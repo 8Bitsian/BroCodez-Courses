@@ -13,3 +13,6 @@ There are four different data types [@BroCodez](https://www.youtube.com/watch?v=
 2. Integer: A whole number
 3. Floats: A floating-point number, a number with a decimal portion
 4. Boolean: Hold the expression true or false
+
+# Typecasting
+Typecasting is the process of converting a variable from one data type to another.
