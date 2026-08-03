@@ -8,10 +8,8 @@ There are two things you need to download:
 # Variables
 A variable is a container for a value - like a box. A variable behaves as if it were the value it contains.
 
-There are four different data types @BroCodez will discuss:
+There are four different data types [@BroCodez](https://www.youtube.com/watch?v=ix9cRaBkVe0) will discuss:
 1. Strings: A series of unique characters
 2. Integer: A whole number
 3. Floats: A floating-point number, a number with a decimal portion
-4. Boolean
-
-Each variable should have a unique name
+4. Boolean: Hold the expression true or false

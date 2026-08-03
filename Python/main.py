@@ -35,3 +35,22 @@ distance = 5.5
 print(f"You ran {distance} kilometers.")
 
 # Use a variable with booleans
+is_student = True
+print(f"Are you a student?: {is_student}?")
+
+if is_student: # If true...
+    print("You are a student.")
+else: # If false...
+    print("You are not a student.")
+
+for_sale = False
+if for_sale: # If true...
+    print("That item is for sale.")
+else: # If false...
+    print("That item is not available.")
+
+is_online = True
+if is_online: # If true...
+    print("You are online.")
+else: # If false...
+    print("You are offline.")
