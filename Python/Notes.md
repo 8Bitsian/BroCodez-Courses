@@ -22,3 +22,6 @@ There are four functions to convert a value or variable:
 2. int()
 3. float()
 4. bool()
+
+# User Input
+We can accept user input using the input function which prompts the user to enter data and returns entered data as a string
