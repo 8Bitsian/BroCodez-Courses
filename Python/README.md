@@ -59,3 +59,7 @@ From here onwards, you'll have to import the math library via: `import math` to 
 - `math.sqrt(var)`: The square root function will print the sqrt of the given value
 - `math.ceil(var)`: The ceiling function will round a floating-point number up to the next integer
 - `math.floor(var)`: The floor function will round a floating-point number down to the next integer
+
+# Decision Structures
+## If-statements
+An if statement is a basic form of decision making; IF a condition is True we do something, Else if it's False, we do something else.

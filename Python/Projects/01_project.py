@@ -1,5 +1,5 @@
 # Project 01: Madlibs Game - A word game where you create a story by filling in the blanks with random words
-
+# Uses Notes 1-3
 # Create a story template whose default is missing components for the user to fill in with random words
 
 adjective1 = input("Enter an adjective (description): ")
