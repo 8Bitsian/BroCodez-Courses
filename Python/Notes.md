@@ -24,4 +24,9 @@ There are four functions to convert a value or variable:
 4. bool()
 
 # User Input
-We can accept user input using the input function which prompts the user to enter data and returns entered data as a string
+We can accept user input using the input function which prompts the user to enter data and returns entered data as a string.
+Instead of having a sepearte print function, within the input function type a string to prompt the user you can asisgn the value to a variable using an assignment operator.
+
+In order to alter the user input in an expression, you have to typecast since it's automatically a string. You can also save lines by typecasting prior to the input() within the same line to save space and for readability. 
+
+You only need to use a printf string if you want to insert variables.
