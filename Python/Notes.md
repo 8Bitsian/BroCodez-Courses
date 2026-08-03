@@ -16,3 +16,9 @@ There are four different data types [@BroCodez](https://www.youtube.com/watch?v=
 
 # Typecasting
 Typecasting is the process of converting a variable from one data type to another.
+
+There are four functions to convert a value or variable:
+1. str()
+2. int()
+3. float()
+4. bool()
