@@ -1,4 +1,5 @@
 # Exercise 01: Rectangle Area Calculator
+# 1-3 Notes
 
 # Typecast the measurements are floats
 length = float(input("Enter the length: "))
