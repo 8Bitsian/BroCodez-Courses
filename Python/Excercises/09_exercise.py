@@ -1,4 +1,4 @@
-# Exercise 09: Password Checker - Validate user input with the following requirements.
+# Exercise 09: Username Checker - Validate user input with the following requirements.
 # 7-8 Notes
 
 username = input("Enter a username: ")
