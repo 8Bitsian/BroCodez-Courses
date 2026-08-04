@@ -150,3 +150,14 @@ The following is a list of common formatting specifiers for numbers:
 - `: `: Indicates a positive value using a space
 - `:-`: Indicates a negative value using the minus sign
 - `:,`: Inserts a comma between numbers
+
+# While Loops
+While loops `while condition:` are a basic form of decision making that uses the if-else statement logic; the only difference being that is that while loops repeat (iterate) code based on their conditions.
+
+An `if` statement will execute once and continues to the rest of the program.
+
+While loops use Boolean logic gates - `while` a condition is `True` we iterate something, `else if` the condition is `False`, we exit the loop and continue to the rest of the program.
+
+The syntax for a while loop is similar to an if statement in that you have the optional else statement. Like with if staements, you can also include parentheses for readability `while (condition): `. You can also introduce logical and ternary operators within the condition.
+
+When using while loops be sure to include a way to escape the loop unless you'd get stuck in an infinite loop.
