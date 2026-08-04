@@ -62,4 +62,24 @@ From here onwards, you'll have to import the math library via: `import math` to 
 
 # Decision Structures
 ## If-statements
-An if statement is a basic form of decision making; IF a condition is True we do something, Else if it's False, we do something else.
+An if statement is a basic form of decision making; IF a condition is True we do something, Else If it's False, we do something else.
+
+After the initial `if` statement be sure to indent the code that follows as Python doesn't use curely brakets.
+
+We can use if statemnts to check conditions. When writing the conditions, it is best to use parentheses for readability.
+
+| Condition | Example |
+|:---|:---:|
+| Greater Than: `>` | `var > value` |
+| Less Than: `<` | `var < value` |
+| Equal To: `==` | `var == value` |
+| Greater Than or Equal To: `>=` | `var >= value` |
+| Less Than or Equal To: `<=` | `var <= value` |
+
+One equal sign is the assignment operator `=`, and two equal sign is the equal to (comparison) operator `==`.
+
+You can check multiple conditions with the `if else` statement. Another way to write it is with `elif`.
+
+The final `else` statement is a last resort or considered the "default option" for the decision structure. If the previous coditions are false then we are directed here.
+
+Boolean data type variables can be used in place of condition expressions since the if statement would alread yevaluate to `True` or `False`.
