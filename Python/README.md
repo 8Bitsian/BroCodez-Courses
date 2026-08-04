@@ -90,3 +90,30 @@ There are three different logical operators [@BroCodez](https://www.youtube.com/
 1. `or`: ONE of the conditions must be `True`
 2. `and`: BOTH of the conditions must be `True`
 3. `not`: Inverts the conditions (NOT `False` or NOT `True`)
+
+# Conditional Expression
+A conditional expression is a one-line shortcut for the if-else statement, which is like a ternary operator in other programming langauges.
+It prints or assigns one of two values based on a condition, i.e, X `if` condition `else` return Y.
+
+# String Methods
+A string is a series of characters with each being saved in memory by their position or index. When working with indexes we always begin with 0.
+
+There are a list of methods (functions) available to parse strings and return integers:
+- `len(var)`: The length function returns an integer of however many characters are within a string
+- `var.find("char")`: The find method will return an integer of the first occurance (index) of a given character. If character isn't found, the method will return "-1"
+- `var.rfind("char")`: The reverse find (hence rfind) method will return an integer of the last occurance (index) of a given character. If character isn't found, the method will return "-1"
+- `var.count("char")`: The count method will return an integer of the number of intstances of a character within the string
+
+There are a list of methods available to parse strings and return strings:
+- `var.capitalize()`: The capitalize method will change the first character (in index 0) to an uppercase and return the full string
+- `var.upper()`: The upper method will change all characters to uppercase and return the full string
+- `var.lower()`: The lower method will change all characters to lowercase and return the full string
+- `var.replace("char", "replace")`: The replace method will replace all of a specified character within the string by another given character. It can also be replaced with an empty string `""`
+
+There are a list of methods available to parse string and return booleans:
+- `var.isdigit()`: The is digit method will return a boolean of `True` if the string only contains digits (0-9), or `False` if otherwise. 
+- `var.isalpha()`: The is digit method will return a boolean of `True` if the string only contains alphabetical characters (a-z or A-Z), or `False` if otherwise. It will print `False` with a space.
+
+To get a list of all string method available top you, use the help function with the string datatype: `print(help(str))`
+
+# 
