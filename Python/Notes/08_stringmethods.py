@@ -1,4 +1,5 @@
 # String Methods - A string is a series of characters
+
 name = input("Enter your full name: ")
 # Example: imani Hollie
 # Pos:     012345678901 (12)
