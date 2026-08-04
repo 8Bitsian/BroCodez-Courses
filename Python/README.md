@@ -133,3 +133,20 @@ To print a range you can do a variety of things:
 
 Any indexing position can be referenced in reverse, but be sure to remember that the negative inital starting point starts at -1 and not 0.
 To rverse a string, set the step index to be negative: `string[::-1]`.
+
+# Format Specifiers
+Format specifiers {value:flags} are flags that format a value based on what flags are inserted.
+We are able to mix and match flags to better readability.
+The syntax for formmatting specifiers are: `{var: [fill][align][sign][#][0][width][,][precision][type]}`
+
+The following is a list of common formatting specifiers for numbers:
+- `:.(num)f`: Rounds to that many decimal places (fixed point)
+- `:(num)`: Allocates that many spaces as a buffer
+- `:0(num)`: Allocates and zero-pads that many spaces (can also insert other characters)
+- `:<(num)`: Left justifies using the left angle bracket
+- `:>(num)`: Right justifies using the right angle bracket
+- `:^(num)`: Center aligns using the caret character
+- `:+`: Indicates a positive value using the plus sign
+- `: `: Indicates a positive value using a space
+- `:-`: Indicates a negative value using the minus sign
+- `:,`: Inserts a comma between numbers
