@@ -1,16 +1,16 @@
-# Exercise 09: Username Checker - Validate user input with the following requirements.
-# 7-8 Notes
+# Exercise 08: Temperature Converter - Create a temperature converted using an if statement
+# 5 Notes
 
-username = input("Enter a username: ")
+unit = input("Celcius or Fahrenheit? (C or F): ")
+temp = float(input("Enter the temperature: ")
 
-# 1. Username is no more than 12 characters
-if len(username) > 12:
-	print("ERROR: Invalid Input: Username is longer than 12 characters.")
-# 2. Username must not contain spaces
-elif not username.find(" ") == -1:
-	print("ERROR: Invalid Input: Username cannot contain spaces.")
-# 3. Username must not contain digits
-elif not username.isalpha(): # Will also check for spaces
-	print("ERROR: Invalid Input: Username cannot contain digits.")
-else:
-	print(f"Welcome {username}")
+if unit == "C":		# C -> F
+	f_temp = (temp * (9.0 / 5.0)) + 32.0
+	unit = "°F"
+	print(f"The temperature is: {round(f_temp, 3)} {unit}")
+elif unit == "F":	# F -> C
+	c_temp = (temp - 32.0) * (5.0 / 9.0)
+	unit = "°C"
+	print(f"The temperature is: {round(c_temp, 3)} {unit}")
+else:	# Error message
+	print(f"{unit} was not a valid unit of measurement")
