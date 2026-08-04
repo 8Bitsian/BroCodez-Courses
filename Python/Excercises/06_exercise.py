@@ -1,13 +1,16 @@
-# Exercise 05: Cacluate the Hypotenuse of a Right Triangle
-# 4 Notes
+# Exercise 09: Username Checker - Validate user input with the following requirements.
+# 7-8 Notes
 
-import math
+username = input("Enter a username: ")
 
-a = float(input("Enter side A: "))
-b = float(input("Enter side B: "))
-
-# Equation for the hypotenuse of a right triangle c = a² + b²
-hypotenuse = math.sqrt(pow(a, 2) + pow(b, 2))
-
-# Use the round function to round to two decimal places
-print(f"The hypotenuse (c) is: {round(hypotenuse, 2)}cm")
+# 1. Username is no more than 12 characters
+if len(username) > 12:
+	print("ERROR: Invalid Input: Username is longer than 12 characters.")
+# 2. Username must not contain spaces
+elif not username.find(" ") == -1:
+	print("ERROR: Invalid Input: Username cannot contain spaces.")
+# 3. Username must not contain digits
+elif not username.isalpha(): # Will also check for spaces
+	print("ERROR: Invalid Input: Username cannot contain digits.")
+else:
+	print(f"Welcome {username}")

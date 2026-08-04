@@ -1,12 +1,13 @@
-# Exercise 04: Cacluate the Area of a Circle
+# Exercise 05: Cacluate the Hypotenuse of a Right Triangle
 # 4 Notes
 
 import math
 
-radius = float(input("Enter the radius of a circle: "))
+a = float(input("Enter side A: "))
+b = float(input("Enter side B: "))
 
-# Equation for the area of a circle A = πr²
-area = math.pi * pow(radius, 2)
+# Equation for the hypotenuse of a right triangle c = a² + b²
+hypotenuse = math.sqrt(pow(a, 2) + pow(b, 2))
 
 # Use the round function to round to two decimal places
-print(f"The circumference is: {round(area, 2)}cm²")
+print(f"The hypotenuse (c) is: {round(hypotenuse, 2)}cm")

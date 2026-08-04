@@ -1,16 +1,9 @@
-# Exercise 07: Weight Converter - Create a weight converted using an if statement
-# 5 Notes
+# Exercise 12: Reverse Credit Card - Reverse the order of the credit card number
+# 9 Notes
 
-weight = float(input("Enter your weight: ")
-unit = input("Kilograms or Pounds? (K or L): ")
+credit_card = input("Enter a credit card number: ")
 
-if unit == "K":		# Kgs -> Lbs
-	weight *= 2.205
-	unit = "Lbs."
-	print(f"Your weight is: {round(weight, 3)} {unit}")
-elif unit == "L":	# Lbs -> Kgs
-	weight /= 2.205
-	unit = "Kgs."
-	print(f"Your weight is: {round(weight, 3)} {unit}")
-else:
-	print(f"{unit} was not valid")
+# To reverse a string set the step to be negative
+reverse_digits = credit_card[::-1]
+
+print(f"{reverse_digits}")
