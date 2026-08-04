@@ -83,3 +83,10 @@ You can check multiple conditions with the `if else` statement. Another way to w
 The final `else` statement is a last resort or considered the "default option" for the decision structure. If the previous coditions are false then we are directed here.
 
 Boolean data type variables can be used in place of condition expressions since the if statement would alread yevaluate to `True` or `False`.
+
+# Logical Operators
+A logical operator evaluates multiple conditions (like the comparision operators) with boolean logic (`True` or `False`)
+There are three different logical operators [@BroCodez](https://www.youtube.com/watch?v=ix9cRaBkVe0) will discuss:
+1. `or`: ONE of the conditions must be `True`
+2. `and`: BOTH of the conditions must be `True`
+3. `not`: Inverts the conditions (NOT `False` or NOT `True`)
