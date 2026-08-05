@@ -24,7 +24,7 @@ print(f"Your email is: {email}")
 age = 23
 print(f"You are {age} years old.")
 
-itmes = 3
+items = 3
 print(f"You are buying {items} items.")
 
 num_of_students = 30
