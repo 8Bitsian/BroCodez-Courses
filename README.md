@@ -17,7 +17,7 @@
 ![repo stars][7]
 ![repo eyes][8]<br/>
 ![total commit][9]
-![last commit][10]
+![last commit][10]<br/>
 
 ## 🛠️ Tech & Tools
 <!-- The World Wide Web Consortium (W3C) develops the HTML5 and CSS standards from https://www.w3.org/ -->
