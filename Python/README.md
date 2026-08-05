@@ -152,12 +152,31 @@ The following is a list of common formatting specifiers for numbers:
 - `:,`: Inserts a comma between numbers
 
 # While Loops
-While loops `while condition:` are a basic form of decision making that uses the if-else statement logic; the only difference being that is that while loops repeat (iterate) code based on their conditions.
-
+While loops `while condition:` are a basic form of decision making that uses the if-else statement logic.
+The only difference being that is that while loops repeat (iterate) code based on their conditions.
 An `if` statement will execute once and continues to the rest of the program.
-
 While loops use Boolean logic gates - `while` a condition is `True` we iterate something, `else if` the condition is `False`, we exit the loop and continue to the rest of the program.
 
-The syntax for a while loop is similar to an if statement in that you have the optional else statement. Like with if staements, you can also include parentheses for readability `while (condition): `. You can also introduce logical and ternary operators within the condition.
+The syntax for a `while` loop is similar to an `if` statement in that you have the optional else statement.
+Like with if staements, you can also include parentheses for readability `while (condition):`.
+You can also introduce logical and ternary operators within the condition.
 
 When using while loops be sure to include a way to escape the loop unless you'd get stuck in an infinite loop.
+
+# For Loops
+For loops are a basic form of decision making; `while` a condition is `True` we iterate a block of code `for` a given number of times, `else if` it's `False`, we exit the loop.
+You can iterate over a range, string, sequence, etc. Syntax for the `for` clause is `for counter in range(start, end, step)`
+
+The `start` parameter is inclusive and beings at index 0.
+The `end` paramater is exclsuive, so add one when wanting to include a value within the specified range.
+The `step` parameter is optional and also beings at index 0 (unless specified otherwise).
+
+The code block indented after the `for` clause will iterate over the range and will print on newlines unless specified otherwise.
+The following print function (not indented) after the block of code is considered outside of the `for` loop so it prints once.-
+
+Because the `for` loop is capable of indexing we can use it to splice strings the same way we would with string indexing by using the `step` parameter.
+To count (interate) backwards use the reversed function around the range function `reversed(range(start, end, step))`.
+	
+The following keywords are also available for the `while` loop:
+- The `continue` keyword stays within the same decision logic (i.e., if-else statement)
+` The `break` keyword leaves the decision logic
