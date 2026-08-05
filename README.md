@@ -27,16 +27,20 @@
 
 > ⚙️ My workflow consists of developing with Geany and GitHub Desktop, and then documenting with Obsidian and GitHub.<br/><br/>
 > [![Obsidian Badge][13]](https://obsidian.md/)
-[![Geany Badge][14]](https://www.geany.org/)
-![GitHub Badge][15]
-![Git Badge][16]<br/>
+![GitHub Badge][14]
+[![GitHub Desktop Badge][ghdesk]](https://github.com/apps/desktop)
+[![Git Badge][15]](https://git-scm.com/)
+[![Geany Badge][16]](https://www.geany.org/)
+[![VSCodium Badge][17]](https://vscodium.com/)<br/>
 
 > 🗣️ I am following tutorials for Python, Java, C++, C# and C for full-stack development.<br/><br/>
-> [![Python Badge][17]](https://www.python.org/)
-[![Java Badge][18]](https://www.java.com/)
-[![C++ Badge][19]](https://isocpp.org/)
-[![C# Badge][20]](https://isocpp.org/)
-[![C Badge][21]](https://isocpp.org/)
+> ![Total Languages Badge][18]
+![Top Langauge Badge][19]<br/>
+> [![Python Badge][20]](https://www.python.org/)
+[![Java Badge][21]](https://www.java.com/)
+[![C++ Badge][22]](https://isocpp.org/)
+[![C# Badge][23]](https://isocpp.org/)
+[![C Badge][24]](https://isocpp.org/)
 
 <!-- Links placed here for the file's readability -->
 <!-- Social Media -->
@@ -60,13 +64,17 @@
 
 <!-- Software -->
 [13]: https://img.shields.io/badge/Obsidian-2026?logo=obsidian&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
-[14]: https://custom-icon-badges.demolab.com/badge/Geany-2026?style=flat&logo=geany2&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
-[15]: https://img.shields.io/badge/GitHub-2026?logo=github&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
-[16]: https://custom-icon-badges.demolab.com/badge/Git-2026?style=flat&logo=git&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[14]: https://img.shields.io/badge/GitHub-2026?logo=github&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[ghdesk]: https://img.shields.io/badge/GitHub_Desktop-2026?logo=github&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[15]: https://custom-icon-badges.demolab.com/badge/Git-2026?style=flat&logo=git&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[16]: https://custom-icon-badges.demolab.com/badge/Geany-2026?style=flat&logo=geany2&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[17]: https://img.shields.io/badge/VSCodium-2026?logo=vscodium&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 
 <!-- Programming Languages -->
-[17]: https://img.shields.io/badge/Python-3?logo=python&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
-[18]: https://img.shields.io/badge/Java-25?logo=openjdk&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
-[19]: https://img.shields.io/badge/C%2B%2B-26?logo=cplusplus&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
-[20]: https://img.shields.io/badge/C%23-14?logo=cplusplus&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
-[21]: https://img.shields.io/badge/C-23?logo=c&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[18]: https://custom-icon-badges.demolab.com/github/languages/count/8Bitsian/CPP-Spring-2026?style=flat&logo=code-square&logoColor=FFFFF0&label=Total%20Languages&labelColor=8C52FF&color=FFDE59
+[19]: https://custom-icon-badges.demolab.com/github/languages/top/8Bitsian/CPP-Spring-2026?style=flat&logo=code-square&logoColor=FFFFF0&label=Top%20Language&labelColor=8C52FF&color=FFDE59
+[20]: https://img.shields.io/badge/Python-3?logo=python&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[21]: https://img.shields.io/badge/Java-25?logo=openjdk&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[22]: https://img.shields.io/badge/C%2B%2B-26?logo=cplusplus&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[23]: https://img.shields.io/badge/C%23-14?logo=cplusplus&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[24]: https://img.shields.io/badge/C-23?logo=c&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
