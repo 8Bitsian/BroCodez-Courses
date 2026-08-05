@@ -1,4 +1,4 @@
-# Exercise 11: Credit Card Parser - Get the last 4 digits of a credit card number.
+# Exercise 07: Credit Card Parser - Get the last 4 digits of a credit card number.
 # 9 Notes
 
 credit_card = input("Enter a credit card number: ")

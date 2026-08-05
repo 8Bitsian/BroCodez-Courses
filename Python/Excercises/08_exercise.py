@@ -1,4 +1,4 @@
-# Exercise 12: Reverse Credit Card - Reverse the order of the credit card number
+# Exercise 08: Reverse Credit Card - Reverse the order of the credit card number
 # 9 Notes
 
 credit_card = input("Enter a credit card number: ")
