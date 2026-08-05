@@ -1,5 +1,6 @@
-# Exercise 06: Cacluator Program - Create calculator using the if statement decision structure
-# 4-5 Notes
+# Project 02: Cacluator Program - Create calculator using the if statement decision structure
+# Uses Notes 4-5
+# Create an if-elif statement for the user to choose an operator and input two numbers
 
 operator = input("Enter Operator (+ - * ** / %): ")
 

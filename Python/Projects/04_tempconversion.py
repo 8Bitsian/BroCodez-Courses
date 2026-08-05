@@ -1,5 +1,6 @@
-# Exercise 08: Temperature Converter - Create a temperature converted using an if statement
+# Project 04: Temperature Converter - Create a temperature converted using an if statement
 # 5 Notes
+# Create an if-elif statement for the user to choose a unit and input a float
 
 unit = input("Celcius or Fahrenheit? (C or F): ")
 temp = float(input("Enter the temperature: ")

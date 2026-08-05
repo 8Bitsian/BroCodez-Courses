@@ -1,5 +1,6 @@
-# Exercise 07: Weight Converter - Create a weight converted using an if statement
+# Project 03: Weight Converter - Create a weight converted using an if statement
 # 5 Notes
+# Create an if-elif statement for the user to choose a unit and input a float
 
 weight = float(input("Enter your weight: ")
 unit = input("Kilograms or Pounds? (K or L): ")
