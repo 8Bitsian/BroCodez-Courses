@@ -6,7 +6,7 @@
 [![Banner](images/Banner.png)](https://8bitsian.github.io/)
 
 ## 😎 BroCodez-Courses
-> 🟥 Follow [@BroCodez](https://www.youtube.com/@BroCodez) on YouTube for free and useful courses on basic programming languages.<br/></br>
+> 📎Follow [@BroCodez](https://www.youtube.com/@BroCodez) on YouTube for free and useful courses on basic programming languages.<br/></br>
 > [![my-website][0]](https://8bitsian.github.io/)
 [![stack-overflow][1]](https://stackoverflow.com/users/32219858/8bitsian)
 [![bluesky][2]](https://bsky.app/profile/8bitsoftware.bsky.social)
