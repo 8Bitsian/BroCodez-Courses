@@ -29,7 +29,7 @@
 > [![Obsidian Badge][13]](https://obsidian.md/)
 [![Geany Badge][14]](https://www.geany.org/)
 ![GitHub Badge][15]
-![GitHub Codespaces Badge][16]<br/>
+![Git Badge][16]<br/>
 
 > 🗣️ C++, Java, and Python for backend development, and minor experience with HTML5, CSS3, and JavaScript for web development<br/><br/>
 > [![Python Badge][17]](https://www.python.org/)
@@ -62,7 +62,7 @@
 [13]: https://img.shields.io/badge/Obsidian-2026?logo=obsidian&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [14]: https://custom-icon-badges.demolab.com/badge/Geany-2026?style=flat&logo=geany2&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 [15]: https://img.shields.io/badge/GitHub-2026?logo=github&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
-[16]: https://custom-icon-badges.demolab.com/badge/Codespaces-2026?style=flat&logo=code&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
+[16]: https://custom-icon-badges.demolab.com/badge/Git-2026?style=flat&logo=git&logoColor=FFFFF0&labelColor=8C52FF&color=FFDE59
 
 <!-- Programming Languages -->
 [17]: https://img.shields.io/badge/Python-3?logo=python&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
