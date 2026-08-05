@@ -10,4 +10,4 @@ b = float(input("Enter side B: "))
 hypotenuse = math.sqrt(pow(a, 2) + pow(b, 2))
 
 # Use the round function to round to two decimal places
-print(f"The hypotenuse (c) is: {round(hypotenuse, 2)}cm")
+print(f"The hypotenuse (side C) is: {round(hypotenuse, 2)}cm")

@@ -20,7 +20,7 @@ print(min_num) # Prints "6"
 
 status = 23
 
-status = "Adult" if age >= 18 else "Child"
+status = "Adult" if status >= 18 else "Child"
 print(status) # Prints "Adult"
 
 temp = 30

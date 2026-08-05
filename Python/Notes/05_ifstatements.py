@@ -6,7 +6,7 @@ age = int(input("Enter your age: "))
 if age >= 100: # Greater than or equal to
 	# Be sure that code underneath the initial if statement is indented
 	print(f"Becuase you are {age}, you are an elder.")
-if else age >= 18:
+elif age >= 18:
 	# You can check multiple conditions with the if else statement
 	print(f"Becuase you are {age}, you are an adult.")
 elif age >= 17:
@@ -29,7 +29,7 @@ else: # response == "N":
 	print("No thank you.")
 	
 name = input("Enter your name: ")
-if name == ""
+if name == "":
 	print("You did not respond.")
 else:
 	print(f"Hello {name}!")
@@ -37,7 +37,7 @@ else:
 # Boolean can be used in placed of a condition since with the if statement it would evaluate to True or False
 for_sale = True
 if for_sale: # True
-	print("Thsi item is for sale.")
+	print("This item is for sale.")
 else: # False
 	print("This item is NOT for sale.")
 	

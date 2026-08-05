@@ -23,7 +23,7 @@ print(result) # Will print "-1"
 
 # The capitalize method will change the case of the first character within a string, which will then return a string
 name = name.capitalize()
-print(name) # Will print "Imani Hollie"
+print(name) # Will print "Imani hollie"
 
 # The upper method will change the case of the all of the characters within a string to be uppercase, which will then return a string
 name = name.upper()
@@ -41,7 +41,7 @@ print(result) # Will print "False" even with mixed letter and numbers
 result = name.isalpha()
 print(result) # Will print "False" because a space " " isn't considered an alphabetical character
 
-phone_number = int(input("Enter your phone number: "))
+phone_number = input("Enter your phone number: ")
 # Example: 1-123-456-7890
 # Pos    : 01234567890123 (14)
 

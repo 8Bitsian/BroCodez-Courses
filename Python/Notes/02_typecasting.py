@@ -11,19 +11,19 @@ gpa = 3.2
 is_student = True
 
 # This will print what datatype the variable is
-print(type(name))       # "<class 'str'>"
-print(type(age))        # "<class 'int'>"
-print(type(gpa))        # "<class 'float'>"
-print(type(is_student)) # "<class 'bool'>"
+print(type(name))       # Prints "<class 'str'>"
+print(type(age))        # Prints "<class 'int'>"
+print(type(gpa))        # Prints "<class 'float'>"
+print(type(is_student)) # Prints "<class 'bool'>"
 
 # you can convert the gpa to an integer
 gpa = int(gpa)
 print(gpa) # The decimal portion will be truncated and will print "3"
 
 # you can convert the age to a string
-age = str(age)
-print(type(age)) # Will appear the same, but it's a string now
-# age += 1 now will give an error
+age = str(age)      # Type casts the integers to a string
+print(type(age))    # Prints "<class 'str'>"
+# age += 1 now will give an error sinces it's now a string, not an int
 
 name = bool(name)
-print(name) # Typecasting text will give True unless there is nothing "" then its False
+print(name) # Typecasting text will give "True", unless there is nothing "" then its "False"
