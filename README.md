@@ -5,8 +5,8 @@
 
 [![Banner](images/Banner.png)](https://8bitsian.github.io/)
 
-## 👩🏽‍💻 BroCodez-Courses
-> 🖥️ Follow [@BroCodez](https://www.youtube.com/@BroCodez) on YouTube for free and useful courses on basic programming languages.<br/></br>
+## 😎 BroCodez-Courses
+> 🟥 Follow [@BroCodez](https://www.youtube.com/@BroCodez) on YouTube for free and useful courses on basic programming languages.<br/></br>
 > [![my-website][0]](https://8bitsian.github.io/)
 [![stack-overflow][1]](https://stackoverflow.com/users/32219858/8bitsian)
 [![bluesky][2]](https://bsky.app/profile/8bitsoftware.bsky.social)
@@ -25,13 +25,13 @@
 > [![Linux Mint Badge][11]](https://www.linuxmint.com/)
 ![Windows 11 Badge][12]
 
-> ⚙️ My workflow consists of developing with Geany or GitHub Codespaces, and documenting with Obsidian and GitHub.<br/><br/>
+> ⚙️ My workflow consists of developing with Geany and GitHub Desktop, and then documenting with Obsidian and GitHub.<br/><br/>
 > [![Obsidian Badge][13]](https://obsidian.md/)
 [![Geany Badge][14]](https://www.geany.org/)
 ![GitHub Badge][15]
 ![Git Badge][16]<br/>
 
-> 🗣️ C++, Java, and Python for backend development, and minor experience with HTML5, CSS3, and JavaScript for web development<br/><br/>
+> 🗣️ I am following tutorials for Python, Java, C++, C# and C for full-stack development.<br/><br/>
 > [![Python Badge][17]](https://www.python.org/)
 [![Java Badge][18]](https://www.java.com/)
 [![C++ Badge][19]](https://isocpp.org/)
