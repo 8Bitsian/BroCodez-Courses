@@ -203,3 +203,61 @@ While inside of the nested loop, note that the inner loops iterates as many time
 To print each iteration of an inner loop on a separate line write a blank print statement `print()`
 
 To write code outside of the nested loop, outdent again until  the next line is in line with the beginning of the outer loop.
+
+# Lists, Sets, & Tuples
+Variable are only able to store one value to memory. But with lists, sets, and tuples, they are considered collections, which are single "variables" used to store multiple related values via indices like with strings.
+
+A common naming convention for collections is to make the variable name plural since they are referencing (storing) multiples of related values called elements.
+
+To access elements within the collection, you have to refer to thier index position like with string splicing. The starting index begins at 0. If you try to reference an index that is out of range, then you will get an error message called `IndexError`.
+
+The `in` operator allows you to parse a collection for a specific value and returns a boolean (either `True` or `False`) if it matches user input.
+
+To list the different methods available to your specific collection, use a print statement w/the directory function `print(dir(var))`. This will print the list of available attributes and methods in alphabetical order. To get an in-depth description of each item listed, use a print statement w/the help function `print(help(var))`.
+
+You are able to iterate over collections via loops. Another naming convention dictates that you use a singluar version of the plural used to name your collection, (ex. `for fruits in fruits:`), for the counter variable to help with readability.
+
+There are 4 general purpose collections, but @BroCodez discusses 3 within this chapter:
+1. var[]: Lists use brackets and are ordered and changeable. Duplicates OK
+2. var{}: Sets use curly braces and are unordered and immutable. Add/Remove OK. NO duplicates
+3. var(): Tuples use parentheses and are ordered and unchangeable. Duplicates OK. FASTER
+
+## Lists
+Lists surround thier values with a square bracket and separate each with a comma `var[val1, ...]`.
+
+Like w/a string, you can splice your list by setting a start index, end index, and step index to print a range of elements. Because lists are ordered and changeable, we can change the value of specific indices by using the assignment operator.
+
+There are a few specific methods are available for lists `var[]`:
+- `len(list)`: The length method prints the number of indices within a collection
+- `.count(value)`: The count method prints the number of instances of a given value within a list. This is possible since duplicates are able to exist within lists. If no element is found with that specific value, then it will print "0"
+- `.append(list)`: The append method adds elements to the end of the list
+- `.remove(list)`: The remove method removes elements from the given index within the list
+- `.insert(pos,value)`: The insert method adds elements to any index within the list
+- `.sort(list)`: The sort method will sort the elements within a list in ascending (A-Z) alphabetical order
+- `.reverse(list)`: The reverse method directly after the sort method will sort elements within a list in descending (Z-A) alphabetical order. Otherwise, the reverse method on its own will sort a list in descending numerical order based on thier indices
+- `.index(value)`: The index method will returm the numerical index position of an element matching the user input. If there isn't a matching value, you will get an error message called `ValueError`
+- `.clear()`: The clear method will delete all elements within the list
+
+## Sets
+Sets surround thier values with a curly brace and separate each with a comma `var{val1, ...}`.
+
+Since sets are unordered, whenever the set is printed to console the elements in the set will contain the same values, but will be stored in different positions, making it random. This makes it so sets are not capable of having duplicate values and we aren't able to reference elements within a set via indices. If we try anyways, we will get an error message called `TypeError`.
+
+To "parse" a set for potential values, we can use the `in` operator to check for values within a set `print(val in set)`, this will return a boolean value of `True` or `False`.
+
+Because sets are unordered, it also makes them immutable, meaning we cannot directly change a set element value. We can, however, add and remove elements within a set via methods:
+- `.add(value)`: The add method allows us to append values to the set
+- `.remove(value)`: The remove method allows us to delete values from the set
+- `.pop()`: The pop method will delete whichever element is first, which is random because of the nature of a set
+- `.clear()`: The clear method will delete all elements within the set
+
+Sets work best for when you are working with constants.
+
+## Tuples
+Tuples surround thier values with parentheses and separate each with a comma `var(val1, ...)`.
+
+Becuase tuples are ordered and unchangeable, they are FASTER than lists because data are in fixed positions.
+- `.index(value)`: The index method will return the numerical index positon of an element
+- `.count(value)`: The count method will return the number of instances of a given value within the tuple
+
+Tuples work best with fixed lists.
