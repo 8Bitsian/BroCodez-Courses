@@ -180,3 +180,26 @@ To count (interate) backwards use the reversed function around the range functio
 The following keywords are also available for the `while` loop:
 - The `continue` keyword stays within the same decision logic (i.e., if-else statement)
 ` The `break` keyword leaves the decision logic
+
+# Nested Loops
+
+Nested loops are loops within another loop (outer and inner). The nested loop syntax is the same regardless of what kindof decision structures are used (e.g., for in while, while in for, etc.).
+The outer loop is the loop on the outer most part of the decision structure.
+The inner loop is always indented as it's considered part of the code block of the outer loop. The inner loop is always on the inner most part of the decision structure.
+
+Going back to for loops, remember that each print statement ends with a new line escape character (\n) implicitly. This makes `print(x)` the same as `print(x, end="\n")`.
+To print everything within the print function on the same line, use the end-line specifier `end="val"`.
+The end-line specificer value can be an empty string `end=""`, a space `end=" "`, or any alphanumeric character `end="-"`. 
+
+To iterate a loop, you have to "nest" the loop you want to iterate (repeat) within the code block of another loop by indenting it.
+When creating the inner loop, you have to use a different name for the counter variable than from the outer loop.
+
+Note that the outer loop iterates its code block (i.e., the inner loop) x number of times. And the inner loop iterates it's code block y number of times. You can calculate how many executions are made by multiplying the outer loop counter by the inner loop counter (x * y).
+
+You can continue to work within the outer loop by outdenting from the inner loop and it will still be considered within the same code block.
+
+While inside of the nested loop, note that the inner loops iterates as many times as the 
+
+To print each iteration of an inner loop on a separate line write a blank print statement `print()`
+
+To write code outside of the nested loop, outdent again until  the next line is in line with the beginning of the outer loop.
