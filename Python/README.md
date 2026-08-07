@@ -179,7 +179,7 @@ To count (interate) backwards use the reversed function around the range functio
 	
 The following keywords are also available for the `while` loop:
 - The `continue` keyword stays within the same decision logic (i.e., if-else statement)
-` The `break` keyword leaves the decision logic
+- The `break` keyword leaves the decision logic
 
 # Nested Loops
 
@@ -198,7 +198,7 @@ Note that the outer loop iterates its code block (i.e., the inner loop) x number
 
 You can continue to work within the outer loop by outdenting from the inner loop and it will still be considered within the same code block.
 
-While inside of the nested loop, note that the inner loops iterates as many times as the 
+While inside of the nested loop, note that the inner loops iterates as many times as the counter of the outer loop.
 
 To print each iteration of an inner loop on a separate line write a blank print statement `print()`
 
