@@ -290,3 +290,20 @@ To iterate over the elements within lists of a 2D list, use nested loops.
 You can mix and match different types of collections within 2D lists.
 
 It isn't necessary to give the elements within a 2D names, but it is great for readability.
+
+# Dictionaries
+A collection (array) of `{key:value}` pairs which are ordered (via indicies) and chanageable. NO duplicates are allowed.
+A dictionary is one of the four basic types of collections for jr. devs.
+To initialize a dictionary enclose the elements (`{key:value}` pairs) within with a set of curly braces, like a set{} array, and separate with commas (`,`).
+
+Like with other 1D arrays, you can see all of the possible attributes and methods for the dictionary{} using a print statement w/the directory method `print(dir(dic_name))`. To get an in-depeth description of each attribute and method use a print statment w/the help method `print(help(dic_name))`.
+
+The following are a few methods available to the `dic{}` array:
+- `.get({key})`: The get method parses a dictionary for a given value. If no values are found, the method will return `None`, which can be used in deicsion structures, like if-statements, like Booleans as an off-state (or `False`)
+- `.update({key}:{value})`: The update method can add values to our dictionary using the same syntax for initializing the dictionary. It can also be used to update preexisting values
+- `.pop("{key}")`: The pop method can remove specific values from the dictionary via a key (like an index/element)
+- `.popitem()`: The pop item method can remove the latest key value that was inserted
+- `.clear()`: The clear method will truncate all keys from the dictionary
+- `.keys()`: The keys method will return an object that resembles a 1D list of all of the keys (i.e., indices) from a given dictionary array
+- `.values()`: The values method will return an object that resembles a 1D list of all of the values (i.e., elements) from a given dictionary array
+- `.items()`: The items method will return an object that resembles a 2D list of all of the `{key:value}` pairs from a given dictionary array
