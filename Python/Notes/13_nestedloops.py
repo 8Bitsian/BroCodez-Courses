@@ -35,13 +35,3 @@ for x in range(3):  # Outer loop iterates the inner loop x number of times
 # You can calculate the amount of iterations by multiplying the counter variables
 # Be sure to add 1 to the outer loop to because it is exclusive
 print((x + 1) * y)    # Prints "27"
-
-# Ex. Creates a rectangle of symbols
-rows = int(input("Enter # of rows: "))
-cols = int(input("Enter # of columns: "))
-symbol = input("Enter a symbol to use: ")
-
-for x in range(rows):
-    for y in range(cols):
-        print(symbol, end="")
-    print()

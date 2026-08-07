@@ -36,6 +36,6 @@ print("Exiting While Loop...")
 num = int(input("Enter a number between 1-10: "))
 # The condition num < 1 or num > 10 can be replaced by 10 > num > 1
 while (num < 1 or num > 10):
-    print(f"ERROR: Inavlid Input - Number must be within range 0 - 10.")
+    print(f"ERROR: Inavlid Input - Number must be within range 1 - 10.")
     num = input("Enter a number between 1-10: ")
 print(f"Your number is {num}.")

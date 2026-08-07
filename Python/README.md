@@ -261,3 +261,37 @@ Becuase tuples are ordered and unchangeable, they are FASTER than lists because 
 - `.count(value)`: The count method will return the number of instances of a given value within the tuple
 
 Tuples work best with fixed lists.
+
+# 2D Collections
+2D collections (or arrays) are two-dimentional collections that are made up of collections.
+You can create a 2D array works with any kind of collection (ex. a list[] made of lists). These are useful when working with matrices or grids of data, similar to an excel spreadsheet.
+
+2D arrays follow the same naming convensions for 1D arrays (lists, tuples, sets, etc.), in that the name of the outer array is more broad than the inner arrays (ex. groceries are made of fruits, vegatables, and meats).
+
+To create a 2D array, think of nested loops, where you would create a 1D collection first, then "nest" the other 1D collections within the elements of ther "outer" collection.
+
+Think back to how you would reference elements within a 1D array:
+- To print the elements within a 1D list 
+
+To print the elements within a 1D list, put the name of the list in a print() function
+
+To print a specific element from within the list, reference it with its index position, starting from 0
+
+To change the value of an element in a 1D list, use an assignment operator (=) w/the index of the element you want to acess
+
+If I were to print the 2D list w/out formatting, it would print every list separated by commas within a square bracket on one line
+
+The 2D list can be parsed similar to that of a grid, w/1D list names as rows and elements as columns
+Like a 1D list to reference a element (which is an entire list), use the index starting from 0
+
+To access an element found within one of the rows (list), you need to reference that specific index too
+you can think of this system like coordinates on a grid
+
+Like with 1D lists, if you try to access an indices out of range, you will get the 'IndexError'
+
+To print entire lists from within a 2D list, use loops
+To iterate over the elements within lists of a 2D list, use nested loops
+
+You can mix and match different types of collections within 2D lists
+
+It isn't necessary to give the elements within a 2D names, but it is great for readability

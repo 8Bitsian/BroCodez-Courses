@@ -14,7 +14,7 @@ for x in reversed(range(1, 11)):
 print("HAPPY NEW YEAR!")
 
 # You can step with the optional parameter in the range function
-for x in range(1, 11, 2):
+for x in range(2, 11, 2):
 	# The step parameter begins at index 0 (in this case 1)
 	print(x)	# Prints "1 3 5 7 9"
 	
@@ -34,7 +34,7 @@ for x in range(1, 10):
 		# This skips over the index matching the value of "7"
 		continue
 	else:
-		print(x)	# Prints "1 2 3 4 5 6 8 9 10" on newlines
+		print(x)	# Prints "1 2 3 4 5 6 8 9" on newlines
 
 # The break keyword leaves the decision logic
 for x in range(1, 10):
@@ -43,5 +43,3 @@ for x in range(1, 10):
 		break
 	else:
 		print(x)	# Prints "1 2 3 4 5 6 7" on newlines
-
-	
