@@ -271,27 +271,22 @@ You can create a 2D array works with any kind of collection (ex. a list[] made o
 To create a 2D array, think of nested loops, where you would create a 1D collection first, then "nest" the other 1D collections within the elements of ther "outer" collection.
 
 Think back to how you would reference elements within a 1D array:
-- To print the elements within a 1D list 
+- Use the `print()` function to print the elements within a 1D array
+- Reference the index position of an element to print a specific element from within the array, starting from 0
+- Use the assignment operator (`=`) w/the index of the element you would like to change
 
-To print the elements within a 1D list, put the name of the list in a print() function
+The same logic applies when parsing through 2D arrays.
+If you used the `print()` function and referenced an element within a 2D array, it would print every 1D array separated by commas within a square bracket on one line.
 
-To print a specific element from within the list, reference it with its index position, starting from 0
+To access specific elements within a 2D array, remember it can be parsed similarly to that of a grid, w/1D array variable names acting as rows and the elements within them acting as columns.
+Like a 1D list to reference a element (which is an entire list), use the index starting from 0. To access an element found within one of the rows (list), you need to reference that specific index too.
+You can think of this system like coordinates on a grid.
 
-To change the value of an element in a 1D list, use an assignment operator (=) w/the index of the element you want to acess
+Like with 1D lists, if you try to access an indices out of range, you will get the 'IndexError'.
 
-If I were to print the 2D list w/out formatting, it would print every list separated by commas within a square bracket on one line
+To print entire lists from within a 2D list, use loops.
+To iterate over the elements within lists of a 2D list, use nested loops.
 
-The 2D list can be parsed similar to that of a grid, w/1D list names as rows and elements as columns
-Like a 1D list to reference a element (which is an entire list), use the index starting from 0
+You can mix and match different types of collections within 2D lists.
 
-To access an element found within one of the rows (list), you need to reference that specific index too
-you can think of this system like coordinates on a grid
-
-Like with 1D lists, if you try to access an indices out of range, you will get the 'IndexError'
-
-To print entire lists from within a 2D list, use loops
-To iterate over the elements within lists of a 2D list, use nested loops
-
-You can mix and match different types of collections within 2D lists
-
-It isn't necessary to give the elements within a 2D names, but it is great for readability
+It isn't necessary to give the elements within a 2D names, but it is great for readability.
