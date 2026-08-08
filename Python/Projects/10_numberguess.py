@@ -35,7 +35,7 @@ while (is_running):
             print("ERROR: Out of Range - Value in (1-100)")
             print(f"Select a number between {low_num} and {high_num}: ")
             continue
-    except:
+    except InvalidInput:
         print("ERROR: Invalid Input - Digits only (0-9)")
         print(f"Select a number between {low_num} and {high_num}: ")
         # Thanks you to @EynonPlays on Twitch
@@ -51,4 +51,4 @@ while (is_running):
     else:
         print(f"CORRECT: The answer is {answer}")
         print(f"Number of Guesses: {guesses}")
-        break    
+        break
