@@ -307,3 +307,16 @@ The following are a few methods available to the `dic{}` array:
 - `.keys()`: The keys method will return an object that resembles a 1D list of all of the keys (i.e., indices) from a given dictionary array
 - `.values()`: The values method will return an object that resembles a 1D list of all of the values (i.e., elements) from a given dictionary array
 - `.items()`: The items method will return an object that resembles a 2D list of all of the `{key:value}` pairs from a given dictionary array
+
+# Random Numbers
+To generate random numbers import the random library module `import random` at the top of the file.
+
+For a list of all of the methods use the print statement w/the help method `print(help(random))`.
+
+Random number generators are great for games, liek D&D dice, card, rock papper scissors, etc.
+
+The following is a list of methods availble to the random library
+- `.randint(start, end)`: The random integer method prints integers within a range that is inclusive. You can also use integer variables within the range
+- `.random()`: The random float method prints floating-point number within a range of 0 and 1 that is inclusive. You can use the decimal format specifier to limit the number of decimal places
+- `.choice(seq)`: The choice method prints a random elemnt from a list or a sequence (best w/tuples)
+- `.shuffle(seq)`: The shuffle method reorders the elements within a sequence (best w/lists)
