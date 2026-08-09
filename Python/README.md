@@ -351,6 +351,14 @@ When calling a function you can set default parameters by initializing them in t
 You don't have to pass values for default arg., making the code cleaner.
 
 ## Keyword Arguments
+A keyword argument is an arg. preceded by an identifier to help w/readability.
+They are used for clarification so args. always appear in the order you intend for them to be.
 
+Order of keyword arguments doesn't matter; Be sure to put position arg. first
+Else you get "SyntaxError: Postional argument follows keyword argument"
+
+`end` is a keyword argument for the bulit-in print() statement `print(var, end=" ")` and will print vairables on the same line.
+
+`sep` (short for separate) is a keyword arg. for the print() statement `print(var, sep=" ")`  which outputs character(s) between strings on the same line.
 
 ## Arbitrary Arguments
