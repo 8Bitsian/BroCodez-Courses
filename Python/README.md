@@ -322,3 +322,11 @@ The following is a list of methods availble to the random library
 - `.shuffle(seq)`: The shuffle method reorders the elements within a sequence (best w/lists)
 
 # Functions
+Instead of re-writing code multiple times, we can utilize functions to reference entire code blocks as reusable code. To initialize a function, use the keyword `def` (for definition) and the function name followed by parentheses `def funct()`.
+
+To call (or invoke) the function just type out the function name w/parentheses `funct()`
+
+You can send data into a function as arguments within the paraentheses `funct(args)`. When sending data, be sure to have a matching set of parameters being referenced within the code block
+
+The `return` statement is used at the end of a function and sends a result back to the caller. You can either send a variable or an operation, and it will send back the result all the same.
+Ex. `z = funct(x, y)` is like using the assignment operator for z = result of function.
