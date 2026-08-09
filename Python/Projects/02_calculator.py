@@ -5,8 +5,8 @@
 operator = input("Enter Operator (+ - * ** / %): ")
 
 # You have to typecast the input functions as floats
-num1 = float(input("Enter the 1st number: ")
-num1 = float(input("Enter the 2nd number: ")
+num1 = float(input("Enter the 1st number: "))
+num2 = float(input("Enter the 2nd number: "))
 
 if (operator == "+"):
 	# Addition (use the round function for two decimal places)

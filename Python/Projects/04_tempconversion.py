@@ -3,7 +3,7 @@
 # Create an if-elif statement for the user to choose a unit and input a float
 
 unit = input("Celcius or Fahrenheit? (C or F): ")
-temp = float(input("Enter the temperature: ")
+temp = float(input("Enter the temperature: "))
 
 if unit == "C":		# C -> F
 	f_temp = (temp * (9.0 / 5.0)) + 32.0

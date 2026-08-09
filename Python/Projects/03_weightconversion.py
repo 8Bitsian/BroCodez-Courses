@@ -2,7 +2,7 @@
 # 5 Notes
 # Create an if-elif statement for the user to choose a unit and input a float
 
-weight = float(input("Enter your weight: ")
+weight = float(input("Enter your weight: "))
 unit = input("Kilograms or Pounds? (K or L): ")
 
 if unit == "K":		# Kgs -> Lbs

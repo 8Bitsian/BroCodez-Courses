@@ -330,3 +330,27 @@ You can send data into a function as arguments within the paraentheses `funct(ar
 
 The `return` statement is used at the end of a function and sends a result back to the caller. You can either send a variable or an operation, and it will send back the result all the same.
 Ex. `z = funct(x, y)` is like using the assignment operator for z = result of function.
+
+# Arguments
+@BroCodez goes over four types of arguments, but has covered two so far:
+1. Positional arguments are used when initializing functions
+2. Default arguments are used for flexiblity and legibility
+3. Keyword arguments
+4. Arbitrary arguments
+
+## Positional Arguments
+A positonal argument is the value passed through a parameter by thier position in the arg. tuple `function(arg1, etc.)`
+
+## Default Arguments
+A default argument is a default value assignend to a parameter. The default arg. is used when the arg. is omitted and makes for a more flexible and legible function call.
+These are best used for arguments with consistent/known base values.
+
+When calling a function you can set default parameters by initializing them in the function definition.
+`function(arg1 = val, etc.)`
+
+You don't have to pass values for default arg., making the code cleaner.
+
+## Keyword Arguments
+
+
+## Arbitrary Arguments
