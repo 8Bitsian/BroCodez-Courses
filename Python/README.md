@@ -362,3 +362,13 @@ Else you get "SyntaxError: Postional argument follows keyword argument"
 `sep` (short for separate) is a keyword arg. for the print() statement `print(var, sep=" ")`  which outputs character(s) between strings on the same line.
 
 ## Arbitrary Arguments
+Arbitrary refers to having to pass a varying amount of arguments, or when you aren't sure of how many will be passed through a function when invoked. Without arbitrary args. you would only be able to pass a set amount of args. defined previously in the function definition.
+
+Arbitrary args. are prefixed w/the unpacking operator (`*`).
+
+There are two kinds of arbitrary args.:
+1. `*args`: Non-key args. allow you to pass multiple non-key arguments into a tuple()
+2. `**kargs`: Keyword args. allow you to pass multiple keyword-arguments into a dictionary{}
+
+The `type()` method will return the data type of the name of the function passed into it.
+For non-key args., it will return `<class 'tuple'>`, and for keyword-args., it will return `<class 'dict'>`.
