@@ -320,3 +320,5 @@ The following is a list of methods availble to the random library
 - `.random()`: The random float method prints floating-point number within a range of 0 and 1 that is inclusive. You can use the decimal format specifier to limit the number of decimal places
 - `.choice(seq)`: The choice method prints a random elemnt from a list or a sequence (best w/tuples)
 - `.shuffle(seq)`: The shuffle method reorders the elements within a sequence (best w/lists)
+
+# Functions
