@@ -372,3 +372,15 @@ There are two kinds of arbitrary args.:
 
 The `type()` method will return the data type of the name of the function passed into it.
 For non-key args., it will return `<class 'tuple'>`, and for keyword-args., it will return `<class 'dict'>`.
+
+# Iterables
+An iterable is an object/collection that can return its elements one at a time, allowing it to be iterated over in a loop.
+
+The iterable in most loops is called the counter variable. It should be named according to what's being counted for readability.
+
+The following are considered iterables:
+- `Lists[]`: You can iterate them in order or in reverse w/the `reversed()` method
+- `Strings[]`: These are a special type of list array, so you can iterate them in order or in reverse w/the `reversed()` method
+- `Tuples()`: You can iterate them in order or in reverse w/the `reversed()` method
+- `Sets{}`: You can only iterate them in order, otherwise you will get the `TypeError` message "'set' object is not reversable"
+- `Dictionaries{}`: You can iterate them in order and either print only the `{keys}`, the `{values}`, or the `{key}:{value}` pair
