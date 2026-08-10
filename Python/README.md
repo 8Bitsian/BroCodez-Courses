@@ -384,3 +384,10 @@ The following are considered iterables:
 - `Tuples()`: You can iterate them in order or in reverse w/the `reversed()` method
 - `Sets{}`: You can only iterate them in order, otherwise you will get the `TypeError` message "'set' object is not reversable"
 - `Dictionaries{}`: You can iterate them in order and either print only the `{keys}`, the `{values}`, or the `{key}:{value}` pair
+
+# Membership Operators
+Membership operators are used to test whether a value or variable is found in a sequence (string, list, tuple, set, or dictionary)
+
+The following are considered membership operators:
+- `in`: The `in` keyword will return a boolean value of `True` or `False`
+- `not in`: # Using the `not` keyword would reverse the resting state
