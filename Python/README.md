@@ -391,3 +391,8 @@ Membership operators are used to test whether a value or variable is found in a 
 The following are considered membership operators:
 - `in`: The `in` keyword will return a boolean value of `True` or `False`
 - `not in`: # Using the `not` keyword would reverse the resting state
+
+# List Comprehensions
+List comprehensions are a concise way to create lists in Python. They are more compact and easier to read than traditional loops.
+
+The syntax for a comprehensive list is as follows: `[(expression) for value in iterable if (condition)]`.
