@@ -412,3 +412,12 @@ You are able to give imported modules custom names, or aliases, with the `as` ke
 Instead of importing the entire module, you can also specify which methods you would like to access with the `from` keyword. This method isn't used as much because of possible of variable naming conflictions.
 
 You can import custom-made modules via referencing their file names so long as they are within the same project folder. File names for methods must not contain underscores or start with numbers.
+
+# Scope Resolution
+Variable scope refers to where a variable is visible and accessible. Scope resolution is structured as follows: (LEGB Rule) Local -> Enclosed -> Global -> Built-in
+
+Functions are not capable of seeing inside of other functions beside themselves. Thus, we cannot cross-reference variables from between function unless we pass them within the function. Becuase of this you can have multiple of the same variable name within different functions.
+
+You can declare functions within the same scope (i.e., enclosed functions). If there was no local variable declaration within the function, it would use the enclosed scope variable instead.
+
+The global scope refers to variables located outside of any functions. If there are no local versions, and no enclosed versions, then the function will refer to the global variable.
