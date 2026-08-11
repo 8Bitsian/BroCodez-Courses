@@ -421,3 +421,10 @@ Functions are not capable of seeing inside of other functions beside themselves.
 You can declare functions within the same scope (i.e., enclosed functions). If there was no local variable declaration within the function, it would use the enclosed scope variable instead.
 
 The global scope refers to variables located outside of any functions. If there are no local versions, and no enclosed versions, then the function will refer to the global variable.
+
+# Main Method
+The main method allows for functions and classes within the main() module to be reused without the main block of code executing. Other scripts that have been imported into the main method can also be run standalone. You can check the name of a script with the following line of code: `if __name__ == "__main__"`.
+
+You can also use the `print(dir())` to get a list of all available methods and files that can be imported. To import everything from a file use the asterisk (`*`) since it means all. 
+
+The program starts by checkign the filenames of all scripts that have been imported to see if it is `__main__`. Then the program implicity starts at the main method from which you can call other methods.
