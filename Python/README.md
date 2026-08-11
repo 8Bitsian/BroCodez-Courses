@@ -396,3 +396,8 @@ The following are considered membership operators:
 List comprehensions are a concise way to create lists in Python. They are more compact and easier to read than traditional loops.
 
 The syntax for a comprehensive list is as follows: `[(expression) for value in iterable if (condition)]`.
+
+# Switch (Mathc-case) Statements
+A match-case, or `switch`, statement is an alternative to using many `elif` statements that was added to Python in v.3.10. `switch` statements are often used because the code is cleaner and the syntax is more readable.
+
+`switch` statements are similar to `if` statements, as code blocks are executed if a value matches a `case` or a condition. The default (or `else`) statement is the underscore, which is a wildcard `case _:`
