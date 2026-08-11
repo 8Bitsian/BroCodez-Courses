@@ -401,3 +401,14 @@ The syntax for a comprehensive list is as follows: `[(expression) for value in i
 A match-case, or `switch`, statement is an alternative to using many `elif` statements that was added to Python in v.3.10. `switch` statements are often used because the code is cleaner and the syntax is more readable.
 
 `switch` statements are similar to `if` statements, as code blocks are executed if a value matches a `case` or a condition. The default (or `else`) statement is the underscore, which is a wildcard `case _:`
+
+# Modules
+Modules are python files (built-in or custom-made) containing code you want to include in your program by using the `import` keyword. Modules are useful to break up a large program into reusable separate files.
+
+For a list of all of the modules within the standard python library use the help() method and pass in the word "modules" `print(help("modules"))`
+
+You are able to give imported modules custom names, or aliases, with the `as` keyword:  `import math as m`. Whenever using methods from within the module, you would refer to it by its alias.
+
+Instead of importing the entire module, you can also specify which methods you would like to access with the `from` keyword. This method isn't used as much because of possible of variable naming conflictions.
+
+You can import custom-made modules via referencing their file names so long as they are within the same project folder. File names for methods must not contain underscores or start with numbers.
