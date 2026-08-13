@@ -1,4 +1,4 @@
-# Project 04: Hypotenuse Calculator - Uses Note 4
+# Project 05: Hypotenuse Calculator - Uses Note 4
 # Calculate the hypotenuse of a right triangle by importing the math library
 
 import math
