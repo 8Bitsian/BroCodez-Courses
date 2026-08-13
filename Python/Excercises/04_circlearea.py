@@ -1,5 +1,5 @@
-# Exercise 04: Cacluate the Area of a Circle
-# 4 Notes
+# Project 04: Circle Area Calculator - Uses Note 4
+# Calculate the circumference of a circle by importing the math library
 
 import math
 
