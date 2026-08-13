@@ -1,5 +1,5 @@
-# Exercise 03: Cacluate the Circumference of a Circle
-# 4 Notes
+# Project 03: Circle Circumference Calculator - Uses Note 4
+# Calculate the circumference of a circle by importing the math library
 
 import math
 
