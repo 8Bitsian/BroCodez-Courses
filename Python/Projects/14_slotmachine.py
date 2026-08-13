@@ -10,32 +10,31 @@ import time
 def place_bet(balance):
     amount = 0.0
     is_valid = True
-
-    print("\n---- Place Your Bet ----")
+    print("\n~~~~~~~~~ PLACE YOUR BET ~~~~~~~~~")
     while is_valid:
         # Typecasting as a floating-point number and using exeception handling
-        try: 
+        try:
+            # Get user input for amount to bet on
             amount = float(input("Gambled Amount: $"))
 
-            # Handle formatting errors
-            # Check if amount is greater than current balance (check for funds)
-            if (amount > balance):
-                print("WARNING: Insufficient Funds - You are gambling without funds\n")
-                return amount
-                break
-            # Check if gambled amount is less than $0 (negative)
-            elif (amount < 0):
+            # Handle formatting errors (had less than come first)
+            # Check if gambled amount is less than $1 ($0 or negative)
+            if (amount < 1):
                 print("ERROR: Out of Range - Deposit must be at least $1\n")
                 continue
             # Check if gambled amount is greater than $25,000 (deposit cap)
             elif (amount > 5000):
                 print("ERROR: Out of Range - Deposit is limited to $5000\n")
                 continue
+            # Check if amount is greater than current balance (check for funds)
+            elif (amount > balance):
+                print("WARNING: Insufficient Funds - You are gambling without funds\n")
+                return amount
         # Handle exception errors
         except:
             print("ERROR: Invalid Input - Digits only (0-9)\n")
             continue
-        
+
         return amount
 
 # Generate new string for row when spun
@@ -45,41 +44,47 @@ def spin_row():
 
     # Use list comprehensions: [(expression) `for` value `in` iterable `if` (condition)]
     # The underscore (_) is a wild card so it essentially means every iteration
-    return [(random.choice(symbols)) for _ in range(3) ]
+    return [(random.choice(symbols)) for _ in range(5) ]
 
 # suggested by @EynonPlays on Twitch
 def animate_spin():
     # Create a symbols list w/strings
     symbols = ["🍋", "🍒", "🍌", "🍇", "⭐"]
 
-    for symbol in range(3):
-        print(f"{random.choice(symbols)} | {random.choice(symbols)} | {random.choice(symbols)}", end="\r")
+    # Repeat the spinning animation 4 times
+    for symbol in range(4):
+        # Replaced w/list comprehension to pick 5 random emojis from the symbols list
+        emojis = [random.choice(symbols) for _ in range(5)]
+        # The " | ".join(emojis) combines the 5 emojis in a single line
+        # The end="\r" (carraige return) prints over the same console line
+        # The flush=True forces the output to appear immediately
+        print(f"  ~~~ " + " | ".join(emojis) + " ~~~ ", end="\r", flush=True)
+        # Pauses each loop (frame) so animation is visible
         time.sleep(0.5)
     
 # Print new string to console
 def print_row(row):
-    print("\n~~~~~~~~~~~~")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
     # Call the animate_spin() function to take the place of "spinning..."
     animate_spin()
     # the .join() method combines indices with strings
-    print(" | ".join(row))
-    print("~~~~~~~~~~~~\n")
+    print(f"  ~~~ " + " | ".join(row) + " ~~~ ")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 # Give user payout if symbols are matching
 def get_payout(row, bet):
-    # Check if all three symbols in row are the same
-    if row[0] == row[1] == row[2]:
+    # Check if all five symbols in row are the same
+    if row[0] == row[1] == row[2] == row[3] == row[4]:
+        # Replace if-else statements w/dictionary
+        symbol = row[0]
+        multipliers = {"🍋": 1,
+                       "🍒": 2,
+                       "🍌": 3,
+                       "🍇": 4,
+                       "⭐": 5
+        }
         # Check one index (pos 0) is the same as symbol
-        if row[0] == "🍋":
-            return bet
-        elif row[0] == "🍒":
-            return bet * 2
-        elif row[0] == "🫐":
-            return bet * 3
-        elif row[0] == "🍇":
-            return bet * 4
-        elif row[0] == "⭐":
-            return bet * 5
+        return bet * multipliers[symbol]
     return 0
 
 # Print messages depending on win/lose conditions
@@ -93,31 +98,32 @@ def win_lose(balance):
         print("The House wins your house... 🏚️\n")
     elif (balance <= -5000):
         print("The House always wins...\n")
-    else:
-        print("One more roll... 🎰\n")
 
 def play_game(balance):
-    # Call the place_bet() function and pass in the balance
+    # Get user input to place a betting amount
     bet_amount = place_bet(balance)
     balance -= bet_amount
 
-    # Call the spin_row() function
+    # Print the randomly generated slots
     row = spin_row()
-
-    # Call the print_row() function
     print_row(row)
 
     # Call the get_payout() function and pass in row/bet_amount
     payout = get_payout(row, bet_amount)
 
     if payout > 0:
-        print(f"You won ${payout:.2f}\n")
+        print(f"You won ${payout:,.2f}")
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
         balance += payout
     else:
-        print(f"The house won this round...\n")
+        print(f"The house won this round...")
+        print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n")
+        balance -= payout
 
     # Call win_condition() function
     win_lose(balance)
+
+    return balance
 
 # Print main menu options to console
 def menu(balance):
@@ -135,8 +141,7 @@ def main():
     balance = 100.0
     amount = 0.0
     is_running = True
-    play_again = True
-
+    
     # If is_running = False, exit the while loop
     while is_running:
         # Call the menu() function
@@ -155,18 +160,20 @@ def main():
 
         match (choice):
             case 1:
+                # Resets every time we choose option 1
+                play_again = True
+
                 # Determine if user want to play again
                 while play_again:
                     # Call the replay() function and pass in the balance
-                    play_game(balance)
+                    balance = play_game(balance)
 
                     try:
-                        try_again = input("Spin? (Y/N) ").lower()
+                        try_again = input("One more roll... 🎰 Spin? (Y/N) ").lower()
 
                         if (try_again != "y"):
                             print("\nAlways welcome to try again!\n")
                             play_again = False
-                            break
                     except:
                         print("ERROR: Invalid Input - Characters only (Y or N)\n")
                         continue
