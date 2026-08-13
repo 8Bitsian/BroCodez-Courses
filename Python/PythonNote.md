@@ -16,7 +16,7 @@ def name():
 def main():
     pass
 
-The program starts by checking if filename is main
+# The program starts by checking if filename is main
 if __name__ == "__main__":
     # `__` is refered to as "dunder"
     # print(f"Called main.py file is: {__name__}\n")
