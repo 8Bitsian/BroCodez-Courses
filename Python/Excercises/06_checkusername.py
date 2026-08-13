@@ -1,5 +1,5 @@
-# Exercise 06: Username Checker - Validate user input with the following requirements.
-# 5-8 Notes
+# Exercise #06: Username Checker - Uses Notes 5-8
+# Validate user input w/if statements using logical operators in the conditions.
 
 username = input("Enter a username: ")
 
