@@ -1,5 +1,5 @@
-# Exercise 09: Rectangle Symbol Display - Display a rectangle made of symbols using nested loops
-# 10-13 Notes
+# Exercise 09: Rectangle Symbol Display - Notes 10-13
+# Display a rectangle made of symbols using nested loops and format specifiers
 
 rows = int(input("Enter # of rows: "))
 cols = int(input("Enter # of columns: "))
