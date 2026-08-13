@@ -31,7 +31,7 @@ def menu():
     print("1. Encrypt Message")
     print("2. Decrypt Message")
     print("3. Exit")
-    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 def main():
     # chars = "!"#$%&'()*+,-./:;<=>?@[\]^_`{|}~0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
@@ -68,6 +68,8 @@ def main():
             case 3:
                 # Exit the loop
                 is_running = False
+    
+    print("\nExiting program...")
 
 # The program starts by checking if filename is main
 if __name__ == "__main__":
