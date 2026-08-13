@@ -1,5 +1,5 @@
-# Exercise 08: Reverse Credit Card - Reverse the order of the credit card number
-# 9 Notes
+# Exercise 08: Reverse Credit Card - Notes 9
+# Reverse the order of the credit card number using string indexing
 
 credit_card = input("Enter a credit card number: ")
 
