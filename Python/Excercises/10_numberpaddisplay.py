@@ -1,5 +1,5 @@
-# Exercise 09: Number Pad display - Display a number pad using a tuple and 2D arrays
-# 14-15 Notes
+# Exercise 10: Number Pad Display - Note 14
+# Display a number pad using a 1D tuple (array)
 
 # We'll use a tuple() since the data being displayed will not change and it's faster
 
