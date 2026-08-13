@@ -1,5 +1,5 @@
-# Exercise 05: Cacluate the Hypotenuse of a Right Triangle
-# 4 Notes
+# Project 04: Hypotenuse Calculator - Uses Note 4
+# Calculate the hypotenuse of a right triangle by importing the math library
 
 import math
 
