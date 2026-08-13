@@ -1,7 +1,7 @@
 {
     "python-envs.pythonProjects": [
         {
-            "path": "Python/Projects/13_bankingprogram/main.py",
+            "path": "Python/Projects/13_bankingprogram.py.py",
             "envManager": "ms-python.python:venv",
             "packageManager": "ms-python.python:pip"
         }
