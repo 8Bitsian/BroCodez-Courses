@@ -1,5 +1,5 @@
-# Exercise 14: Shipping Label - Print a shipping label using arbitrayr arguments within a function
-# 21 Notes
+# Exercise 14: Shipping Label - Note 21
+# Print a shipping label using arbitrary arguments within a function
 
 # Positional arguments must be first
 def ship_label(*args, **kwargs):
