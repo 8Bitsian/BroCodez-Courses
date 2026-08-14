@@ -1,5 +1,5 @@
-# Exercise 16: Display The Weekend - Use a match-case (switch) statement to display if it is the weekend
-# 25 Notes
+# Exercise 16: Display The Weekend - Note 25
+# Use a match-case (switch) statement to display if it is the weekend
 
 def is_weekend(day):
     match day:
