@@ -1,5 +1,5 @@
 # Exercise 13: Generate Phone Number - Note 20
-#Generate a phone number by passing a country code, area code and digits via keyword arguments
+# Generate a phone number by passing a country code, area code and digits via keyword arguments
 
 def get_phone(country, area, f_digits, l_digits):
     return f"+{country} ({area}) {f_digits}-{l_digits}"
