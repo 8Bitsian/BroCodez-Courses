@@ -1,5 +1,5 @@
-# Exercise 11: Invoice Display - Display an invocie using a function
-# 16 - 18 Notes
+# Exercise 11: Invoice Display - Note 18
+# Display an invoice using a function
 
 def invoice_display(username, amount, due_date):
     print(f"Hello, {username}")
