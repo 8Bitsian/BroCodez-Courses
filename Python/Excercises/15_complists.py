@@ -1,5 +1,5 @@
-# Exercise 15: Various Comprehensive Lists
-# 22 - 24 Notes
+# Exercise 15: Various Comprehensive Lists - Notes 22 - 24
+# Create various comprehensive lists utilizing iterables and membership operators (in)
 
 fruits = ["apple", "orange", "banana", "coconut"]
 print(fruits)
