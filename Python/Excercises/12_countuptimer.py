@@ -1,5 +1,5 @@
-# Exercise 12: Count Up Timer - Display a timer
-# 19 Notes
+# Exercise 12: Count Up Timer - Note 19
+# Display a timer using default arguments
 
 # Import the time module for .sleep() method
 import time
