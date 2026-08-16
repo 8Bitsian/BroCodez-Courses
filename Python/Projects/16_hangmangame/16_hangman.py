@@ -2,18 +2,19 @@
 # Create a hangman game using functions and the main method w/1D arrays and switch statements.
 
 import random
+# Calls values from wordlist.py
+from wordslist import words
 
 # Generate new string (word) when called
 # @Eynon reminded me that you can store collections in functions
 def gen_word():
-    # Tuple of words to choose from
-    words = ("apple", "orange", "banana", "coconut", "pinapple")
+    # Chooses random values from words using random.choice() method
     return random.choice(words)
 
 # Dictionary of {key} for incorrect number of guesses and {value} of ASCII art
 hangman_art = {0: ("   ",
                    "   ",
-                   "   "),  # No worng answers, no hangman
+                   "   "),  # No wrong answers, no hangman
                1: (" o ",
                    "   ",
                    "   "),  # 1 wrong answer, show head
