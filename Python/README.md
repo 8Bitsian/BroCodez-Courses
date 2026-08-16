@@ -428,3 +428,4 @@ The main method allows for functions and classes within the main() module to be 
 You can also use the `print(dir())` to get a list of all available methods and files that can be imported. To import everything from a file use the asterisk (`*`) since it means all. 
 
 The program starts by checkign the filenames of all scripts that have been imported to see if it is `__main__`. Then the program implicity starts at the main method from which you can call other methods.
+
