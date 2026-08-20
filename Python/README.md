@@ -461,3 +461,9 @@ Allows a class to inherit attributes and methods from another class.
 Helps with readability and modularity
 The parent class is the most broad, and the following child classes are more specific and inherient traits (attributes and methods) from the parent class.
 The syntax for basic inherientance would be `class Child(Parent)`.
+
+## Multiple Inheritances
+A Class can inherit traits (attributes and methods) from more than one parent class `C(A, B)`. Think like mother and father to child.
+
+## Multi-level Inheritance
+A class can inherit from a parent which inherits from another parent `C(B) <- B(A) <- A`. Think like a grandfather to father to son.

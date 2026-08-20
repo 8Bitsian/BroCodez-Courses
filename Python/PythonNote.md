@@ -9,7 +9,7 @@ Python Note for all of your copy + paste needs
 
 # Class syntax for starting new class.py files:
 ```
-class Name:
+class Parent:
     # Class Variables
 
     # Constructor/Initialization Method
@@ -18,6 +18,11 @@ class Name:
         ...
         self.var# = var#
 
+    # Functions
+    def function(self):
+        pass
+
+class Child(Parent):
     # Functions
     def function(self):
         pass
