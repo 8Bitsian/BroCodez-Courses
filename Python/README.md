@@ -447,3 +447,11 @@ To create the attributes, reference the `self` keyword and the parameters passed
 When calling variable w/object it won't print the individual paramters, it will print where the object is stored in memory.
 
 To print the individal attributes of the object use the attribute access operator (`.`) followed by the name of the attribute. You can access methods the same way you do attributes.
+
+# Class Variables
+Class variables are shared among all instances (objects) of a class.
+They are defined outside of the constructor method. It's good practice to access a class variables by the name of their class.
+
+Each objects has an instance variable, i.e., their attributes.  Access instance variables via their specific object. 
+
+Create a counter variable to count how many objects (students) are being created via accessing the Class name and using a class variable.
