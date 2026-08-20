@@ -11,18 +11,20 @@ Python Note for all of your copy + paste needs
 ```
 class Parent:
     # Class Variables
-
     # Constructor/Initialization Method
-    def __init__(self, var1, ..., var#):
-        self.var1 = var1
-        ...
-        self.var# = var#
+    def __init__(self, var):
+        self.var = var
 
     # Functions
     def function(self):
         pass
 
 class Child(Parent):
+    # Class Variables
+    # Constructor/Initialization Method
+    def __init__(self, var):
+        self.var = var
+        
     # Functions
     def function(self):
         pass

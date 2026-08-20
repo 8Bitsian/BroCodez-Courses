@@ -467,3 +467,10 @@ A Class can inherit traits (attributes and methods) from more than one parent cl
 
 ## Multi-level Inheritance
 A class can inherit from a parent which inherits from another parent `C(B) <- B(A) <- A`. Think like a grandfather to father to son.
+
+# Superclass
+In programming, we try not to repeat ourselves, therefore we move all shared variables into the superclass (parent class) since it will be inherited. This aides with readability and modularity.
+
+The `super()` function is used in a child class (subclass) to call methods from a parent class (superclass). It allows you to extend the functionality of the inherited methods.
+
+To access the attributes within the superclass, use the super() method with the initialization method and a attribute list.
