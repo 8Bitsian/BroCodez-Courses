@@ -429,3 +429,21 @@ You can also use the `print(dir())` to get a list of all available methods and f
 
 The program starts by checkign the filenames of all scripts that have been imported to see if it is `__main__`. Then the program implicity starts at the main method from which you can call other methods.
 
+# Object Oriented Programming (OOP)
+Objects are "bundles" of related attributes (variables) and methods (functions).
+A class is used to design the structure and layout of an object (like a blueprint).
+Best practice dictates placing classes within their own files for better modularity and readability.
+
+Note: Capitalize classes for better readability within the code.
+
+When creating an object initialize a variable and call the class to access the constructor method. Be sure to pass in the correct parameters as you would a function.
+
+Methods are actions that objects can perform.
+- The constructor method is like a function.
+- The initialization method is used to create the constructor w/attributes
+
+To create the attributes, reference the `self` keyword and the parameters passed into the initialization method. The `self` keyword refers to the classes it is within.
+
+When calling variable w/object it won't print the individual paramters, it will print where the object is stored in memory.
+
+To print the individal attributes of the object use the attribute access operator (`.`) followed by the name of the attribute. You can access methods the same way you do attributes.
