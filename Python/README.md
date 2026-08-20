@@ -483,3 +483,5 @@ There are two ways to achieve polymorphism:
 2. "Duck typing": Object must have necessary attributes/methods
 
 ## Duck Typing
+Object can be treated as a different type of object but must have the minimum necessary attributes/methods.
+"If it looks like a duck, walks like a duck, and quacks like a duck, it must be a duck."
