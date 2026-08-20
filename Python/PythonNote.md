@@ -10,12 +10,15 @@ Python Note for all of your copy + paste needs
 # Class syntax for starting new class.py files:
 ```
 class Name:
-    # constructor/initialization method
+    # Class Variables
+
+    # Constructor/Initialization Method
     def __init__(self, var1, ..., var#):
         self.var1 = var1
         ...
         self.var# = var#
 
+    # Functions
     def function(self):
         pass
 ```
