@@ -474,3 +474,12 @@ In programming, we try not to repeat ourselves, therefore we move all shared var
 The `super()` function is used in a child class (subclass) to call methods from a parent class (superclass). It allows you to extend the functionality of the inherited methods.
 
 To access the attributes within the superclass, use the super() method with the initialization method and a attribute list.
+
+# Polymorphism
+Polymorphism is a greek word that means "to mhave many forms or faces" with poly meaning "many" and morphe meaning "form".
+
+There are two ways to achieve polymorphism:
+1. Inheritance: An object coult could be treated of the same type as a parent class
+2. "Duck typing": Object must have necessary attributes/methods
+
+## Duck Typing
