@@ -7,6 +7,19 @@ Python Note for all of your copy + paste needs
 # Detailed Description
 ```
 
+# Class syntax for starting new class.py files:
+```
+class Name:
+    # constructor/initialization method
+    def __init__(self, var1, ..., var#):
+        self.var1 = var1
+        ...
+        self.var# = var#
+
+    def function(self):
+        pass
+```
+
 # Main method syntax for starting new main.py files:
 @omp3policeo on Twitch for backtick suggestion
 ```

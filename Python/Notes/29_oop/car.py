@@ -1,5 +1,3 @@
-# 
-
 # Note: Capitalize classes for better readability
 class Car:
     # The constructor method is like a function
