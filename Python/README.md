@@ -455,3 +455,9 @@ They are defined outside of the constructor method. It's good practice to access
 Each objects has an instance variable, i.e., their attributes.  Access instance variables via their specific object. 
 
 Create a counter variable to count how many objects (students) are being created via accessing the Class name and using a class variable.
+
+# Inheritance
+Allows a class to inherit attributes and methods from another class.
+Helps with readability and modularity
+The parent class is the most broad, and the following child classes are more specific and inherient traits (attributes and methods) from the parent class.
+The syntax for basic inherientance would be `class Child(Parent)`.
