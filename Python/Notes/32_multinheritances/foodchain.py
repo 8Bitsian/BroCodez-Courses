@@ -1,4 +1,4 @@
-# Animal is the "grandparent" class, so weverything inherits it
+# Animal is the "grandparent" class, so everything inherits it
 class Animal:
     # Put the construtor in the main parent (orin this case grandparent) class
     def __init__(self, name):
