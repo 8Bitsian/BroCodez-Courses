@@ -518,3 +518,10 @@ To access the class method, utilize the class name and the access operator (`.`)
 When the class method is called, we can access or modify class data.
 
 ## Magic Methods
+Dunder methods (double underscore `__`) include `__init__`, `__str__`, `__eq__`.
+They are automatically called by many of Python's built-in operations.
+They allow developers to define or customize the behavior of objects.
+
+When creating objects we automatically call the dunder (magic) initialization method `__init__(self, var)`. This allows us to define the object by assigning attributes.
+
+When we print object directly to the console we are initially given a memory address. To cutomize the behavior of the object we have to use the string dunder method `__str__(self)`.

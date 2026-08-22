@@ -29,13 +29,24 @@ if __name__ == "__main__":
 ```
 class Parent:
     # Class Variables
+    class_var
+
     # Constructor/Initialization Method
     def __init__(self, var):
         self.var = var
 
-    # Functions
+    # String Method
+    def __str__(self):
+        pass
+
+    # Instance Method
     def function(self):
         pass
+
+    # Class Method
+    @classmethod
+    def get_name(cls):
+        return {cls.class_var}"
 
 class Child(Parent):
     # Class Variables
