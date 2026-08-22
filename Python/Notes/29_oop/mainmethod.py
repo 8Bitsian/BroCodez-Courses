@@ -1,7 +1,7 @@
 # Object-Oriented Programming (OOP)
 
 # Objects are "bundles" of related attributes (variables) and methods (functions).
-# A class is used to design the structure and layout of an object (liek a blueprint)
+# A class is used to design the structure and layout of an object (like a blueprint)
 # Best practice dictates placing classes within their own files for better modularity and readability
 from car import Car
 
@@ -16,7 +16,7 @@ def main():
     # Be sure to pass in the correct parameters as you would a function
     car1 = Car("Camero", 2025, "Yellow w/black stripe", "Bumblebee", True)
 
-    # When calling variable w/object it won't print the individual paramters, it will print where the object is stroed in memory
+    # When calling variable w/object it won't print the individual paramters, it will print where the object is stored in memory
     # print(car1)         # Prints "<car.Car object at 0x000001CEE6BD16A0>"
 
     #To print the individal attributes of the object use the attribute access operator (`.`) followed by the name of the attribute

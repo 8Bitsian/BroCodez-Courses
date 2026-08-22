@@ -4,11 +4,11 @@ class Student:
     class_year = 2026
     num_students = 0
 
-    # constructor/initialization method
+    # Constructor/initialization method
     # The `self` keyword refers to the object that is being referenced
     # Each objects has an instance variable, i.e., their attributes
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        # Create a counter variable to coutn how many objects (students) are being created via accessing the Class name and using a class variable.
+        # Create a counter variable to count how many objects (students) are being created via accessing the Class name and using a class variable.
         Student.num_students += 1

@@ -485,3 +485,27 @@ There are two ways to achieve polymorphism:
 ## Duck Typing
 Object can be treated as a different type of object but must have the minimum necessary attributes/methods.
 "If it looks like a duck, walks like a duck, and quacks like a duck, it must be a duck."
+
+# Methods
+## Static Methods
+Methods that belong to individual objects from classes are instance methods.
+Each object that gets created will have their own instance.
+Instance methods are best for operations on instances of the class (objects).
+- EX. `def get_info(self): return f"{self.name} = {self.position}"`
+
+Static methods belong to a class rather than any object from that class (instance). Usually used for general utility functions.
+Static methods are best used for utility functiuons that do not need access to class data.
+- EX. `@staticmethod def km_to_mi(kilometers): return kilometers * 0.621371`
+
+To create a static method, you need to use the decorator `@staticmethod`.
+Static methods don't have `self` keyword since they aren't working with the 
+
+To call a static method, use the class name and the access operator (`.`)
+To call an instance method for an object, repeat the same syntax except use a variable name.
+
+if __name__ == "__main__":
+    main()
+
+## Class Methods
+
+## Magic Methods
