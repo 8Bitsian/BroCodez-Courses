@@ -487,6 +487,10 @@ Object can be treated as a different type of object but must have the minimum ne
 "If it looks like a duck, walks like a duck, and quacks like a duck, it must be a duck."
 
 # Methods
+- Instance methods: Best for operations on instances of the class (objects)
+- Static methods: Best for utility functions that do not need access to class data
+- Class methods = Best for class-level data or require access to the class itself
+
 ## Static Methods
 Methods that belong to individual objects from classes are instance methods.
 Each object that gets created will have their own instance.
@@ -503,9 +507,14 @@ Static methods don't have `self` keyword since they aren't working with the
 To call a static method, use the class name and the access operator (`.`)
 To call an instance method for an object, repeat the same syntax except use a variable name.
 
-if __name__ == "__main__":
-    main()
-
 ## Class Methods
+A class method allows operations related to the class itself.
+The keyword `self` refers to any object made within the class.
+The keyword `cls` refers to the class itself, and must be passed as the first parameter like the `self` keyword.
+
+To create a class method, utilize the class method decorator `@classmethod` and pass in the class keyword `cls` as the first parameter.
+
+To access the class method, utilize the class name and the access operator (`.`) followed by the class method name.
+When the class method is called, we can access or modify class data.
 
 ## Magic Methods
