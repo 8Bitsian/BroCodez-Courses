@@ -525,3 +525,12 @@ They allow developers to define or customize the behavior of objects.
 When creating objects we automatically call the dunder (magic) initialization method `__init__(self, var)`. This allows us to define the object by assigning attributes.
 
 When we print object directly to the console we are initially given a memory address. To cutomize the behavior of the object we have to use the string dunder method `__str__(self)`.
+
+# Properties
+[Article](https://www.geeksforgeeks.org/python/python-property-decorator-property/)
+
+The `@property` decorator is used to define a method as a property (which can be accessed like an attribute). It can add additional logic via getter (read), setter (write), and delete methods/attributes.
+
+Prefixing attributes w/underscore (`_`) implies that they are private, meaning they are internal and shouldn't be accessed directly by the end user. You can bypass this by using the underscore when referencing an attribute from the main file.
+
+To get access to private attributes, create getter methods via the `@property` decorator. You have to include the underscore when referencing private attributes.
