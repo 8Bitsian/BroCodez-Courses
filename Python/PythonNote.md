@@ -32,12 +32,8 @@ class Parent:
     class_var
 
     # Constructor/Initialization Method
-    def __init__(self, var):
-        self.var = var
-
-    # String Method
-    def __str__(self):
-        pass
+    def __init__(self, p_var):
+        self.p_var = p_var
 
     # Instance Method
     def function(self):
@@ -49,12 +45,27 @@ class Parent:
         return {cls.class_var}"
 
 class Child(Parent):
-    # Class Variables
     # Constructor/Initialization Method
-    def __init__(self, var):
-        self.var = var
+    def __init__(self, p_var, c_var):
+        super().__init__(p_var)
+        self.c_var = c_var
         
     # Functions
     def function(self):
         pass
+
+    # Getter Method
+    @property
+    def c_function(self):
+        return {self.c_var}
+
+    # Setter Method
+    @c_function.setter
+    def c_function(self, new_var):
+        self.c_var = new_var
+
+    # Deleter Method
+    @c_function.deleter
+    def c_function(self):
+        del self.c_var
 ```

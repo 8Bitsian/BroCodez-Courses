@@ -526,7 +526,31 @@ When creating objects we automatically call the dunder (magic) initialization me
 
 When we print object directly to the console we are initially given a memory address. To cutomize the behavior of the object we have to use the string dunder method `__str__(self)`.
 
-# Properties
+# Decorators
+A decorator is a function that extends the behavior of another function w/o modifying the base function. Pass the base function as an argument to the decorator.
+- EX. `@add_sprinkles get_icecream("vanilla")`
+
+We have been returning values, but now we can return functions w/decorators.
+
+The following is the basic formatting for creating a decorator:
+```
+def decorator(func):
+    def wrapper(*args, **kwargs):
+        func(**args, **kwargs)
+    return wrapper
+
+@decorator
+def function(var):
+    pass
+```
+You have to include the inner wrapper function to call the base function.
+The Inner wrapper functions use the keywords `*args` and `*kwargs` to accept any number of any type of arguments. You have to do the same for the function that you call
+
+To apply a decorator to a base function, use the decorator symbol `@` then the decorator name. You can apply more than one decorators to a base function.
+
+You can pass in arguments to a base function, but be sure to have the wrapper functions be able to accept those arguments.
+
+## Properties
 [Article](https://www.geeksforgeeks.org/python/python-property-decorator-property/)
 
 The `@property` decorator is used to define a method as a property (which can be accessed like an attribute). It can add additional logic via getter (read), setter (write), and delete methods/attributes.
