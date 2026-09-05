@@ -558,3 +558,15 @@ The `@property` decorator is used to define a method as a property (which can be
 Prefixing attributes w/underscore (`_`) implies that they are private, meaning they are internal and shouldn't be accessed directly by the end user. You can bypass this by using the underscore when referencing an attribute from the main file.
 
 To get access to private attributes, create getter methods via the `@property` decorator. You have to include the underscore when referencing private attributes.
+
+# Exception Handling
+An exception is an event that interupts the flow of a program (suchs as ZeroDivisionError, TypeError, ValueError, etc.)
+
+There are four parts to the exception handle:
+1. `try` block lets you test code for errors
+2. `except` block lets you handle the error
+3. `else` block lets you execute code if there's no error
+4. `finally` block lets you execute code regardless of the `try` and `except` blocks
+
+User input is cosidered dangerous and should be validated by the error handle blocks.
+You can implement the `Exeception` keyword as a catch-all, but it is considered bad practice since it is too broad of a clause. Ex. `except Exception:`.
