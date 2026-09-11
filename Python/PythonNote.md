@@ -1,5 +1,4 @@
 # Python Note
-
 A Python Note w/copy-and-paste templates for starting a multi-file Python project.
 
 ---
@@ -36,11 +35,33 @@ if __name__ == "__main__":
     # print("Program finished.")
 ```
 
-# Class syntax for starting new class.py files:
+---
+
+# Basic module syntax for starting new container.py files:
+```python
+# Project #: Project Name
+# File: module_name.py
+# Description: Brief description of this module
+
+# Constant
+CONSTANT_NAME = value
+
+# Function
+def function_name(parameter):
+    pass
 ```
+
+---
+
+# Parent class syntax for defining inheritance between two classes/modules:
+```python
+# Project #: Project Name
+# File: parent.py
+# Description: Brief description of the parent class
+
 class Parent:
     # Class Variables
-    class_var
+    class_var = None
 
     # Constructor/Initialization Method
     def __init__(self, p_var):
@@ -51,32 +72,44 @@ class Parent:
         pass
 
     # Class Method
-    @classmethod
+    @class_method
     def get_name(cls):
-        return {cls.class_var}"
+        return {cls.class_var}
+```
+
+# Child class syntax for defining inheritance between two classes/modules:
+```python
+# Project #: Project Name
+# File: child.py
+# Description: Brief description of the child class
+
+from parent import Parent
 
 class Child(Parent):
     # Constructor/Initialization Method
     def __init__(self, p_var, c_var):
         super().__init__(p_var)
         self.c_var = c_var
-        
-    # Functions
+
+    # Override Inherited Method
     def function(self):
         pass
 
     # Getter Method
     @property
     def c_function(self):
-        return {self.c_var}
+        # Return the child variable
+        return self.c_var
 
     # Setter Method
     @c_function.setter
     def c_function(self, new_var):
+        # Update the child variable
         self.c_var = new_var
 
     # Deleter Method
     @c_function.deleter
     def c_function(self):
+        # Delete the child variable
         del self.c_var
 ```
