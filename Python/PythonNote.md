@@ -3,6 +3,8 @@
 ## Main File Setup
 
 ### File Header comment block for starting new main.py files:
+@omp3policeo on Twitch for back-tick suggestion
+If you add python after the back-ticks then markdown will read the code inside as Python
 ```python
 # Project #: Name - Uses Notes #
 # File: filename.py
@@ -11,7 +13,6 @@
 ```
 
 ### Main method syntax for starting new main.py files:
-@omp3policeo on Twitch for back-tick suggestion
 ```python
 # Standard-library imports
 import module_name
