@@ -2,10 +2,10 @@
 A Python Note w/copy-and-paste templates for starting a multi-file Python project.
 
 ---
+# Main File Setup
 
-# File Header
+## File Header
 Add this comment block at the top of each Python file when starting new files:
-
 ```python
 # Project #: Name - Uses Notes #
 # File: filename.py
@@ -13,7 +13,7 @@ Add this comment block at the top of each Python file when starting new files:
 # Uses: List of related files, classes, or modules
 ```
 
-# Main method syntax for starting new main.py files:
+## Main method syntax for starting new main.py files:
 @omp3policeo on Twitch for back-tick suggestion
 ```python
 # Standard-library imports
@@ -36,8 +36,9 @@ if __name__ == "__main__":
 ```
 
 ---
+# Module/Class File Setup
 
-# Basic module syntax for starting new container.py files:
+## Basic module syntax for starting new container.py files:
 ```python
 # Project #: Project Name
 # File: module_name.py
@@ -51,9 +52,7 @@ def function_name(parameter):
     pass
 ```
 
----
-
-# Parent class syntax for defining inheritance between two classes/modules:
+## Parent class syntax for defining inheritance between two classes/modules:
 ```python
 # Project #: Project Name
 # File: parent.py
@@ -77,7 +76,7 @@ class Parent:
         return {cls.class_var}
 ```
 
-# Child class syntax for defining inheritance between two classes/modules:
+## Child class syntax for defining inheritance between two classes/modules:
 ```python
 # Project #: Project Name
 # File: child.py
