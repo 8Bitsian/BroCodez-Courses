@@ -15,21 +15,25 @@ Add this comment block at the top of each Python file when starting new files:
 ```
 
 # Main method syntax for starting new main.py files:
-@omp3policeo on Twitch for backtick suggestion
-```
-import _
-from _ import _
+@omp3policeo on Twitch for back-tick suggestion
+```python
+# Standard-library imports
+import module_name
+# Third-party or local library imports
+from package_name import object_name
 
-def name():
+# Describe what this function does
+def function_name():
     pass
 
+# Runs the main program
 def main():
     pass
 
 if __name__ == "__main__":
-    # print(f"Called main.py file is: {__name__}\n")
+    # print(f"Running {__name__}\n")
     main()
-    # print("Exiting main.py file...")
+    # print("Program finished.")
 ```
 
 # Class syntax for starting new class.py files:
