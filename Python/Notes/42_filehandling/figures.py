@@ -3,6 +3,32 @@ import os   # To handle general files, import the operating system `os` module.
 import json # To handle `.json` files, import the `.json` module
 import csv  # To handle `.csv` files, import the `.csv` module
 
+def txt_data():
+    # When writing to files we can use the extensions `.txt`, `.json`, and `.csv`
+    txt_data1 = "I like dolls."
+    txt_data2 = "I also like action figures!"
+    txt_data3 = "Models are also pretty fricken sweet!"
+
+def collections():
+    # This list is what I initialize the text.txt file with
+    dreamhouse = ["Barbara", "Kenneth", "Nikki", "Raquelle", "Summer", "Ryan"]
+
+    # I append the original text.txt file with the remaining collections
+    warhammer40K = ["Imperium of Man", "Eldar", "Tyranids", "Orks", "Necrons", "T'au Empire"]
+
+    # `.json` files are made w/key value pairs, like dictionaries are.
+    gundam = {
+        "designation": "Gundam ZERO",
+        "model #": "XARX-0",
+        "pilot": "Ray Azumi",
+    }
+
+    # Comma separated value `.csv` files are made like excel spreadsheets, like 2D arrays are.
+    transformers = [["Designation", "Faction", "Position", "Frame", "Generation"],
+                    ["Starscream", "Decepticon", "SIC and Air Commader", "Seeker", 1],
+                    ["Sunstreaker", "Autobot", "Frontrunner", "Grounder", 1],
+                    ["Bluestreak", "Autobot", "Sniper", "Grounder", 1]]
+
 def check_for_file(file_path):
     # To check if a file exists use the os module path exists extension, which will return a boolean value depending on if the file is detected.
     if (os.path.exists(file_path)):
@@ -65,50 +91,3 @@ def append_file(file_path, txt_data, collection):
             for figure in collection:
                 file.write(figure + "\n")
             print(f"`{file_path}` was updated.")
-
-def main():
-    # To detect certain files use a string w/a relative h (Ex. folder/test.txt) or an absolute file path (Ex. C:Usrs/BroCodez/Desktop/test.txt).
-    # When referencing a file, type the file's name and extension as a string (Ex. "test.txt").
-    
-    # The `r` prior to the string indicates a raw string which correct any combatant backslashes that can be interpretted as escape characters.
-    file_path = r"Python\Notes\42_filehandling\text.txt"
-
-    # Another way would be to rewrite the file direcotry using forward slashes `/` instead of backwards slashes `\` to avoid conflicts with escape characters.
-    # file_path = "Python/Notes/42_filehandling/text.txt"
-
-    # Call the access_module function
-    check_for_file(file_path)
-
-    # When writing to files we can use the extensions `.txt`, `.json`, and `.csv`
-    txt_data1 = "I like dolls."
-    txt_data2 = "I also like action figures!"
-    txt_data3 = "Models are also pretty fricken sweet!"
-    
-    dreamhouse = ["Barbara", "Kenneth", "Nikki", "Raquelle", "Summer", "Ryan"]
-    warhammer40K = ["Imperium of Man", "Eldar", "Tyranids", "Orks", "Necrons", "T'au Empire"]
-
-    # `.json` files are made w/key value pairs, like dictionaries are.
-    gundam = {
-        "designation": "Gundam ZERO",
-        "model #": "XARX-0",
-        "pilot": "Ray Azumi",
-    }
-
-    # Comma separated value `.csv` files are made like excel spreadsheets, like 2D arrays are.
-    transformers = [["Designation", "Faction", "Position", "Frame", "Generation"],
-                    ["Starscream", "Decepticon", "SIC and Air Commader", "Seeker", 1],
-                    ["Sunstreaker", "Autobot", "Frontrunner", "Grounder", 1],
-                    ["Bluestreak", "Autobot", "Sniper", "Grounder", 1]]
-
-    # Call the write_to_file function
-    write_to_file(file_path, txt_data1, dreamhouse)
-
-    # Call the append_file function
-    append_file(file_path, txt_data2, warhammer40K)
-    append_file(file_path, txt_data3, gundam)
-    append_file(file_path, txt_data3, transformers)
-
-if __name__ == "__main__":
-    # print(f"Called main.py file is: {__name__}\n")
-    main()
-    # print("Exiting main.py file...")

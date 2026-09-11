@@ -1,1 +1,22 @@
-I like smoothies.
+I like dolls.
+Barbara
+Kenneth
+Nikki
+Raquelle
+Summer
+Ryan
+I,m,p,e,r,i,u,m, ,o,f, ,M,a,n
+E,l,d,a,r
+T,y,r,a,n,i,d,s
+O,r,k,s
+N,e,c,r,o,n,s
+T,',a,u, ,E,m,p,i,r,e
+Models are also pretty fricken sweet!
+{
+    "designation": "Gundam ZERO",
+    "model #": "XARX-0",
+    "pilot": "Ray Azumi"
+}Designation,Faction,Position,Frame,Generation
+Starscream,Decepticon,SIC and Air Commader,Seeker,1
+Sunstreaker,Autobot,Frontrunner,Grounder,1
+Bluestreak,Autobot,Sniper,Grounder,1
