@@ -4,8 +4,7 @@ A Python Note w/copy-and-paste templates for starting a multi-file Python projec
 ---
 # Main File Setup
 
-## File Header
-Add this comment block at the top of each Python file when starting new files:
+## File Header comment block for starting new main.py files:
 ```python
 # Project #: Name - Uses Notes #
 # File: filename.py
