@@ -1,10 +1,17 @@
 # Python Note
-Python Note for all of your copy + paste needs
 
-# Comment syntax for starting new files:
-```
+A Python Note w/copy-and-paste templates for starting a multi-file Python project.
+
+---
+
+# File Header
+Add this comment block at the top of each Python file when starting new files:
+
+```python
 # Project #: Name - Uses Notes #
-# Detailed Description
+# File: filename.py
+# Description: Brief description of this file
+# Uses: List of related files, classes, or modules
 ```
 
 # Main method syntax for starting new main.py files:
