@@ -6,7 +6,7 @@ import csv  # To handle `.csv` files, import the `.csv` module
 
 from file_handling import (check_for_file, write_to_file, append_file)
 from text_data import (TXT_DATA_1, TXT_DATA_2, TXT_DATA_3)
-from collections import (DREAMHOUSE, WARHAMMER_40K, GUNDAM_ZERO, TRANSFORMERS)
+from collection_data import (DREAMHOUSE, WARHAMMER_40K, GUNDAM_ZERO, TRANSFORMERS)
 
 def main():
     # To detect certain files use a string w/a relative h (Ex. folder/test.txt) or an absolute file path (Ex. C:Usrs/BroCodez/Desktop/test.txt).
