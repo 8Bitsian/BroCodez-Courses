@@ -6,7 +6,7 @@ import csv  # To handle `.csv` files, import the `.csv` module
 
 from file_handling import (check_for_file, write_to_file, append_file)
 from text_data import (TXT_DATA_1, TXT_DATA_2, TXT_DATA_3)
-from collections import (DREAMHOUSE, WARHAMMER_40K, GUNDAM, TRANSFORMERS)
+from collections import (DREAMHOUSE, WARHAMMER_40K, GUNDAM_ZERO, TRANSFORMERS)
 
 def main():
     # To detect certain files use a string w/a relative h (Ex. folder/test.txt) or an absolute file path (Ex. C:Usrs/BroCodez/Desktop/test.txt).
@@ -22,14 +22,12 @@ def main():
     check_for_file(file_path)
     
     # Call the write_to_file function
-    write_to_file(file_path, txt_data1, dreamhouse)
+    write_to_file(file_path, TXT_DATA_1, DREAMHOUSE)
 
     # Call the append_file function
-    append_file(file_path, txt_data2, warhammer40K)
-    append_file(file_path, txt_data3, gundam)
-    append_file(file_path, txt_data3, transformers)
+    append_file(file_path, TXT_DATA_2, WARHAMMER_40K)
+    append_file(file_path, TXT_DATA_3, GUNDAM_ZERO)
+    append_file(file_path, TXT_DATA_3, TRANSFORMERS)
 
 if __name__ == "__main__":
-    # print(f"Called main.py file is: {__name__}\n")
     main()
-    # print("Exiting main.py file...")
