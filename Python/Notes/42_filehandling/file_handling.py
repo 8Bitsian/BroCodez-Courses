@@ -39,7 +39,6 @@ def write_to_file(file_path, txt_data, collection):
     #     # Since the file does exist, you will get an error message.
     #     print(f"ERROR: Mode Error: `{file_path}` already exists...")
 
-# Append a list, dictionary, or other collection to a file
 def append_file(file_path, txt_data, collection):
     # The `isinstance(object, class_info)` method checks the data type of an object
     if (isinstance(collection, dict)):
