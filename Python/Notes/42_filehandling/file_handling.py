@@ -3,30 +3,6 @@ import os   # To handle general files, import the operating system `os` module.
 import json # To handle `.json` files, import the `.json` module
 import csv  # To handle `.csv` files, import the `.csv` module
 
-# Make all text data and arrays global to make it easier to access. Make sure to capitalize everything for better readability.
-
-# When writing to files we can use the extensions `.txt`, `.json`, and `.csv`
-TXT_DATA_1 = "I like dolls."
-TXT_DATA_2 = "I also like action figures!"
-TXT_DATA_3 = "Models are also pretty fricken sweet!"
-
-# The DREAMHOUSE list is what I will initialize the text.txt file with
-DREAMHOUSE = ["Barbara", "Kenneth", "Nikki", "Raquelle", "Summer", "Ryan"]
-
-# I'll append the original text.txt file w/the remaining collections
-WARHAMMER_40K = ["Imperium of Man", "Eldar", "Tyranids", "Orks", "Necrons", "T'au Empire"]
-
-# `.json` files are made w/key value pairs, like dictionaries are.
-GUNDAM = { "designation": "Gundam ZERO",
-           "model #": "XARX-0",
-           "pilot": "Ray Azumi" }
-
-# Comma separated value `.csv` files are made like excel spreadsheets, like 2D arrays are.
-TRANSFORMERS = [["Designation", "Faction", "Position", "Frame", "Generation"],
-                ["Starscream", "Decepticon", "SIC and Air Commader", "Seeker", 1],
-                ["Sunstreaker", "Autobot", "Frontrunner", "Grounder", 1],
-                ["Bluestreak", "Autobot", "Sniper", "Grounder", 1]]
-
 def check_for_file(file_path):
     # To check whether a path exists and use the `os` module `path.exists` extension, which will return a boolean value depending on if the file is detected.
     if (os.path.exists(file_path)):
@@ -66,15 +42,15 @@ def write_to_file(file_path, txt_data, collection):
 # Append a list, dictionary, or other collection to a file
 def append_file(file_path, txt_data, collection):
     # The `isinstance(object, class_info)` method checks the data type of an object
-    if (isinstance(collection, dict):
+    if (isinstance(collection, dict)):
         # The append `a` mode will insert new data into the file.
         with open(file=file_path, mode="a") as file:
-            file.write(text + "\n")
+            file.write(txt_data + "\n")
             # The json.dump() extension will print everything on the same line if the indent keyword isn't included
             json.dump(collection, file, indent=4)
-            file.write("\n")
+            file.write("\n\n")
             print(f"`{file_path}` was updated.")
-    elif (isinstance(collection, list) and all(isinstance(row, list) for row in collection):
+    elif (isinstance(collection, list) and all(isinstance(row, list) for row in collection)):
         with open(file=file_path, mode="a", newline="") as file:
             # For .csv files create a writer object to provide methods for writing data to a csv file
             writer = csv.writer(file)
@@ -86,7 +62,7 @@ def append_file(file_path, txt_data, collection):
     else:
         with open(file=file_path, mode="a") as file:
             file.write(txt_data + "\n")
-            for figure in collection:
+            for item in collection:
                 file.write(str(item) + "\n")
             file.write("\n")
             print(f"`{file_path}` was updated.")
