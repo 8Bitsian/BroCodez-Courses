@@ -570,3 +570,23 @@ There are four parts to the exception handle:
 
 User input is cosidered dangerous and should be validated by the error handle blocks.
 You can implement the `Exeception` keyword as a catch-all, but it is considered bad practice since it is too broad of a clause. Ex. `except Exception:`.
+
+# File Handling
+## File Detection
+
+# File Detection
+To handle files, import the operating system `os` module.
+
+To detect certain files use a string w/a relative file path (Ex. folder/test.txt) or an absolute file path (Ex. C:Usrs/BroCodez/Desktop/test.txt)
+
+When referencing a file, type the file's name and extension as a string (Ex. "test.txt").
+
+The `r` prior to the string indicates a raw string which correct any combatant backslashes that can be interpretted as escape characters. Another way would be to rewrite the file direcotry using forward slashes `/` instead of backwards slashes `\` to avoid conflicts with escape characters.
+
+To check if a file exists use the `os` module `path.exists` extension, which will return a boolean value depending on if the file is detected.
+
+Then, you can check if the file path leads to a file and not a directory using the `path.isfile` module extension, which will return a boolean value depending on if the file is detected.
+
+## Writing Files
+
+## Reading Files
