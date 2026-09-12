@@ -13,7 +13,7 @@ from alarmclock import (get_time, set_alarm)
 
 # Runs the main program
 def main():
-    # Call and set alarm_time to get_time
+    # Call and get alarm_time from get_time() module
     alarm_time = get_time()
 
     # Call set_alarm() method
