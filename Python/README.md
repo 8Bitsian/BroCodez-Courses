@@ -615,3 +615,17 @@ To read a file, set the mode as `"r"` of the `open()` method to read.
 When reading a file object, it will return one long string. The `file.read()` extension will print the file contents to the compiler (Ex. `content = file.read()`).
 
 For `.json` files, you have to use the `json.load()` extension to read the file. For `.csv` files, you have to use the `csv.reader()` extension to read the file along with a `for` loop to iterate over the lines. For both the `json` and `csv` files, you can reference columns using an index.
+
+# Dates and Times
+Format specifiers for the `datetime()` module include the following:
+| Directive | Meaning | Example |
+|:---:|:---|:---|
+| `%a` | Weekday as locale's abbreviated name | `Sun, Mon, Tue, Wed, Thu, Fri, Sat` |
+| `%A` | Weekday as locale's full name        | `Sunday, Monday, Tuesday, Wednesday, Friday, Saturday` |
+| `%w` | Weekday as decimal number, where 0 is Sundayd and 6 is Saturaday | `0, 1, 2, 3, 4, 5, 6` |
+| `%d` | Day of the month as a zero-padded decimal number | `01, 02, 03, ..., 31` |
+| `%b` | Month as the locale's abbreviated name | `Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov. Dec` |
+| `%B` | Month as the locale's full name        | `January, Feburary, MArch, April, May, June, July, August, September, October, November, December` |
+| `%m` | Month as a zero-padded decimal number  | `01, 02, 03, ..., 12` |
+| `%y` | Year w/out century as a zero-paddded decimal number | `01, 02, 03, ..., 99` |
+| `%Y` | Year with century as a zero-paddded decimal number  | `0001, 0002, 0003, ..., 9999` |
