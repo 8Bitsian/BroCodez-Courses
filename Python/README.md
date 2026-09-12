@@ -629,3 +629,13 @@ Format specifiers for the `datetime()` module include the following:
 | `%m` | Month as a zero-padded decimal number  | `01, 02, 03, ..., 12` |
 | `%y` | Year w/out century as a zero-paddded decimal number | `01, 02, 03, ..., 99` |
 | `%Y` | Year with century as a zero-paddded decimal number  | `0001, 0002, 0003, ..., 9999` |
+
+# Multithreading
+Mutlithreading is used to perform multiple tasks concurrently (i.e., multitasking).
+It's good for input/output (I/O) bound tasks like reading files or fetching data from APIs threading (Ex. `Thread(target=my_function)`).
+
+To use the threading constructor, import the `threading` module. The `threading` module creates a `Thread()` objects and tells it which target function to run later. It passes the method `"target=object.function"` as the target and only runs when you call the `start()` method.
+
+The `start()` and `join()` methods control the execution of a Python thread:
+- The `.start()` method begins running the thread's target function in a separate thread so the main program can continue runnign while the task executes
+- The `.join()` method makes the current thread wait to print the next line in the console until another thread finishes
