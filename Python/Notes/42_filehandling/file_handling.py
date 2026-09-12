@@ -65,3 +65,24 @@ def append_file(file_path, txt_data, collection):
                 file.write(str(item) + "\n")
             file.write("\n")
             print(f"`{file_path}` was updated.")
+
+def read_file(file_path):
+    try:
+        # To read a file, set the mode as "r" of the `open()` method to read.
+        with open(file=file_path, mode="r") as file:
+            # content = json.load(file)
+
+            # content = csv.reader(file)
+            # for line in content:
+            #     print(line)
+
+            # For both the json and csv files, you can reference columns using an index
+
+            # When reading a file object, it will return one long string
+            # The `file.read()` extension will print the file contents to the compiler
+            content = file.read()
+            print(content)
+    except FileNotFoundError:
+        print(f"ERROR: Location Error: `{file_path}` not found...")
+    except PermissionError:
+        print(f"ERROR: Permission Error: You cannot read this file.")

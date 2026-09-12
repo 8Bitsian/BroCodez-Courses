@@ -4,7 +4,7 @@ import os   # To handle general files, import the operating system `os` module.
 import json # To handle `.json` files, import the `.json` module
 import csv  # To handle `.csv` files, import the `.csv` module
 
-from file_handling import (check_for_file, write_to_file, append_file)
+from file_handling import (check_for_file, write_to_file, append_file, read_file)
 from text_data import (TXT_DATA_1, TXT_DATA_2, TXT_DATA_3)
 from collection_data import (DREAMHOUSE, WARHAMMER_40K, GUNDAM_ZERO, TRANSFORMERS)
 
@@ -28,6 +28,10 @@ def main():
     append_file(file_path, TXT_DATA_2, WARHAMMER_40K)
     append_file(file_path, TXT_DATA_3, GUNDAM_ZERO)
     append_file(file_path, TXT_DATA_3, TRANSFORMERS)
+    print()
+
+    # Call the read_file function
+    read_file(file_path)
 
 if __name__ == "__main__":
     main()

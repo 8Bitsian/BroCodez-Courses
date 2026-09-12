@@ -571,22 +571,47 @@ There are four parts to the exception handle:
 User input is cosidered dangerous and should be validated by the error handle blocks.
 You can implement the `Exeception` keyword as a catch-all, but it is considered bad practice since it is too broad of a clause. Ex. `except Exception:`.
 
-# File Handling
+# File Handling (Detection, Writing, Appending, Reading)
 ## File Detection
+When writing to files we can use the extensions `.txt`, `.json`, and `.csv`.
+To handle files, import the operating system `os` module. To handle json files, import the `json` module. To handle comma separated value (csv) files, import the `csv` module.
 
-# File Detection
-To handle files, import the operating system `os` module.
+When referencing a file, type the file's name and extension as a string (Ex. `"test.txt"`).
 
-To detect certain files use a string w/a relative file path (Ex. folder/test.txt) or an absolute file path (Ex. C:Usrs/BroCodez/Desktop/test.txt)
+To detect certain files use a string w/a relative file path (Ex. `r"folder/test.txt"`) or an absolute file path (Ex. `r"C:Users/BroCodez/Desktop/test.txt"`).
 
-When referencing a file, type the file's name and extension as a string (Ex. "test.txt").
-
-The `r` prior to the string indicates a raw string which correct any combatant backslashes that can be interpretted as escape characters. Another way would be to rewrite the file direcotry using forward slashes `/` instead of backwards slashes `\` to avoid conflicts with escape characters.
+The `r` prior to the file path string indicates a **raw string** which correct any combatant backslashes that can be interpretted as escape characters. Another way would be to rewrite the file direcotry using forward slashes `/` instead of backwards slashes `\` to avoid conflicts with escape characters.
 
 To check if a file exists use the `os` module `path.exists` extension, which will return a boolean value depending on if the file is detected.
 
 Then, you can check if the file path leads to a file and not a directory using the `path.isfile` module extension, which will return a boolean value depending on if the file is detected.
 
 ## Writing Files
+You can initialize files with collections of 1D and 2D arrays. Lists are best for `.txt` files, dictionaries are best for `.json` files since thet are made w/key value pairs, and 2D arrays are best for `.csv` files since they are made like excel spreadsheets with rows and columns.
+
+To create or overwrite a text file with text and a list of values use the `with` statement to wrap the following code block. When we open a file in the `with` statement, it will automatically close that file when the statement is finished executing.
+
+The `open()` function will return a file object; The first parameter is the file path and the second parameter is the function mode. There are three modes that are briefly discussed: 
+1. The write `"w"` mode
+2. The append `"a"` mode
+3. The read `"r"` mode
+
+You can set the parameters of the open() function as keyword objects to make them easier to read. Close the statement with the `as` keyword to give the following file object an alias.
+
+To write to the file, use the `write()` method and a string as an argument (Ex. `file.write(txt_data + "\n")`). To write each value within a collection, you'll have to iterate with a for loop and cast each item as a string to make it easier to append a newline character. (Ex. `file.write(str(item) + "\n")`)
+
+You can also write files with `"x"` mode, which will only write to a file that doesn't exist. You can use exception handling to bypass the `FileExistsError` to continue the program.
+
+# Appending Files
+You can use the `isinstance(object, class_info)` method checks the data type of an object, such as the type of collection to insert new data into the file with the append `"a"` mode.
+
+The `json.dump()` extension will print everything on the same line if the indent keyword isn't included (Ex. `json.dump(collection, file, indent=4)`).
+
+For `.csv` files create a writer object to provide methods for writing data to a csv file (Ex. `writer = csv.writer(file)`). To write anything to the `csv` file, we have to iterate over the 2D array with a `for` loop.
 
 ## Reading Files
+To read a file, set the mode as `"r"` of the `open()` method to read.
+
+When reading a file object, it will return one long string. The `file.read()` extension will print the file contents to the compiler (Ex. `content = file.read()`).
+
+For `.json` files, you have to use the `json.load()` extension to read the file. For `.csv` files, you have to use the `csv.reader()` extension to read the file along with a `for` loop to iterate over the lines. For both the `json` and `csv` files, you can reference columns using an index.
