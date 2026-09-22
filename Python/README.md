@@ -641,7 +641,29 @@ The `start()` and `join()` methods control the execution of a Python thread:
 - The `.join()` method makes the current thread wait to print the next line in the console until another thread finishes
 
 # pyQt5 Graphical User Interface (GUI)
-Install the Pyqt5 library via the termianl w/the following command: `pip install PyQt5`
+`pyQt5` is a library for creating python Graphical User Interfaces (GUIs).
+
+Install the Pyqt5 library via the terminal w/the following command: `pip install PyQt5`. Be sure to use the proper capitalization when calling this library.
+
+# GUI Basics
+The `sys` or system module provides access to system-specific parameters and functions (Ex. `import sys`).
+
+Widgets are the building blocks of any PyQt5 application. They begin with `Q` to help distinguish them from other libraries widgets.
+- The `QApplication` module manages the GUI app's control flow and main settings (Ex. `from PyQt5.QtWidgets import QApplication`)
+- The `QMainWindow` module is designed for creating the main application window (Ex. `from PyQt5.QtWidgets import QMainWindow`)
+
+Create an app object via the `QApplication` module and pass in the singluar argument of `sys.argv` which allows PyQt5 to process any command line arguments intended for it if we use command prompt or terminal (Ex. `app = QApplication(sys.argv)`).
+
+When creating a window object, the default behavior is to hide it. To output the window access the `show()` method which will only pop up for a brief moment. To prolong it until we either interact or close it, use the `sys.exit()` method and pass in the application object which has a built-in `exec_()` execute method (Ex. `sys.exit(app.exec_())`).
+
+By inheriting from the parent class of `QMainWindow`, we can customize our own windows to display to the end user via a child class (Ex. `class MainWindow(QMainWindow)`).
+
+Within the contructor/initialization method we can set the title, size/pposition, and icon of the pop up window.
+- To set the title for the window, use the `setWindowTitle()` method and pass in a string (Ex. `self.setWindowTitle("My First GUI")`)
+- To set where the window appears and the inital size of the window, use the `setGeometry()` method and pass in the following parameters: `ax` = x-coordinate, `ay` = y-coordinate, `aw` = width of window, and `ah` = height of window. All of the parameters are measured in pixels. If the `ax` and `ay` parameters are set to `0` then the window will appear in the top-right corner of the screen (Ex. `self.setGeometry(ax=0, ay=0, aw=500, ah=500)`)
+
+The `QIcon` module is designed to work with images (Ex. `from PyQt5.QtGui import QIcon`).
+- To set the icon for the window, use the `setWidnowIcon()` method and pass in the `QIcon()` method with a file path to the image you'd like to use (Ex. `self.setWindowIcon(QIcon(r"Python\Notes\46_pyQt5\icon.png"))`)
 
 ## Labels
 
