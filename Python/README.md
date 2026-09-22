@@ -640,4 +640,3 @@ The `start()` and `join()` methods control the execution of a Python thread:
 - The `.start()` method begins running the thread's target function in a separate thread so the main program can continue runnign while the task executes
 - The `.join()` method makes the current thread wait to print the next line in the console until another thread finishes
 
-# Requesting API Data
