@@ -720,6 +720,28 @@ To set the alignment both vertically and horizontally, use the bitwise operator 
 To center the label in the middle of the winow simply use `Qt.AlignCenter` (Ex. `label.setAlignment(Qt.AlignCenter)`).
 
 ## Images
+The `QPixmap` module is designed to handle images and provides functionality for loading, manipulating, and displaying images (Ex. `from PyQt5.QtGui import QPixmap`).
+
+To create a picture within the window, create a label object within the constructor/initialization method using the `QLabel()` method and pass in a `self` parameter (Ex. `picture = QLabel(self)`).
+
+To adjust the height and width of the label, use the `setGeometry()` method and pass in the following parameters: `aw` = width of label and `ah` = height of label (Ex. `picture.setGeometry(0, 0, 250, 250)`).
+
+To create the image label object use the `QPixmap()` method and pass in a string of the relative file path to the image you would like to use (Ex. `pixmap = QPixmap(r"Python\Notes\46_pyQt5\icon.png")`).
+
+This alone will not show the image in the window. To show the image, you have to set it to the picture label via the `setPixmap()` method and pass in the pixmap object to the label object (Ex. `picture.setPixmap(pixmap)`).
+
+To scale the image to the size of the label, use the `setScaledContents()` method and pass in the boolean value of `True` (Ex. `picture.setScaledContents(True)`).
+
+To align the image, use the `setGeometry()` method and utilzie the `label.width()` and `label.height()` methods to reflect the current value for the image. The following parameters (`aw` = width of label, and `ah` = height of label) can be changed to change the justification (alignment) of the image:
+
+| Code | Alignment |
+| :---: | :---: |
+| `ah = 0` | Vertical Top |
+| `ah = (self.height() - picture.height()) // 2` | Vertical Center |
+| `ah = self.height() - picture.height()` | Vertical Bottom |
+| `aw = self.width() - picture.width()` | Horizontal Right |
+| `aw = (self.width() - picture.width()) // 2` | Horizontal Center |
+| `aw = 0` | Horizontal Left |
 
 ## Layout Managers
 
