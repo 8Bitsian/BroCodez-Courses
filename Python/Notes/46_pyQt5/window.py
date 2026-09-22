@@ -8,17 +8,20 @@ import sys # The `sys` or system module provides access to system-specific param
 
 # Widgets are the building blocks of any PyQt5 application. They begin with `Q` to help distinguish them from other libraries widgets.
 # The `QMainWindow` module is designed for creating the main application window
-# The `QLabel` modulke is designed for creating text labels
-from PyQt5.QtWidgets import QMainWindow, QLabel
+# The `QLabel` module is designed for creating text labels
+# The `QWidget` module is designed for being the basic container
+# The `QVBoxLayout` module is designed for the vertical box layout
+# The `QHBoxLayout` module is designed for the horizontal box layout
+# The `QGridLayout` module is designed for the grid box layout
+from PyQt5.QtWidgets import (QMainWindow, QLabel, QWidget, QVBoxLayout, QHBoxLayout, QGridLayout)
 
 # The `QIcon` module is designed to work with images
 # The `QFont` module is designed to work with text and change fonts
 # The `QPixmap` module is designed to handle images and provides functionality for loading, manipulating, and displaying images.
-from PyQt5.QtGui import QIcon, QFont, QPixmap
+from PyQt5.QtGui import (QIcon, QFont, QPixmap)
 
 # The `Qt` module is used for alignments
 from PyQt5.QtCore import Qt
-
 
 # By inheriting from the parent class of `QMainWindow`, we can customize our own windows to display to the end user via a child class.
 class MainWindow(QMainWindow):
@@ -31,8 +34,11 @@ class MainWindow(QMainWindow):
         # If the `ax` and `ay` parameters are set to `0` then the window will appear in the top-right corner of the screen.
         # self.setGeometry(ax=0, ay=0, aw=500, ah=500)
         self.setGeometry(700, 300, 500, 500)
-        # To set the icon for the window, use the `setWidnowIcon()` method and pass in the `QIcon()` method with a file path to the image you'd like to use
+        # To set the icon for the window, use the `setWindowIcon()` method and pass in the `QIcon()` method with a file path to the image you'd like to use
         self.setWindowIcon(QIcon(r"Python\Notes\46_pyQt5\icon.png"))
+
+        # Call the `initUI()` function from within the initialization method.
+        self.initUI()
 
         # To create a test label within the window, create label object within the constructor/initialization method using the `QLabel()` method and pass in a string and the self paramters
         text_1 = "8BitSoftware"
@@ -100,3 +106,45 @@ class MainWindow(QMainWindow):
                             (self.height() - picture.height()) // 2,   # vertical center
                             picture.width(),
                             picture.height())
+
+        # When creating the user interface define another Constructor/Initialization Method using the keyword `initUI()` and pass the `self` parameter
+
+        # MainWindow() cannot utilize a layout manager (e.g., `QWidget`, `QVBoxLayout`, `QHBoxLayout`, and `QGridLayout`) since it has a layout structure that is incompatible.abs
+        # To create a UI, you have to create a widget and add a layout manager to the main window to display the layout.
+    def initUI(self):
+        # Create a generic widget called `central_widget`
+        central_widget = QWidget()
+        # Use the `setCentralWidget()` method to create a central widget object to apply the layout manager to the main window
+        self.setCentralWidget(central_widget)
+
+        # When you create label objects, they are automatically overlapping.
+        label1 = QLabel("#1", self)
+        label2 = QLabel("#2", self)
+        label3 = QLabel("#3", self)
+        label4 = QLabel("#4", self)
+        label5 = QLabel("#5", self)
+
+        label1.setStyleSheet("background-color: magenta;")
+        label2.setStyleSheet("background-color: cyan;")
+        label3.setStyleSheet("background-color: yellow;")
+        label4.setStyleSheet("background-color: tan;")
+        label5.setStyleSheet("background-color: black;")
+
+        # To align the labels vertically create a vertical layout manager object via the `QVBoxLayout()` method.
+        # vbox = QVBoxLayout()
+
+        # To align the labels horizontally create a vertical layout manager object via the `QHBoxLayout()` method.
+        # hbox = QHBoxLayout()
+
+        # To align the labels in a grid create a grid layout manager object via the `QGridLayout()` method.
+        grid = QGridLayout()
+
+        # Use the `addWidget()` method to insert a label object. For grid specifically, we have to specify a row and column after the label.
+        grid.addWidget(label1, 0, 0)
+        grid.addWidget(label2, 1, 1)
+        grid.addWidget(label3, 2, 2)
+        grid.addWidget(label4, 3, 3)
+        grid.addWidget(label5, 4, 4)
+
+        # To show the layout use the `setLayout()` method and pass in the layout manager object
+        central_widget.setLayout(grid)

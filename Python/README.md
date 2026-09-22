@@ -744,6 +744,34 @@ To align the image, use the `setGeometry()` method and utilzie the `label.width(
 | `aw = 0` | Horizontal Left |
 
 ## Layout Managers
+The following modules are The following library methods are designed for creating and stylizing basic wiget containers:
+- The `QWidget` module is designed for being the basic container
+- The `QVBoxLayout` module is designed for the vertical box layout
+- The `QHBoxLayout` module is designed for the horizontal box layout
+- The `QGridLayout` module is designed for the grid box layout
+Ex. `from PyQt5.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout, QGridLayout`
+
+When creating the user interface define another Constructor/Initialization Method using the keyword `initUI()` and pass the `self` parameter (Ex. `def initUI(self):`).
+
+Call the `initUI()` function from within the initialization method (Ex. `self.initUI()`).
+
+The main window (e.g., `MainWindow(QMainWindow)`) cannot utilize a layout manager (e.g., `QWidget`, `QVBoxLayout`, `QHBoxLayout`, and `QGridLayout`) since it has a layout structure that is incompatible.
+
+To create a UI, you have to create a widget manager to add a layout manager to the main window to display the layout (Ex. `def initUI(self):`).
+
+To create a generic widget object used the `QWidget()` function (Ex. `central_widget = QWidget()`).
+Then, use the `setCentralWidget()` method to create a widget object to apply the layout manager and show in the main window and pass in the widget object as a parameter (Ex. `self.setCentralWidget(central_widget)`).
+
+When you create label objects, they are automatically overlapping, so to align any of the labels you have to utilize the layout managers. To create a layout manager object, use the following methods:
+| Code | Layout |
+| :---: | :---: |
+| `vbox = QVBoxLayout()` | Vertical |
+| `hbox = QHBoxLayout()` | Horizontal |
+| `grid = QGridLayout()` | Grid |
+
+Use the `addWidget()` method to insert a label object (Ex. `hbox.addWidget(label1)`). For the `QGridLayout()` method specifically, we have to specify a row and column after the label (Ex. `grid.addWidget(label1, 0, 0)`).
+
+To show the layout use the `setLayout()` method and pass in the layout manager object (Ex. `central_widget.setLayout(grid)`).
 
 ## Buttons
 
