@@ -666,6 +666,58 @@ The `QIcon` module is designed to work with images (Ex. `from PyQt5.QtGui import
 - To set the icon for the window, use the `setWidnowIcon()` method and pass in the `QIcon()` method with a file path to the image you'd like to use (Ex. `self.setWindowIcon(QIcon(r"Python\Notes\46_pyQt5\icon.png"))`)
 
 ## Labels
+The following library methods are designed for creating and stylizing text labels:
+- The `QLabel` module is designed for creating text labels (Ex. `from PyQt5.QtWidgets import QLabel`)
+- The `QFont` module is designed to work with text and change fonts (Ex. `from PyQt5.QtGui import QFont`)
+- The `Qt` module is used for aligning objects within a window (Ex. `from PyQt5.QtCore import Qt`)
+
+To create a text label within the window, create a new label object within the constructor/initialization method using the `QLabel()` method and pass in a string and `self` as parameters (Ex. `label = QLabel("Hello, world!", self)`).
+
+To adjust the height and width of the label, use the `setGeometry()` method and initalize the `aw` and `ah` parameters (Ex. `label.setGeometry(0, 0, 500, 500)`).
+        
+To change the font and size of the label use the `setFont(QFont())` method and pass in the font name as a string and the font size in pixels as parameters (Ex. `label.setFont(QFont("JetBrains Mono", 35))`)
+
+To use a style sheet to further stylize the font similar to that in CSS, use the `setStyleSheet()` and pass in string arguments ending in semicolons `;`.
+
+```python
+label.setStyleSheet("color: #8C52FF;"
+                    "background-color: #FFFFF0;"
+                    "font-weight: semibold;"
+                    "font-style: italic;"
+                    "text-decoration: underline")
+```
+
+When passing in a color value, you can either use keywords, such as `purple`, or you can use rgb values or hexadecimal values, such as `color: #8C52FF;`.
+
+When passing a font weight, you can either use keywords, such as `semibold`, or you can use weight values, such as `600`.
+
+Here are more examples of font weight in pixels:
+| Weight | Value |
+| :---: | :---: |
+| Thin | 100 |
+| Extralight | 200 |
+| Light | 300 |
+| Regular | 400 |
+| Medium | 500 |
+| Semibold | 600 |
+| Bold | 700 |
+| Extrabold | 800 |
+
+To align the text label within the window, use the `setAlignment(Qt._)` method with the following parameters:
+| Keyword | Alignment |
+| :---: | :---: |
+| `Qt.AlignTop` | Vertical Top |
+| `Qt.AlignVCenter` | Vertical Center |
+| `Qt.AlignBottom` | Vertical Bottom |
+| `Qt.AlignRight` | Horizontal Right |
+| `Qt.AlignHCenter` | Horizontal Center |
+| `Qt.AlignLeft` | Horizontal Left |
+
+To set the alignment both vertically and horizontally, use the bitwise operator OR `|` to combine the two flags:
+- `label.setAlignment(Qt.AlignHCenter | Qt.AlignTop)` Aligns labels to the horizontal center and vertical top
+- `label.setAlignment(Qt.AlignHCenter | Qt.AlignBottom)` Aligns labels to the horizontal center and vertical bottom
+
+To center the label in the middle of the winow simply use `Qt.AlignCenter` (Ex. `label.setAlignment(Qt.AlignCenter)`).
 
 ## Images
 
