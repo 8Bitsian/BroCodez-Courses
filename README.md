@@ -35,7 +35,7 @@
 
 > 🗣️ I am following tutorials for Python, Java, C++, C# and C for full-stack development.<br/><br/>
 > ![Total Languages Badge][18]
-![Top Langauge Badge][19]<br/>
+![Top Language Badge][19]<br/>
 > [![Python Badge][20]](https://www.python.org/)
 [![Java Badge][21]](https://www.java.com/)
 [![C++ Badge][22]](https://isocpp.org/)
