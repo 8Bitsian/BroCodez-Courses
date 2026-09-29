@@ -11,8 +11,11 @@
 from PyQt5.QtWidgets import QMainWindow, QWidget
 # The `QIcon` module is designed to work with images
 from PyQt5.QtGui import QIcon
+# The `Qt` module is used for alignments
+from PyQt5.QtCore import Qt
 
 from buttons import create_button
+from checkboxes import create_checkbox
 from labels import create_title, color_title
 from pictures import create_picture
 from layouts import create_layout
@@ -39,15 +42,16 @@ class MainWindow(QMainWindow):
         # Use the `setCentralWidget()` method to create a central widget object to apply the layout manager to the main window
         self.setCentralWidget(central_widget)
 
-        self.button = create_button(central_widget, self.on_click)
+        self.button = create_button(central_widget, self.on_button_click)
+        self.checkbox = create_checkbox(central_widget, self.checkbox_changed)
         labels = color_title(central_widget)
         title = create_title(central_widget)
         picture = create_picture(central_widget,
                                  r"Python\Notes\46_pyQt5\icon.png")
         
-        create_layout(central_widget, self.button, labels, title, picture)
+        create_layout(central_widget, self.button, self.checkbox, labels, title, picture)
     
-    def on_click(self):
+    def on_button_click(self):
         print("Button Clicked!")
         # To change the text on the button after the end user clicks on it, use the `.setText()` method and pass in a string.
         self.button.setText("Clicked!")
@@ -57,3 +61,9 @@ class MainWindow(QMainWindow):
         # To disable buttons after clicking on them, call the `setDisabled()` method and pass in the boolean paramter `True`
         self.button.setDisabled(True)
         # self.label.setText("Goodbye!")
+
+    def checkbox_changed(self, state):
+        if state == Qt.Checked:
+            print("Box Checked!")
+        else:
+            print("Box Unchecked!")

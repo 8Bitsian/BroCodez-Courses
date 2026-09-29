@@ -12,7 +12,7 @@ from PyQt5.QtWidgets import (QVBoxLayout,
 # The `Qt` module is used for alignments
 from PyQt5.QtCore import Qt
 
-def create_layout(parent, button, labels, title, picture):
+def create_layout(parent, button, checkbox, labels, title, picture):
     # To align widgets/labels use the various box layout managers:
     # To create a vertical layout manager object via the `QVBoxLayout()` method
     # vbox = QVBoxLayout()
@@ -26,10 +26,11 @@ def create_layout(parent, button, labels, title, picture):
     grid.addWidget(title, 0, 0, 1, 2)
     grid.addWidget(picture, 1, 0, 1, 2)
     grid.addWidget(button, 2, 0, 1, 2)
+    grid.addWidget(checkbox, 3, 0, 1, 2)
 
     # To add mutliple widgets utilize a for loop
     for index, label in enumerate(labels):
-        grid.addWidget(label, (3 + index // 2), (index % 2))
+        grid.addWidget(label, (4 + index // 2), (index % 2))
 
     # To show the layout use the `setLayout()` method and pass in the layout manager object
     # central_widget.setLayout(grid)
