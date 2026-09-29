@@ -8,13 +8,14 @@
 
 # The `QMainWindow` module is designed for creating the main application window
 # The `QWidget` module is designed for being the basic container
-from PyQt5.QtWidgets import QMainWindow, QWidget
+# The `QRadioButton` module is designed for creating radio buttons
+from PyQt5.QtWidgets import QMainWindow, QWidget, QRadioButton
 # The `QIcon` module is designed to work with images
 from PyQt5.QtGui import QIcon
 # The `Qt` module is used for alignments
 from PyQt5.QtCore import Qt
 
-from buttons import create_button
+from buttons import create_button, create_radio_button
 from checkboxes import create_checkbox
 from labels import create_title, color_title
 from pictures import create_picture
@@ -43,13 +44,14 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(central_widget)
 
         self.button = create_button(central_widget, self.on_button_click)
+        self.radios = create_radio_button(central_widget, self.on_radio_click)
         self.checkbox = create_checkbox(central_widget, self.checkbox_changed)
         labels = color_title(central_widget)
         title = create_title(central_widget)
         picture = create_picture(central_widget,
                                  r"Python\Notes\46_pyQt5\icon.png")
         
-        create_layout(central_widget, self.button, self.checkbox, labels, title, picture)
+        create_layout(central_widget, self.button, self.radios, self.checkbox, labels, title, picture)
     
     def on_button_click(self):
         print("Button Clicked!")
@@ -62,8 +64,13 @@ class MainWindow(QMainWindow):
         self.button.setDisabled(True)
         # self.label.setText("Goodbye!")
 
+    def on_radio_click(self):
+        radio_button = self.sender()
+        if radio_button.isChecked():
+            print(f"{radio_button.text()} is selected!")
+
     def checkbox_changed(self, state):
         if state == Qt.Checked:
-            print("Box Checked!")
+            print("Box Checked!")   # State is in 2
         else:
-            print("Box Unchecked!")
+            print("Box Unchecked!") # State is in 0

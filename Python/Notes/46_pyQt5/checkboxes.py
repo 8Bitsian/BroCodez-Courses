@@ -14,7 +14,7 @@ from PyQt5.QtGui import QFont
 
 def create_checkbox(parent, checkbox_changed):
     # To create a checkbox, be sure to prefix w/the self object when in the initial construtor method. When defining a standalone function, just call the `QCheckBox()` method and initialize the button object w/a string and the self object.
-    checkbox = QCheckBox("Do you like pink?", parent)
+    checkbox = QCheckBox("Do you like purple?", parent)
 
     # You are able to stylize a checkbox as you would any other widget.
     checkbox.setFont(QFont("JetBrains Mono", 15, 300))
