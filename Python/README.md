@@ -744,7 +744,7 @@ To align the image, use the `setGeometry()` method and utilzie the `label.width(
 | `aw = 0` | Horizontal Left |
 
 ## Layout Managers
-The following modules are The following library methods are designed for creating and stylizing basic wiget containers:
+The following modules are the library methods are designed for creating and stylizing basic wiget containers:
 - The `QWidget` module is designed for being the basic container
 - The `QVBoxLayout` module is designed for the vertical box layout
 - The `QHBoxLayout` module is designed for the horizontal box layout
@@ -774,6 +774,23 @@ Use the `addWidget()` method to insert a label object (Ex. `hbox.addWidget(label
 To show the layout use the `setLayout()` method and pass in the layout manager object (Ex. `central_widget.setLayout(grid)`).
 
 ## Buttons
+The following modules are the library methods are designed for creating and stylizing buttons:
+- The `QPushButtle` module is designed for creating buttons
+
+Ex. `from PyQt5.QtWidgets import QLabel, QPushButton`
+
+To create a button, be sure to prefix w/the self object when in the initial construtor method. When defining a standalone function, just call the `QPushButton()` method and initialize the button object w/a string and the self object.
+Ex. `button = QPushButton("Click Me!", parent)`
+
+You are able to stylize a button as you would any other widget.
+``` python
+button.setFont(QFont("JetBrains Mono", 25, 600))
+button.setStyleSheet("color: #FFFFF0;"
+                        "background-color: #8C52FF;")
+```
+
+To have the button do something when clicked use the `clicked.connect()` method and pass in a function for what you would like to happen as the parameter.
+Ex. `button.clicked.connect(on_click)`
 
 ### Radio Buttons
 
