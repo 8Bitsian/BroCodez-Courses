@@ -15,8 +15,10 @@ from PyQt5.QtGui import QIcon
 # The `Qt` module is used for alignments
 from PyQt5.QtCore import Qt
 
-from buttons import create_button, create_radio_button
+from buttons import (create_button,
+                     create_submission, create_radio_button)
 from checkboxes import create_checkbox
+from textboxes import create_textbox
 from labels import create_title, color_title
 from pictures import create_picture
 from layouts import create_layout
@@ -46,12 +48,24 @@ class MainWindow(QMainWindow):
         self.button = create_button(central_widget, self.on_button_click)
         self.radios = create_radio_button(central_widget, self.on_radio_click)
         self.checkbox = create_checkbox(central_widget, self.checkbox_changed)
+
+        self.textbox = create_textbox(central_widget)
+        self.submit_button = create_submission(central_widget, self.on_submit_click)
+
         labels = color_title(central_widget)
         title = create_title(central_widget)
         picture = create_picture(central_widget,
                                  r"Python\Notes\46_pyQt5\icon.png")
         
-        create_layout(central_widget, self.button, self.radios, self.checkbox, labels, title, picture)
+        create_layout(central_widget,
+                      self.button,
+                      self.radios,
+                      self.checkbox,
+                      self.textbox,
+                      self.submit_button,
+                      labels,
+                      title,
+                      picture)
     
     def on_button_click(self):
         print("Button Clicked!")
@@ -63,6 +77,15 @@ class MainWindow(QMainWindow):
         # To disable buttons after clicking on them, call the `setDisabled()` method and pass in the boolean paramter `True`
         self.button.setDisabled(True)
         # self.label.setText("Goodbye!")
+
+    def on_submit_click(self):
+        print("Submit Clicked!")
+        self.button.setStyleSheet("color: #8C52FF;"
+                                  "background-color: #FFFFF0;"
+                                  "font-style: italic;")
+        
+        text = self.textbox.text()
+        print(f"You submitted: {text}")
 
     def on_radio_click(self):
         radio_button = self.sender()

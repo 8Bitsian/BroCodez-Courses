@@ -12,7 +12,7 @@ from PyQt5.QtWidgets import QApplication
 
 # Runs the main program
 def main():
-    # create an app object via the `QApplication` module and pass in the singluar argument of `sys.argv` which allows PyQt5 to process any command line arguments intended for it if we use command prompt or terminal.
+    # Create an app object via the `QApplication` module and pass in the singluar argument of `sys.argv` which allows PyQt5 to process any command line arguments intended for it if we use command prompt or terminal.
     app = QApplication(sys.argv)
     # When creating a window object, the default behavior is to hide it.
     window = MainWindow()   # Prints ""
