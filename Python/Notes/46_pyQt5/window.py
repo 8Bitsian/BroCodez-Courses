@@ -47,6 +47,7 @@ class MainWindow(QMainWindow):
 
         self.button = create_button(central_widget, self.on_button_click)
         self.radios = create_radio_button(central_widget, self.on_radio_click)
+        
         self.checkbox = create_checkbox(central_widget, self.checkbox_changed)
 
         self.textbox = create_textbox(central_widget)

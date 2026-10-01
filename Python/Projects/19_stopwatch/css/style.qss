@@ -1,0 +1,36 @@
+QMainWindow {
+    background-color: white;
+}
+
+QLabel {
+    font-family: Jetbrains Mono;
+    color: red;
+    padding: 0px;
+    margin: 0px;
+}
+
+QLabel#title {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+QLabel#time {
+    font-size: 60px;
+}
+
+QPushButton {
+    font-family: Jetbrains Mono;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 10px;
+    margin: 0px;
+    border: 2px solid red;
+    border-radius: 5px;
+    color: red;
+}
+
+QPushButton:hover {
+    background-color: pink;
+    color: brown;
+}
