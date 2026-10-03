@@ -1,7 +1,5 @@
-"""
-Final Project: Weather API Application
-Description: A weather app that gets API data to show real-time weather.
-"""
+# Final Project: Weather API Application
+# Description: A weather app that gets API data to show real-time weather.
 
 # Standard-library imports
 import sys, os
@@ -12,6 +10,7 @@ from ui.window import MainWindow
 
 # Load the QSS Style sheet
 def load_stylesheet(app,filepath):
+    """Load the style sheet for the entire program."""
     file = QFile(filepath)
     if file.open(QFile.ReadOnly | QFile.Text):
         stream = QTextStream(file)
@@ -21,7 +20,10 @@ def load_stylesheet(app,filepath):
 
 # Run the main program
 def main():
-    # Ensure app can find resources
+    """
+    Final Project: Weather API Application
+    Description: A weather app that gets API data to show real-time weather.
+    """
     base_dir = os.path.dirname(os.path.abspath(__file__))
     os.chdir(base_dir)
 
