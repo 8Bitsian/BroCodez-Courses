@@ -38,8 +38,10 @@ class MainWindow(QMainWindow):
         # Image sourced from https://feathericons.com/
         self.setWindowIcon(load_icon("cloud-drizzle.svg"))
 
+        # Create temperature unit data variables for radio buttons
         self.units = "metric"
         self.last_request = None
+        self.last_weather_data = None
 
         # Create a UI with a generic central widget and a layout manager
         central_widget = QWidget(self)
@@ -93,7 +95,7 @@ class MainWindow(QMainWindow):
 
         print(f"You submitted: {city_name}")
 
-        request_key = (city_name.casefold(), self.units)
+        request_key = city_name.casefold()
         if request_key == self.last_request:
             self.caption.setText("Data is already being displayed")
             return
@@ -102,15 +104,25 @@ class MainWindow(QMainWindow):
         self.caption.setText("Loading weather...")
 
         try:
-            data = load_weather_data(city_name, api_key, self.units)
-            self.display_weather(data)
+            data = load_weather_data(city_name, api_key, "metric")
+            self.last_weather_data = data
             self.last_request = request_key
+
+            self.display_weather(data)
 
         except ValueError as error:
             self.caption.setText(str(error))
 
         finally:
             self.submit.setEnabled(True)
+
+    def on_unit_changed(self, button_id):
+        self.units = "imperial" if button_id == 1 else "metric"
+        if self.last_weather_data is None:
+            self.caption.setText("Submit a city to load the weather.")
+            return
+
+        self.display_weather(self.last_weather_data)
 
     def display_weather(self, data):
         main_data = data.get("main", {})
@@ -124,7 +136,12 @@ class MainWindow(QMainWindow):
             self.caption.setText("The weather response was incomplete.")
             return
 
-        unit_symbol = "°F" if self.units == "imperial" else "°C"
+        # If saved response was originally loaded in Celsius, convert it to Fahrenheit
+        if self.units == "imperial":
+            temperature = (temperature * 9 / 5) + 32
+            unit_symbol = "°F"
+        else:
+            unit_symbol = "°C"
 
         self.temperature.setText(f"{temperature:.1f}{unit_symbol}")
 
@@ -140,8 +157,3 @@ class MainWindow(QMainWindow):
         }.get(condition, "cloud-drizzle.svg")
 
         update_picture(self.picture, icon_filename)
-
-    def on_unit_changed(self, button_id):
-        self.units = "imperial" if button_id == 1 else "metric"
-        self.last_request = None
-        self.caption.setText("Press Get Weather to update the units.")
