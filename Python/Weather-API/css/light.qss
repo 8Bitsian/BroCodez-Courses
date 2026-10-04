@@ -114,4 +114,5 @@ QRadioButton::indicator:checked {
 
 QSvgWidget {
     background-color: transparent;
+    border-raidus: 2px;
 }

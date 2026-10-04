@@ -31,7 +31,7 @@ def create_picture(parent, filename="cloud-drizzle.svg", theme="light"):
     """Create an SVG weather image widget."""
     picture = QSvgWidget(parent)
     picture.setObjectName("weatherIcon")
-    picture.setFixedSize(QSize(150, 150))
+    picture.setFixedSize(QSize(200, 200))
 
     update_picture(picture, filename, theme)
     
