@@ -4,7 +4,7 @@
 # Third-party imports
 from PyQt5.QtWidgets import QPushButton, QRadioButton, QButtonGroup
 
-def create_button(parent, module, object_name, text=""):
+def create_button(parent, object_name, module, text=""):
     """Create the button object w/specified parameters."""
     # Create button object
     button = QPushButton(text, parent)
@@ -17,12 +17,9 @@ def create_button(parent, module, object_name, text=""):
 
 def create_submit(parent, on_submit_click):
     """Create the submit button to enter the city name."""
-    return create_button(parent,
-                         on_submit_click,
-                         "submit",
-                         "Submit")
+    return create_button(parent, "submit", on_submit_click, "Submit")
 
-def create_radio(parent, module, object_name, text=""):
+def create_radio(parent, object_name, module, text=""):
     """Create the radio button object w/specified parametrs."""\
     # Create the radio button object
     radio = QRadioButton(text, parent)
@@ -33,20 +30,27 @@ def create_radio(parent, module, object_name, text=""):
 
     return radio
 
-def create_temp_preference(parent, state_change):
-    """Create the radio buttons Celsius and Fahrenheit to click temperature output."""
-    fahrenheit = create_radio(parent, state_change, "f-temp", "Fahrenheit")
-    celsius = create_radio(parent, state_change, "c-temp", "Celsius")
+def create_temp_preference(parent, on_unit_changed):
+    """
+    Create the temperature-unit radio buttons.
 
+    The button IDs mathc OpenWeather's API unit values:
+    metric = Celsius
+    imperial = Fahrenheit
+    """
+    # Create radio button objects
+    celsius = create_radio(parent, "c-temp", on_unit_changed, "Celsius")
+    fahrenheit = create_radio(parent, "f-temp", on_unit_changed, "Fahrenheit")
+    
     # Put the radio buttons into one group
     temp_group = QButtonGroup(parent)
-    temp_group.addButton(fahrenheit, 0)
-    temp_group.addButton(celsius, 1)
+    temp_group.addButton(celsius, 0)
+    temp_group.addButton(fahrenheit, 1)
 
-    # Send the index of radio button to state_change()
-    temp_group.idClicked.connect(state_change)
+    # Connect the group
+    temp_group.idClicked.connect(on_unit_changed)
 
-    # Fahrenheit is selected by default
-    fahrenheit.setChecked(True)
+    # Celsius is selected by default
+    celsius.setChecked(True)
 
-    return fahrenheit, celsius
+    return (fahrenheit, celsius)

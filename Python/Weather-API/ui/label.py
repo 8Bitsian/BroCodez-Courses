@@ -20,9 +20,9 @@ def create_title(parent):
 def create_temperature(parent):
     """Create the temperature label."""
     return create_label(parent, "temperature",
-                        "78°F")
+                        "--")
 
 def create_caption(parent):
     """Create the caption label for the weather icons."""
     return create_label(parent, "caption",
-                        "Sunny")
+                        "Enter a city to begin.")

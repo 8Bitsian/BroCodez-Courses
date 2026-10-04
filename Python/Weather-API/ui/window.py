@@ -10,14 +10,14 @@ from PyQt5.QtWidgets import QMainWindow, QWidget
 from PyQt5.QtCore import Qt
 
 # Local library imports
-from ui.image import (load_icon,
-                      create_picture,
-                      update_picture)
+from data.apidata import load_weather_data
 
 from ui.button import (create_submit,
                        create_temp_preference)
 
-from ui.textbox import create_city_input
+from ui.image import (load_icon,
+                      create_picture,
+                      update_picture)
 
 from ui.label import (create_title,
                       create_temperature,
@@ -25,15 +25,21 @@ from ui.label import (create_title,
 
 from ui.layout import create_layout
 
+from ui.textbox import (create_api_key_input,
+                        create_city_input)
+
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
 
         # Set up basic window description
         self.setWindowTitle("Weather API App")
-        self.setGeometry(700, 300, 500, 500)
+        self.setMinimumSize(400, 600)
         # Image sourced from https://feathericons.com/
         self.setWindowIcon(load_icon("cloud-drizzle.svg"))
+
+        self.units = "metric"
+        self.last_request = None
 
         # Create a UI with a generic central widget and a layout manager
         central_widget = QWidget(self)
@@ -42,55 +48,100 @@ class MainWindow(QMainWindow):
         # Create title object
         self.title = create_title(central_widget)
 
-        # Create city textbox and submit button
-        self.textbox = create_city_input(central_widget)
-        self.submit = create_submit(central_widget,
-                                    self.on_submit_click)
+        # Create api and city textboxes and submit buttons
+        self.api_key = create_api_key_input(central_widget)
+        # create separate submit button for api key
+        self.city_name = create_city_input(central_widget)
+        self.submit = create_submit(central_widget, self.on_submit_click)
 
         # Create temperature label and measurement buttons
         self.temperature = create_temperature(central_widget)
         self.fahrenheit, self.celsius = create_temp_preference(central_widget,
-                                                               self.state_change)
+                                                               self.on_unit_changed)
 
         # Create weather icon and caption objects
         self.picture = create_picture(central_widget)
         self.caption = create_caption(central_widget)
 
         # Apply the layout manager to the entire UI
-        widgets = [self.title,
-                  self.textbox,
-                  self.submit,
-                  self.temperature,
-                  self.fahrenheit,
-                  self.celsius,
-                  self.picture,
-                  self.caption]
+        widgets = {
+            "title": self.title,
+            "api_key": self.api_key,
+            "city_name": self.city_name,
+            "submit": self.submit,
+            "temperature": self.temperature,
+            "fahrenheit": self.fahrenheit,
+            "celsius": self.celsius,
+            "picture": self.picture,
+            "caption": self.caption
+        }
 
         create_layout(central_widget, widgets)
 
     def on_submit_click(self):
         print("Submit Clicked!")
 
-        city = self.textbox.text().strip()
+        api_key = self.api_key.text().strip()
+        if not api_key:
+            self.caption.setText("Please enter your API key.")
+            return
 
-        if not city:
+        city_name = self.city_name.text().strip()
+        if not city_name:
             self.caption.setText("Please enter a city.")
             return
 
-        print(f"You submitted: {city}")
+        print(f"You submitted: {city_name}")
 
-        update_picture(self.picture, "sun.svg")
-        self.caption.setText("Sunny")
+        request_key = (city_name.casefold(), self.units)
+        if request_key == self.last_request:
+            self.caption.setText("Data is already being displayed")
+            return
 
-        degree = 25
-        if self.fahrenheit.isChecked():
-            temperature = {degree * 9 / 5} + 32
-            self.temperature.setText(f"{temperature:.1f}°F")
-        else:
-            self.temperature.setText(f"{degree:.1f}°C")
+        self.submit.setEnabled(False)
+        self.caption.setText("Loading weather...")
 
-    def state_change(self, button_id):
-        if button_id == 0:  
-            print("Fahrenheit Selected!")
-        elif button_id == 1:
-            print("Celsius Selected!")
+        try:
+            data = load_weather_data(city_name, api_key, self.units)
+            self.display_weather(data)
+            self.last_request = request_key
+
+        except ValueError as error:
+            self.caption.setText(str(error))
+
+        finally:
+            self.submit.setEnabled(True)
+
+    def display_weather(self, data):
+        main_data = data.get("main", {})
+        weather_data = data.get("weather", [{}])[0]
+
+        temperature = main_data.get("temp")
+        description = weather_data.get("description", "Unknown").capitalize()
+        condition = weather_data.get("main", "")
+
+        if temperature is None:
+            self.caption.setText("The weather response was incomplete.")
+            return
+
+        unit_symbol = "°F" if self.units == "imperial" else "°C"
+
+        self.temperature.setText(f"{temperature:.1f}{unit_symbol}")
+
+        city_name = data.get("name", self.city_name.text().strip())
+        self.caption.setText(f"{city_name}: {description}")
+
+        icon_filename = {
+            "Clear": "sun.svg",
+            "Clouds": "cloud.svg",
+            "Rain": "cloud-rain.svg",
+            "Thunderstorm": "cloud-lightning.svg",
+            "Snow": "cloud-snow.svg",
+        }.get(condition, "cloud-drizzle.svg")
+
+        update_picture(self.picture, icon_filename)
+
+    def on_unit_changed(self, button_id):
+        self.units = "imperial" if button_id == 1 else "metric"
+        self.last_request = None
+        self.caption.setText("Press Get Weather to update the units.")

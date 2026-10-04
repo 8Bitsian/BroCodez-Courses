@@ -11,47 +11,49 @@ def create_layout(parent, widgets):
 
     Widgets order:
         0 - title label
-        1 - textbox line edit
-        2 - submit button
-        3 - temperature label
-        4 - fahrenheit radio button
-        5 - celsius radio button
-        6 - weather icon
-        7 - caption label
+        1 - api key textbox
+        2 - city name textbox
+        3 - submit button
+        4 - temperature label
+        5 - fahrenheit radio button
+        6 - celsius radio button
+        7 - weather icon
+        8 - caption label
     """
-
+    # Create basic vertical layout manager
     vbox = QVBoxLayout()
     vbox.setAlignment(Qt.AlignTop)
+    vbox.setSpacing(12)
 
-    # title
-    widgets[0].setAlignment(Qt.AlignCenter)
-    vbox.addWidget(widgets[0])
+    # Create title label object
+    widgets["title"].setAlignment(Qt.AlignCenter)
+    vbox.addWidget(widgets["title"])
 
-    # textbox
-    widgets[1].setAlignment(Qt.AlignCenter)
-    vbox.addWidget(widgets[1])
+    # Create api key textbox object
+    vbox.addWidget(widgets["api_key"])
+    # Create city name textbox object
+    vbox.addWidget(widgets["city_name"])
 
-    # s_button
-    vbox.addWidget(widgets[2])
+    # Create submit button object
+    vbox.addWidget(widgets["submit"])
 
-    # temperature
-    widgets[3].setAlignment(Qt.AlignCenter)
-    vbox.addWidget(widgets[3])
+    # Create temperature label object
+    widgets["temperature"].setAlignment(Qt.AlignCenter)
+    vbox.addWidget(widgets["temperature"])
 
-    # radio buttons
+    # Create temperature unit radio buttons
     hbox = QHBoxLayout()
     hbox.setAlignment(Qt.AlignCenter)
-    # f_button & c_button
-    hbox.addWidget(widgets[4])
-    hbox.addWidget(widgets[5])
+    hbox.addWidget(widgets["fahrenheit"])
+    hbox.addWidget(widgets["celsius"])
     vbox.addLayout(hbox)
 
-    # picture
-    vbox.addWidget(widgets[6], alignment=Qt.AlignCenter)
+    # Create weather icon picture object
+    vbox.addWidget(widgets["picture"], alignment=Qt.AlignCenter)
 
-    # caption
-    widgets[7].setAlignment(Qt.AlignCenter)
-    vbox.addWidget(widgets[7])
+    # Create caption label object
+    widgets["caption"].setAlignment(Qt.AlignCenter)
+    vbox.addWidget(widgets["caption"])
 
     # Set the layout manager to organize window
     parent.setLayout(vbox)
