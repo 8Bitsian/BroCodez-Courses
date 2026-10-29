@@ -33,14 +33,20 @@
 [![Geany Badge][16]](https://www.geany.org/)
 [![VSCodium Badge][17]](https://vscodium.com/)<br/>
 
-> 🗣️ I am following tutorials for Python, Java, C++, C# and C for full-stack development.<br/><br/>
+> 🗣️ I am following tutorials to become a full stack developer! For front end development: CSS, HTML, JavaScript, and React; For back end development: Python, Rust, Java, C++, C#, and PHP; And for databases: MongoDB and MySQL.<br/><br/>
 > ![Total Languages Badge][18]
 ![Top Language Badge][19]<br/>
 > [![Python Badge][20]](https://www.python.org/)
 [![Java Badge][21]](https://www.java.com/)
 [![C++ Badge][22]](https://isocpp.org/)
 [![C# Badge][23]](https://isocpp.org/)
-[![C Badge][24]](https://isocpp.org/)
+[![PHP Badge][24]](https://www.php.net/)
+[![CSS_Badge][25]](https://www.w3.org/Style/CSS/)
+[![HTML_Badge][26]](https://html.spec.whatwg.org/multipage/)
+[![JavaScript_Badge][27]](https://ecma-international.org/publications-and-standards/standards/ecma-262/)
+[![React_Badge][28]](https://react.dev/versions)
+[![MySQL_Badge][29]](https://www.mysql.com/)
+[![MongoDB_Badge][30]](https://www.mongodb.com/)
 
 <!-- Links placed here for the file's readability -->
 <!-- Social Media -->
@@ -77,4 +83,10 @@
 [21]: https://img.shields.io/badge/Java-25?logo=openjdk&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 [22]: https://img.shields.io/badge/C%2B%2B-26?logo=cplusplus&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
 [23]: https://img.shields.io/badge/C%23-14?logo=cplusplus&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
-[24]: https://img.shields.io/badge/C-23?logo=c&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[24]: https://img.shields.io/badge/PHP-8?logo=php&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[25]: https://img.shields.io/badge/CSS-3?logo=css&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[26]: https://img.shields.io/badge/HTML-5?logo=html5&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[27]: https://img.shields.io/badge/JavaScript-ES6?logo=javascript&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[28]: https://img.shields.io/badge/React-19?logo=react&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[29]: https://img.shields.io/badge/MySQL-9?logo=mysql&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
+[30]: https://img.shields.io/badge/MongoDB-9?logo=mongodb&logoColor=%23f6f4f0&labelColor=%238c52ff&color=%23ffde59
