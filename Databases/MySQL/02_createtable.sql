@@ -1,0 +1,1 @@
+# Exercise 02 - Create a Table
