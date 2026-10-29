@@ -31,21 +31,22 @@
 [![GitHub Desktop Badge][ghdesk]](https://github.com/apps/desktop)
 [![Git Badge][15]](https://git-scm.com/)
 [![Geany Badge][16]](https://www.geany.org/)
-[![VSCodium Badge][17]](https://vscodium.com/)<br/>
+[![VSCodium Badge][17]](https://vscodium.com/)
+> <br/>
 
 > 🗣️ I am following tutorials to become a full stack developer! For front end development: CSS, HTML, JavaScript, and React; For back end development: Python, Rust, Java, C++, C#, and PHP; And for databases: MongoDB and MySQL.<br/><br/>
 > ![Total Languages Badge][18]
 ![Top Language Badge][19]<br/>
+> [![CSS_Badge][25]](https://www.w3.org/Style/CSS/)
+[![HTML_Badge][26]](https://html.spec.whatwg.org/multipage/)
+[![JavaScript_Badge][27]](https://ecma-international.org/publications-and-standards/standards/ecma-262/)
+[![React_Badge][28]](https://react.dev/versions)<br/>
 > [![Python Badge][20]](https://www.python.org/)
 [![Java Badge][21]](https://www.java.com/)
 [![C++ Badge][22]](https://isocpp.org/)
 [![C# Badge][23]](https://isocpp.org/)
-[![PHP Badge][24]](https://www.php.net/)
-[![CSS_Badge][25]](https://www.w3.org/Style/CSS/)
-[![HTML_Badge][26]](https://html.spec.whatwg.org/multipage/)
-[![JavaScript_Badge][27]](https://ecma-international.org/publications-and-standards/standards/ecma-262/)
-[![React_Badge][28]](https://react.dev/versions)
-[![MySQL_Badge][29]](https://www.mysql.com/)
+[![PHP Badge][24]](https://www.php.net/)<br/>
+> [![MySQL_Badge][29]](https://www.mysql.com/)
 [![MongoDB_Badge][30]](https://www.mongodb.com/)
 
 <!-- Links placed here for the file's readability -->
