@@ -32,7 +32,7 @@ To utilize SQL commands in JetBrains DataGrip follow the steps below:
 
 The `Query Console` allows end users to write and execute SQL statements directly, while a `Query File` is an `.sql` file that you can create, store, and manage within a project.
 
-# `CREATE` a Database
+# `CREATE` a `DATABASE`
 A database is essentially a folder that acts a container for the files, or tables.
 
 Every command made in the console must end with a semicolon `;`.
@@ -51,9 +51,55 @@ ALTER DATABASE myDB READ ONLY = 0;  # Data within the database can be modified
 ```
 
 # `CREATE` a `TABLE`
+A table in a relational database consists of rows and columns. In this section, we'll be creating the table.
+
+To create a table, go to the query window and use the following commands:
+```SQL
+CREATE TABLE employees (    # When creating a table, separate each column header with a comma (,)
+    employee_id INT,
+    first_name VARCHAR(30),     # Up to 30 characters for the names
+    last_name VARCHAR(30),
+    hourly_pay DECIMAL(5, 2),   # I don't except people to make more than $999.99 for hourly
+    hire_date DATE
+);
+```
+Once you execute the code and refresh the `Database Explorer` window, you should see a `tables/` folder appear within your database along with the `employees` table and the column header row.
+
+To rename a table, utilize the `RENAME` statement:
+```SQL
+RENAME TABLE employees
+          TO workers;
+```
+
+To alter a table, utilize the `ALTER` statement:
+```SQL
+ALTER TABLE workers
+ADD phone_number VARCHAR(15);
+RENAME COLUMN phone_number TO email;
+MODIFY COLUMN email VARCHAR(75);
+MODIFY email VARCHAR(75)
+AFTER last_name;    # If you need to move a column to the front, just use the keyword FIRST
+```
+
+To select data from a table to view it in the console utilize a `SELECT` statement:
+```SQL
+SELECT *         # The asterisk is a wild-card character meaning all
+FROM workers;    # The data within the table will show on the console
+```
+
+To delete a table, utilize the `DROP` statement:
+```SQL
+DROP TABLE workers;
+```
 
 # `INSERT` rows into a `TABLE`
+```SQL
+```
 
 # `SELECT` data `FROM` a `TABLE`
+```SQL
+```
 
 # `UPDATE` and `DELETE` data
+```SQL
+```
