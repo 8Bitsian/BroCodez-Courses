@@ -75,8 +75,14 @@ To alter a table, utilize the `ALTER` statement:
 ```SQL
 ALTER TABLE workers
 ADD phone_number VARCHAR(15);
+
+ALTER TABLE workers
 RENAME COLUMN phone_number TO email;
+
+ALTER TABLE workers
 MODIFY COLUMN email VARCHAR(75);
+
+ALTER TABLE workers
 MODIFY email VARCHAR(75)
 AFTER last_name;    # If you need to move a column to the front, just use the keyword FIRST
 ```
