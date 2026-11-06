@@ -1,10 +1,8 @@
-# Python Note Template
+# C++ Note Template
 
 ## Main File Setup
 
 ### File Header comment block for starting new main.py files:
-Thank you @omp3policeo on Twitch for back-tick suggestion! </br>
-If you add python after the back-ticks then markdown will read the code inside as Python.
 ```cpp
 // Project #: Name - Uses Notes #
 // File: filename.cpp
@@ -21,15 +19,17 @@ If you add python after the back-ticks then markdown will read the code inside a
 // Third-party or local library imports
 # include "header_name.hpp"
 
+using namespace std;
+
 // Describe what this function does
 void function_name() {
 }
 
 // Runs the main program
 int main() {
-    // std:cout << "Running program...\n";
+    // cout << "Running program...\n";
     function_name();
-    // std:cout << "Program finished.\n";
+    // cout << "Program finished.\n";
     return 0;
 }
 ```
@@ -48,6 +48,8 @@ int main() {
 // Standard-library includes
 #include <string>
 
+using namespace std;
+
 # Constant
 inline constexpr int CONSTANT_NAME = 0;
 
@@ -62,6 +64,8 @@ void function_name(int parameter);
 // Description: Brief description of this module
 
 #include "module_name.hpp"
+
+using namespace std;
 
 // Function Definition
 void funciton_name(int parameter) {
@@ -82,6 +86,8 @@ void funciton_name(int parameter) {
 // Standard-library includes
 #include <string>
 
+using namespace std;
+
 # Class Declaration
 class Parent {
     public:
@@ -95,7 +101,7 @@ class Parent {
         virtual void function_name();
 
         // Getter Method
-        sid::string getName() const;
+        string getName() const;
 
     protected:
         // Instance Variable
@@ -110,6 +116,8 @@ class Parent {
 ### Parent class source syntax for parent.cpp:
 ```cpp
 #include "parent_name.hpp"
+
+using namespace std;
 
 Parent::Parent(int pVar) : pVar_(pVar) {
 }
@@ -131,6 +139,8 @@ std::string Parent::getName() const {
 #pragma once
 
 #include "parent.hpp"
+
+using namespace std;
 
 # Class Declaration
 class Child : public Parent {
@@ -155,6 +165,8 @@ class Child : public Parent {
 ### Child class source syntax for child.cpp:
 ```cpp
 #include "child_name.hpp"
+
+using namespace std;
 
 Child::Child(int pVar, int cVar)
     : Parent(pVar), cVar_(cVar) {
