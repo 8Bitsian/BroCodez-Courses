@@ -253,6 +253,8 @@ int main() {
 
 # Artithmetic Operators
 
+
+
 ## Example
 ```cpp title="06_arithmetciops.cpp"
 #include <iostream>
