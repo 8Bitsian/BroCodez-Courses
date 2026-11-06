@@ -160,6 +160,7 @@ Using `const` can help prevent accidental changes to variables that should remai
 
 A popular naming convention for `const` variables is to use all uppercase letters with underscores to separate words.
 
+## Example
 ```cpp title="03_const.cpp"
 // Standard-library includes
 # include <iostream>
@@ -195,6 +196,7 @@ Within the namespace, you are able to declare similarly named variables, functio
 Any variable declared within the `main()` function is cosidered within the global namespace, which means it is accessible throughout the entire program unless shadowed by a local variable with the same name.
 To access a variable, function, or class within a namespace, you can use the scope resolution operator `::` followed by the namespace name and the identifier name.
 
+## Example
 ```cpp title="04_namespaces.cpp"
 # include <iostream>
 using namespace std; 
@@ -215,12 +217,84 @@ int main() {
 ```
 
 # `typedef`and Type Aliases
+In C++, the `typedef` keyword is used to create an additional name (alias) for an existing data type, allowing you to define a new name for a type that can be used interchangeably with the original type.
+This can be useful for improving code readability, simplifying complex type declarations, or creating more meaningful names for types in your program.
+
+A common naming convention for `typedef` aliases is to use a descriptive name that ends with `_t`, indicating that it is a type alias.
+You can also create a `typedef` alias for a simple data type like `string`, which can make the code more readable and easier to understand.
+
+`typedef` has been largely replaced by the `using` keyword in modern C++ (C++11 and later), which works better with templates. However, `typedef` is still widely used and supported in C++.
+The `using` keyword is a more modern way to create type aliases in C++. It provides better support for templates and is generally considered more readable.
+
+## Example
+```cpp title="05_typedefaliases.cpp"
+#include <iostream>
+using namespace std;
+
+// typedef string text_t;
+// typedef int number_t;
+
+using text_t = string;
+using number_t = int;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    text_t myText = "Hello, World!";
+    number_t age = 23;
+
+    cout << "My text is: " << myText << endl;
+    cout << "My age is: " << age << endl;
+
+    return 0;
+}
+```
 
 # Artithmetic Operators
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Type Conversion
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # User Input
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Math Functions
 
