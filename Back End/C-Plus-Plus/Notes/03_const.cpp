@@ -6,7 +6,6 @@
 
 // Standard-library includes
 # include <iostream>
-# include <string>
 
 using namespace std;
 

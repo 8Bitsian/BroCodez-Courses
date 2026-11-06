@@ -183,6 +183,36 @@ int main() {
 ```
 
 # Namespaces
+The `namespace` keyword in C++ is used to group related variables, functions, and classes under a single name to avoid naming conflicts in larger programs.
+Namespaces help organize code and prevent collisions between identifiers that may have the same name but are used in different contexts.
+
+The `using` keyword allows you to use names from a namespace without having to prefix them with the namespace name.
+Ex. `using namespace std;` allows you to use `cout` and `endl` without the `std::` prefix.
+
+You can declare a namespace as you would a function: with the `namespace` keyword followed by the namespace name and curcle braces `{}`.
+Within the namespace, you are able to declare similarly named variables, functions, and classes from the global scope within the namespace.
+
+Any variable declared within the `main()` function is cosidered within the global namespace, which means it is accessible throughout the entire program unless shadowed by a local variable with the same name.
+To access a variable, function, or class within a namespace, you can use the scope resolution operator `::` followed by the namespace name and the identifier name.
+
+```cpp title="04_namespaces.cpp"
+# include <iostream>
+using namespace std; 
+
+namespace alt { int x = 1; }
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    int x = 0;
+
+    cout << "Global namespace x is: " << x << endl;
+    cout << "\"alt\" namespace is: " << alt::x << endl;
+
+    return 0;
+}
+```
 
 # `typedef`and Type Aliases
 
