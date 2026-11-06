@@ -153,7 +153,34 @@ int main() {
 }
 ```
 
-# `const`
+# `const` Keyword
+The `const` keyword in C++ is used to declare variables whose values cannot be changed after initialization because they are constant.
+This means that once a `const` variable is assigned a value, it cannot be modified throughout the program (variable is then considered read-only).
+Using `const` can help prevent accidental changes to variables that should remain constant, improving code safety and readability.
+
+A popular naming convention for `const` variables is to use all uppercase letters with underscores to separate words.
+
+```cpp title="03_const.cpp"
+// Standard-library includes
+# include <iostream>
+# include <string>
+
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    const double PI = 3.14159;
+    double radius = 5.0;
+
+    double circumference = 2 * PI * radius;
+
+    cout << "The circumference of a circle with radius " << radius << " is: " << circumference << endl;
+
+    return 0;
+}
+```
 
 # Namespaces
 

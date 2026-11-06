@@ -27,6 +27,9 @@ void function_name() {
 
 // Runs the main program
 int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+    
     // cout << "Running program...\n";
     function_name();
     // cout << "Program finished.\n";
