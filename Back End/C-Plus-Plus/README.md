@@ -1,6 +1,9 @@
 # Setup
-There are two things you need to code in C++:
-1. 
+There are two things you need to download:
+1. A C/C++ Compiler
+- Go to [isocpp.org](https://isocpp.org/get-started) and download the latest version of [ClangD](https://clangd.llvm.org/installation.html)
+2. An Integrated Development Environment (IDE)
+- Go to [JetBrains.com](https://www.jetbrains.com/clion/) and download the latest version of the community version (it's free :3)
 
 # Variables and Basic Data Types
 
