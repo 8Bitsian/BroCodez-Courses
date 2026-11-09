@@ -19,6 +19,7 @@
 // Third-party or local library imports
 # include "header_name.hpp"
 
+// Namespace declaration
 using namespace std;
 
 // Describe what this function does
