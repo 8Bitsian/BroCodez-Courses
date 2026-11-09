@@ -505,15 +505,33 @@ int main() {
 ```
 
 # Ternary Operator
+In C++, the ternary operator `?:` is a shorthand way to write an if-else statement.
+It has the syntax: `condition ? value_if_true : value_if_false`.
 
 ## Example
-```cpp title="12_ternaryops.cpp"
+```cpp title="12_ternary-ops.cpp"
 #include <iostream>
 using namespace std;
 
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    bool isRaining = true;
+
+    /*
+        // Example of an if-else statement
+        if (isRaining) {
+            cout << "It is raining." << endl;
+        } else {
+            cout << "It is sunny." << endl;
+        }
+
+        // Example of a ternary operator
+        (isRaining) ? cout << "It is raining." << endl : cout << "It is sunny." << endl;
+    */
+
+    cout << (isRaining ? "Take an umbrella." : "No need for an umbrella.") << endl;
 
     return 0;
 }
