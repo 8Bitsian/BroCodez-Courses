@@ -425,7 +425,7 @@ int main() {
 # `if` statements
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="10_ifstatements.cpp"
 #include <iostream>
 using namespace std;
 
@@ -440,7 +440,7 @@ int main() {
 # Switches
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="11_switchstatements.cpp"
 #include <iostream>
 using namespace std;
 
@@ -455,7 +455,7 @@ int main() {
 # Ternary Operator
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="12_ternaryops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -470,7 +470,7 @@ int main() {
 # Logical Operators
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="13_logicalops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -485,7 +485,7 @@ int main() {
 # `String` Methods
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="14_stringmethods.cpp"
 #include <iostream>
 using namespace std;
 
@@ -500,7 +500,7 @@ int main() {
 # `while` Loops
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="15_whileloops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -515,7 +515,7 @@ int main() {
 # `for` Loops
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="16_forloops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -530,7 +530,7 @@ int main() {
 # `break` and `continue`
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="17_breakcontinue.cpp"
 #include <iostream>
 using namespace std;
 
@@ -545,7 +545,7 @@ int main() {
 # Nested Loops
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="18_nestedloops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -560,7 +560,7 @@ int main() {
 # `random`
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="19_random.cpp"
 #include <iostream>
 using namespace std;
 
@@ -575,7 +575,7 @@ int main() {
 # User Defined Functions
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="20_userfunctions.cpp"
 #include <iostream>
 using namespace std;
 
@@ -590,7 +590,7 @@ int main() {
 # `return` Keyword
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="21_return.cpp"
 #include <iostream>
 using namespace std;
 
@@ -605,7 +605,7 @@ int main() {
 # Overloaded Functions
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="22_overloadfunctions.cpp"
 #include <iostream>
 using namespace std;
 
@@ -620,7 +620,7 @@ int main() {
 # Variable Scope
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="23_variablescope.cpp"
 #include <iostream>
 using namespace std;
 
@@ -635,7 +635,7 @@ int main() {
 # Arrays
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="24_singlearrays.cpp"
 #include <iostream>
 using namespace std;
 
@@ -650,7 +650,7 @@ int main() {
 # `sizeof()` Operator
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="25_sizeofops.cpp"
 #include <iostream>
 using namespace std;
 
