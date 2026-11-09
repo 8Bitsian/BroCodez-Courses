@@ -314,7 +314,7 @@ Use `static_cast<new_type>(value)` to make an explicit conversion. This is the p
 `char` is an integer type that is commonly used to store character values. Assigning an integer to a `char` converts that integer to the corresponding character value in the implementation's character encoding; this is not guaranteed to be ASCII. When a `char` is printed, the stream displays it as a character. Cast it to `int` to display its numeric value.
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="07_typeconversion.cpp"
 #include <iostream>
 using namespace std;
 
@@ -369,15 +369,54 @@ int main() {
 ```
 
 # Math Functions
+Math related functions in C++ are part of the `<cmath>` library, which provides a variety of mathematical operations and constants.
+These functions can be used for tasks such as calculating square roots, trigonometric functions, logarithms, and more.
+
+If you head to www.cplusplus.com/references/cmath/ you can find a comprehensive list of all the functions available in the `<cmath>` library, along with their descriptions and usage examples.
+
+The `max()` and `min()` functions are standard functions in C++ that return the maximum and minimum of two values, respectively.
+They are part of the `<algorithm>` header, but can also be used with `<cmath>` for basic types.
+
+The following functions are part of the `<cmath>` library and provide various mathematical operations:
+- The `sqrt()` function returns the square root of a value
+- The `pow()` function raises a value to the power of another value
+- The `abs()` function returns the absolute value of a number
+- The `round()` function rounds a floating-point number to the nearest integer
+- The `ceil()` function rounds a floating-point number up to the nearest integer
+- The `floor()` function rounds a floating-point number down to the nearest integer
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="09_mathfunctions.cpp"
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    double x = 3.5;
+    double y = 4.0;
+    double z;
+
+    z = max(x, y);
+    cout << "The maximum of " << x << " and " << y << " is " << z << endl;
+    z = min(x, y);
+    cout << "The minimum of " << x << " and " << y << " is " << z << endl;
+
+    z = sqrt(x);
+    cout << "The square root of " << x << " is " << z << endl;
+    z = pow(x, y);
+    cout << x << " raised to the power of " << y << " is " << z << endl;
+    z = abs(-x);
+    cout << "The absolute value of " << -x << " is " << z << endl;
+
+    z = round(x);
+    cout << "The rounded value of 3.6 is " << z << endl;
+    z = ceil(x);
+    cout << "The ceiling value of 3.2 is " << z << endl;
+    z = floor(x);
+    cout << "The floor value of 3.8 is " << z << endl;
 
     return 0;
 }
