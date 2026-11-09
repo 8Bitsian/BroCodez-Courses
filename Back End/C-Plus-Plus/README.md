@@ -359,82 +359,615 @@ int main() {
 
 # Math Functions
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # `if` statements
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Switches
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Ternary Operator
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Logical Operators
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # `String` Methods
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `while` Loops
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # `for` Loops
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `break` and `continue`
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Nested Loops
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `random`
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # User Defined Functions
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `return` Keyword
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Overloaded Functions
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Variable Scope
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Arrays
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `sizeof()` Operator
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Iteration
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `foreach` Loop
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Pass Array to a Function
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Search array for an element
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Sort an array
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `fill()` Function
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Fill an array with User Input
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Multidimentional Arrays
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Memory addresses
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Pass by `value` vs. pass by `ref`
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # `const` Parameters
 
-# Pointes
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
+# Pointers
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `null` pointers
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Dynamic Memory
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Recursion
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Function Templates
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `structs`
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Pass `structs` as arguments
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # `enum`
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Object Oriented Programming
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Constructors
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Constructor Overloading
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
 
 # Getters and Setters
 
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
+
 # Inheritance
+
+## Example
+```cpp title="06_arithmetciops.cpp"
+#include <iostream>
+using namespace std;
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    return 0;
+}
+```
