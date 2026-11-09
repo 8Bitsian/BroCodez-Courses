@@ -466,15 +466,39 @@ int main() {
 ```
 
 # Switches
+In C++, `switch` statements are another decision structure that act as an alternative to multiple `if else` statements.
+They are used when you have a variable that can take on multiple discrete values.
+The `break` statement is used to exit the switch statement after a case has been executed.
 
 ## Example
-```cpp title="11_switchstatements.cpp"
+```cpp title="11_switch-statements.cpp"
 #include <iostream>
 using namespace std;
 
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    char grade;
+    cout << "Enter letter grade: ";
+    cin >> grade;
+
+    switch (grade) {
+        case 'A':
+            cout << "You did fantastic!";
+            break;
+        case 'B':
+            cout << "You did great!";
+            break;
+        case 'C':
+            cout << "You did okay.";
+            break;
+        case 'F':
+            cout << "You are failing.";
+            break;
+        default:
+            cout << "Enter a letter grade (A-F)";
+    }
 
     return 0;
 }
