@@ -12,10 +12,18 @@ int main() {
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
     string name;
+    int age;
+
+    cout << "Enter your age: ";
+    cin >> age; // Read user input and store it in the variable 'age'
+
     cout << "Enter your name: ";
-    cin >> name; // Read user input and store it in the variable 'name'
+    getline(cin >> ws, name); // Read user input and store it in the variable 'name'
+    // Note: Using `getline()` allows for reading full names with whitespaces, unlike `cin >> name` which stops at the first whitespace.
+    // Include `ws` to consume any leading whitespace characters before reading the name, ensuring that the input is captured correctly.
 
     cout << "Hello, " << name << "!" << endl; // Output a greeting message with the user's name
+    cout << "You are " << age << " years old." << endl; // Output the user's age
 
     return 0;
 }
