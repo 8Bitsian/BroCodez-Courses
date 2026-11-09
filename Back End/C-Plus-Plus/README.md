@@ -305,6 +305,13 @@ int main() {
 ```
 
 # Type Conversion
+Type conversion changes a value from one data type to another. C++ conversions can happen implicitly, when the compiler performs a permitted conversion automatically, or explicitly, when the code requests a conversion.
+
+An implicit conversion can happen when assigning a value to a variable of another type. For example, assigning a `double` to an `int` discards the fractional part by truncating toward zero; it does not round the value. Converting an `int` to a `double` keeps the integer value and represents it with a floating-point type.
+
+Use `static_cast<new_type>(value)` to make an explicit conversion. This is the preferred C++ style over a C-style cast such as `(int)value`, because it makes the conversion easier to recognize and review. Converting a floating-point value to an integer this way also truncates toward zero.
+
+`char` is an integer type that is commonly used to store character values. Assigning an integer to a `char` converts that integer to the corresponding character value in the implementation's character encoding; this is not guaranteed to be ASCII. When a `char` is printed, the stream displays it as a character. Cast it to `int` to display its numeric value.
 
 ## Example
 ```cpp title="06_arithmetciops.cpp"
@@ -314,6 +321,22 @@ using namespace std;
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    double original = 3.14;
+    int implicitInt = original;
+    double implicitDouble = 3;
+    int explicitInt = static_cast<int>(original);
+    double convertedBack = static_cast<double>(explicitInt);
+
+    cout << "Implicit double-to-int: " << implicitInt << endl;
+    cout << "Implicit int-to-double: " << implicitDouble << endl;
+    cout << "Explicit double-to-int: " << explicitInt << endl;
+    cout << "Converted back to double: " << convertedBack << endl;
+
+    char letter = static_cast<char>(100);
+    cout << "Character value: " << letter << endl;
+    cout << "Numeric value of character: " << static_cast<int>(letter) << endl;
+    cout << "Character for numeric value 101: " << static_cast<char>(101) << endl;
 
     return 0;
 }
