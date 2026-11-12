@@ -15,6 +15,7 @@
 // Standard-library includes
 # include <iostream>
 # include <string>
+# include <cmath>
 
 // Third-party or local library imports
 # include "header_name.hpp"
