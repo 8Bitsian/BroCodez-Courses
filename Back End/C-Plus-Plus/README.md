@@ -538,6 +538,10 @@ int main() {
 ```
 
 # Logical Operators
+In C++, logical operators are used to compare multiple conditions. There are three kinds of logical operators:
+1. The and operator `&&` checks if two or more conditions are `true`
+2. The or operator `||` checks if at least one of two or more conditions are `true`
+3. The not operator `!` reverses the logical state of its operand and checks for the inverse of the condition
 
 ## Example
 ```cpp title="13_logicalops.cpp"
@@ -547,6 +551,26 @@ using namespace std;
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    int temperature;
+    bool isSunny = true;
+
+    cout << "Enter the temperature (°C): ";
+    cin >> temperature;
+
+    if (temperature > 0 && temperature < 30) { 
+        cout << "The temperature is nice." << endl;
+    } else if (temperature <= 0 || temperature >= 30) {
+        cout << "The temperature is bad." << endl;
+    } else {
+        cout << "Invalid input." << endl;
+    }
+
+    if (!isSunny) {
+        cout << "It will rain." << endl;
+    } else {
+        cout << "It is sunny." << endl;
+    }
 
     return 0;
 }
