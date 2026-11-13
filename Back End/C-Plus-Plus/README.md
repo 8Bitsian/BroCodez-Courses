@@ -577,6 +577,18 @@ int main() {
 ```
 
 # `String` Methods
+In C++, a string is a sequence of characters that can be manipulated and stored in memory.
+The C++ Standard Library provides the `std::string` class, which is part of the `<string>` header, to handle strings more easily than using character arrays (C-style strings).
+
+The following are examples of string methods the standard library includes:
+- The `length()` method will return the number of characters within a string
+- The `empty()` method will return a boolean value depending on whether there are characters within a string
+- The `append()` method will insert a string within the parentheses to the end of another string
+- The `at()` method will return the character at the specified index, starting with 0
+- The `insert(pos, string)` method will insert a string at a speicied index within the 
+- The `find()` method will return the first index of the specified character within a string
+- The `erase(start, end)` method will remove a portion of a string at a given index range
+- The `clear()` method will remove all characters within a string
 
 ## Example
 ```cpp title="14_stringmethods.cpp"
@@ -586,6 +598,30 @@ using namespace std;
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    string name;
+    cout << "Enter your name: ";
+    getline(cin >> ws, name);
+
+    cout << name.length() << endl;
+
+    (name.empty()) ? cout << "The string is empty." << endl : cout << "The string is full." << endl;
+
+    name.append("@gmail.com");
+    cout << name << endl;
+
+    cout << name.at(0) << endl;
+
+    name.insert(0, "Your email is: ");
+    cout << name << endl;
+
+    cout << name.find(' ') << endl;
+
+    name.erase(0, 15);
+    cout << name << endl;
+
+    name.clear();
+    (name.empty()) ? cout << "The string is empty." << endl : cout << "The string is full." << endl;
 
     return 0;
 }
