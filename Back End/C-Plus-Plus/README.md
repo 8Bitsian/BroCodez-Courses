@@ -924,17 +924,55 @@ void happyBirthday(string bdayPerson, int age) {
 ```
 
 # `return` Keyword
+The `return` keyword returns a value back to the spot where the encompassing function was called.
 
 ## Example
 ```cpp title="23_return.cpp"
 #include <iostream>
 using namespace std;
 
+string getName();
+string concatStrings(string fName, string lName);
+void printName(string fullName);
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    string fName = getName();
+    string lName = getName();
+    string fullName = concatStrings(fName, lName);
+    printName(fullName);
+
     return 0;
+}
+
+string getName() {
+    /// @brief Get the user input for their name
+    /// @return name
+
+    string name;
+    cout << "Enter name: ";
+    cin >> name;
+
+    return name;
+}
+
+string concatStrings(string fName, string lName) {
+    /// @brief Concatenates a user's first and last name into a string
+    /// @param fName    User's first name
+    /// @param lName    User's last name
+    /// @return full name
+
+    return fName + " " + lName;
+}
+
+void printName(string fullName) {
+    /// @brief Outputs the end user's full name in a string
+    /// @param fullName End user's full name
+
+    cout << endl;
+    cout << "   Your full name: " << fullName << endl << endl;
 }
 ```
 
@@ -945,11 +983,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -960,11 +1007,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -975,11 +1031,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -990,11 +1055,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1005,11 +1079,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1020,11 +1103,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1035,11 +1127,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1050,11 +1151,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1065,11 +1175,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1080,11 +1199,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1095,11 +1223,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1110,11 +1247,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1125,11 +1271,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1140,11 +1295,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1155,11 +1319,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1170,11 +1343,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1185,11 +1367,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1200,11 +1391,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1215,11 +1415,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1230,11 +1439,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1245,11 +1463,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1260,11 +1487,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1275,11 +1511,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1290,11 +1535,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1305,11 +1559,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1320,11 +1583,20 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
 
@@ -1335,10 +1607,19 @@ int main() {
 #include <iostream>
 using namespace std;
 
+void funtion();
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    function();
     return 0;
+}
+
+void function() {
+    /// @brief Describe what the user-defined function does
+    /// @param var Describe what the parameter represented
+    /// @return Desribe what value is being returned
 }
 ```
