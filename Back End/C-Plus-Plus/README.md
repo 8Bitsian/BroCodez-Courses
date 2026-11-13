@@ -869,17 +869,57 @@ int main() {
 ```
 
 # User Defined Functions
+In C++, function are defined as a block of reusable code which executes when called.
+C++ provides predefined functions such as the `main()` function which is used as a starting point to execute code.
+
+Users are also able to define their own functions to perform certain actions repetitively.
+
+In C++, the source code is read from the top down, so for readbility's sake, you can declare them before the `main()` method and define them separately afterwards.
+
+To declare a function, specify the `return` value type and the name of the function, followed by paraentheses with parameters.
+A return value type describes what data type is expected to be returned by the function using the `return` keyword.
+When a function should not return any value, use the `void` return value type.
+
+NOTE: Remember to include default arguments in the declaration to avoid compilation errors.
+
+You can execute code within the function by calling it: `function_name();`.
+In C++, there is variable scope, so values in different functions must be passed as paraters when calling functions.
+You can set a default parameter value by using the assignment operator `=`.
+You are able to pass multiple parameters, so long as you separate them with a comma `,`.
+Because the variable is being passed into a different scope, the name can change as need be.
+
+To define a function, write the code block, or the body, to be executed.
 
 ## Example
 ```cpp title="22_userfunctions.cpp"
 #include <iostream>
 using namespace std;
 
+void happyBirthday(string bdayPerson, int age);
+
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
+    string name = "Imani";
+    int age = 23;
+
+    happyBirthday(name, age);
+
     return 0;
+}
+
+void happyBirthday(string bdayPerson, int age) {
+    /// @brief The `happyBirthday()` function prints they happy birthday song to the console
+    /// @param bdayPerson The birthday person's name
+    /// @param age The birthday person's age
+    
+    cout << "Inside of happy birthday function.\n" << endl;
+    cout << "Happy Birthday to you!" << endl;
+    cout << "Happy Birthday dear you!" << endl;
+    cout << "Happy Birthday to " << bdayPerson << "!" << endl;
+    cout << "Happy Birthday to you!" << endl;
+    cout << "You are " << age << " years old!\n" << endl;
 }
 ```
 
