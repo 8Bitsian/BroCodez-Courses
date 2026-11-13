@@ -26,9 +26,8 @@
 // Namespace declaration
 using namespace std;
 
-// Describe what this function does
-void function_name() {
-}
+// Function declaration
+void function_name(type p_name);
 
 // Runs the main program
 int main() {
@@ -49,6 +48,13 @@ int main() {
     function_name();
     // cout << "Program finished.\n";
     return 0;
+}
+
+// Function definition
+void function_name(type p_name) {
+    /// @brief Describe what this function does
+    /// @param p_name Describe what this parameter defines
+    /// @return Describe what is being returned
 }
 ```
 
