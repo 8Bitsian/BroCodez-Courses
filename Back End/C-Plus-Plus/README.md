@@ -812,7 +812,7 @@ int main() {
 }
 ```
 
-# `random`
+# `<random>` Library
 
 ## Example
 ```cpp title="21_random.cpp"
