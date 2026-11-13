@@ -1005,26 +1005,45 @@ int main() {
 ```
 
 # Variable Scope
+In C++, scope detemines where a variable name can be used in a program.
+
+Variables are only accessible inside the region they are created within, i.e., scope:
+- Global scope is declared outside all functions
+- Local (block) scope is declared inside a function body and is visible only within that block `{}`
+
+A variable declared in an inner scope can have the same name as one in an outer scope, but not vice versa.
+The inner variable then hides (shadows) the outer one with the inner scope.
+C++ will treat them as separate variables.
+
+Global-scope variable are available anywhere within the program, unless a local vairable with the same name shadows it.
+`::` can be used to delibrately access the global or outer scope variables.
 
 ## Example
 ```cpp title="25_variable-scope.cpp"
 #include <iostream>
 using namespace std;
 
-void funtion();
-
-int main() {
-    /// @brief The `main()` function is where the program begins
-    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
-
-    function();
-    return 0;
-}
+const int NUMBER = 67;
 
 void function() {
-    /// @brief Describe what the user-defined function does
-    /// @param var Describe what the parameter represented
-    /// @return Desribe what value is being returned
+    cout << NUMBER << endl;
+
+    int varNum = 23;
+    cout << varNum << endl;
+}
+
+int main() {
+    int NUMBER = 48;
+    cout << NUMBER << endl;
+
+    cout << ::NUMBER << endl;
+
+    function();
+
+    int varNum = 19;
+    cout << varNum << endl;
+
+    return 0;
 }
 ```
 
