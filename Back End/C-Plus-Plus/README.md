@@ -813,15 +813,57 @@ int main() {
 ```
 
 # `<random>` Library
+In C++, the `<random>` standard library is only pseudo-random, meaning it is not truly random but is close enough.
+
+It has two parts that work together to create random numbers:
+1. An engine which creates random numbers
+2. A distribution which turns them into the kinds of numbers you'd want
+
+For most programs, use a `random_device` to start an `mt19936` engine, and a distribution to get the numbers you need.
+- `random_device` creates a random number from the computer, often used as the starting value for the seed
+- The Mersenne Twister `mt19937` is a fast, high-quality random number engine
+
+The `<random>` library can be used in conjunction with two other libraries:
+- The `<algorithm>` library provides methods to deal with sorting, searching, and manipulating data structures
+- The `<ctime>` library provides a variety of functions to measure dates and times
+
+To begin, the `<ctime>` library allows use to seed the `srand()` function with `time(NULL)`, which returns a timestamp resenting the current moment in time.
+The `rand()` function will generate a number between 0 and `RAND_MAX`, inclusive, but guaranteed to be at least `32767`. `RAND_MAX` is a constant defined by `<cstdlib>` that gives the largest value the `rand()` function can return.
+By using the modulus `&` operator, we can specify a range, and by using the addition `+` operator, we can adjust the starting index of said range.
+
+The second option, uses the `<algorithm>` library, which provides four different distribution functions to seed the engine with:
+1. The `uniform_int_distribution<int> range(start, end)` function gives random whole numbers in a range, where every number is equally likely. It includes both values in the parentheses for the range.
+2. The `uniform_real_distribution<double> range(start, end)` function gives random decimal numbers in a range, where every number is equally likely. It includes the start index, and excludes the ending index for the range.
+3. The `normal_distribution<double> range(mean, stddev)` function gives random decimal numbers in a range, where every number is likely closer to the mean. The first index is the mean and the second index is the standard deviation.
+4. The `bernoulli_distribution chance(index)` function gives random boolean values, `true` or `false`, like a coin flip. The index controls how much of the percentage is likely to be `true`
 
 ## Example
 ```cpp title="21_random.cpp"
 #include <iostream>
+#include <random>
+#include <algorithm>
 using namespace std;
 
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    random_device source;
+    mt19937 engine(source());
+    uniform_int_distribution<int> die6(1, 6);
+
+    // Roll 4d6, drop the lowest die, add the rest for base stat
+    int total = 0;
+    int lowest = 7;
+    
+    for (int i = 1; i <= 4; i++) {
+        int rollD6 = die6(engine);
+        cout << "Roll " << i << ": " << rollD6 << endl;
+        total += rollD6;
+        lowest = min(lowest, rollD6);
+    }
+    int stat = total - lowest;
+    cout << "Stat: " << stat << endl;
 
     return 0;
 }
