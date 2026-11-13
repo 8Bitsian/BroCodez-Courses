@@ -13,12 +13,15 @@
 ### Main method syntax for starting new main.cpp files:
 ```cpp
 // Standard-library includes
-# include <iostream>
-# include <string>
-# include <cmath>
+#include <iostream>
+#include <string>
+#include <cmath>
+#include <algorithm>
+#include <random>
+#include <ctime>
 
 // Third-party or local library imports
-# include "header_name.hpp"
+#include "header_name.hpp"
 
 // Namespace declaration
 using namespace std;
@@ -32,6 +35,16 @@ int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
     
+    // Declare variables
+
+    // Print the menu
+
+    // Get user input
+
+    // Perform the calculation
+
+    // Output the result
+
     // cout << "Running program...\n";
     function_name();
     // cout << "Program finished.\n";

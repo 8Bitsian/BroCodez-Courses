@@ -855,7 +855,6 @@ int main() {
     // Roll 4d6, drop the lowest die, add the rest for base stat
     int total = 0;
     int lowest = 7;
-    
     for (int i = 1; i <= 4; i++) {
         int rollD6 = die6(engine);
         cout << "Roll " << i << ": " << rollD6 << endl;
