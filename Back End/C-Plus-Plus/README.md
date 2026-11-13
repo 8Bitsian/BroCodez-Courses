@@ -977,26 +977,30 @@ void printName(string fullName) {
 ```
 
 # Overloaded Functions
+In C++, function overloading allows multiple functions to have the same name so long as their parameters are different in data type or number.
+Instead of defining two functions that should do the same thing, it is better to overload one.
+A function name and paramters is called a function signature, and is used to identify the function.
+This lets you use the same function name for similar tasks.
 
 ## Example
 ```cpp title="24_overload-functions.cpp"
 #include <iostream>
 using namespace std;
 
-void funtion();
+int addFunc(int x, int y) { return x + y; }
+double addFunc(double x, double y) { return x + y; }
 
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
-    function();
-    return 0;
-}
+    int numInt = addFunc(8, 5);
+    double numDouble = addFunc(4.0, 9.2);
 
-void function() {
-    /// @brief Describe what the user-defined function does
-    /// @param var Describe what the parameter represented
-    /// @return Desribe what value is being returned
+    cout << "   Int: " << numInt << endl;
+    cout << "Double: " << numDouble << endl;
+
+    return 0;
 }
 ```
 
