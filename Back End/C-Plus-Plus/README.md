@@ -1094,6 +1094,66 @@ int main() {
 }
 ```
 
+## Iteration
+You can iterate over an array via a `for` or a `for-each` loop.
+
+The traditional method of iterating with the `for` loop a
+
+### Example
+```cpp title="26_iteration.cpp"
+#include <iostream>
+using namespace std;
+
+void noLoop(string autobots[5]) {
+    /// @brief Iterate over the autobots[] array and print elements w/a for loop
+    /// @param autobots[5] array contains 5 cybertronians
+
+    cout << "Print elements of array manually: " << endl;
+    cout << autobots[0] << endl;
+    cout << autobots[0] << endl;
+    cout << autobots[0] << endl;
+    cout << autobots[0] << endl;
+    cout << autobots[0] << endl << endl;
+}
+
+void forLoop(string autobots[5]) {
+    /// @brief Iterate over the autobots[] array and print elements w/a for loop
+    /// @param autobots[5] array contains 5 cybertronians
+
+    cout << "Print elements of array w/for loop: " << endl;
+
+    // Set the index to 0 since the first array has an index of 0
+    for (int i = 0; i < sizeof(autobots)/sizeof(string); i++) {
+        cout << autobots[i] << endl;
+    }
+    cout << endl;
+}
+
+void forEachLoop(string autobots[5]) {
+    /// @brief Iterate over the autobots[] array and print elements w/a for each loop
+    /// @param autobots[5] array contains 5 cybertronians
+
+    cout << "Print elements of array w/for each loop: " << endl;
+    cout << autobots[0] << endl;
+    cout << autobots[0] << endl;
+    cout << autobots[0] << endl;
+    cout << autobots[0] << endl;
+    cout << autobots[0] << endl << endl;
+}
+
+int main() {
+    /// @brief The `main()` function is where the program begins
+    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
+
+    string autobots[5] = { "Ratchet", "Ironhide", "Bumblebee", "Grimlock", "Sludge"};
+
+    noLoop(autobots[5]);
+    forLoop(autobots[5]);
+    forEachLoop(autobots[5]);
+    return 0;
+}
+```
+
 # `sizeof()` Operator
 In C++, the `sizeof()` operator determines the size in bytes of a variable, data type, class, objetc, etc.
 
@@ -1139,34 +1199,12 @@ int main() {
 }
 ```
 
-# Iteration
 
-## Example
-```cpp title="28_iteration.cpp"
-#include <iostream>
-using namespace std;
-
-void funtion();
-
-int main() {
-    /// @brief The `main()` function is where the program begins
-    /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
-
-    function();
-    return 0;
-}
-
-void function() {
-    /// @brief Describe what the user-defined function does
-    /// @param var Describe what the parameter represented
-    /// @return Desribe what value is being returned
-}
-```
 
 # Pass Array to a Function
 
 ## Example
-```cpp title="29_pass-array.cpp"
+```cpp title="28_pass-array.cpp"
 #include <iostream>
 using namespace std;
 
@@ -1190,7 +1228,7 @@ void function() {
 # Search array for an element
 
 ## Example
-```cpp title="30_search-array.cpp"
+```cpp title="29_search-array.cpp"
 #include <iostream>
 using namespace std;
 
@@ -1214,7 +1252,7 @@ void function() {
 # Sort an array
 
 ## Example
-```cpp title="31_sort-array.cpp"
+```cpp title="30_sort-array.cpp"
 #include <iostream>
 using namespace std;
 
@@ -1238,7 +1276,7 @@ void function() {
 # `fill()` Function
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="31_arithmetciops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -1262,7 +1300,7 @@ void function() {
 # Fill an array with User Input
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="32_arithmetciops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -1286,7 +1324,7 @@ void function() {
 # Multidimentional Arrays
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="33_arithmetciops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -1310,7 +1348,7 @@ void function() {
 # Memory addresses
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="34_arithmetciops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -1334,7 +1372,7 @@ void function() {
 # Pass by `value` vs. pass by `ref`
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="35_arithmetciops.cpp"
 #include <iostream>
 using namespace std;
 
@@ -1358,7 +1396,7 @@ void function() {
 # `const` Parameters
 
 ## Example
-```cpp title="06_arithmetciops.cpp"
+```cpp title="36_arithmetciops.cpp"
 #include <iostream>
 using namespace std;
 
