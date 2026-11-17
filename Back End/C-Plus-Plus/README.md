@@ -1048,26 +1048,49 @@ int main() {
 ```
 
 # Arrays
+In C++, an array is a data structure used to store multiple values in a single variable, which are then accessed via an index number.
+
+Arrays can be treated like variables that hold multiple values.
+After the variable name add square brackets `[]` and a set of curly braces `{}` around each value within the array
+You can use commas `,` to separate values in the list
+You can only add values of the same data type as the array
+
+To declare an array, define the variable type (e.g., `int`, `double`, `string`, etc.), specify the name of the array followed by square brackets `[]`.
+To define an array, use an assignment operator `=` and an array literal using curly braces `{}` and insert a comma `,` separated list of values.
+You can only add values of the same data type as the array
+
+You can declare an array and assign values later, so long as you specify the number of elements it should store within the square brackets `[]`.
+
+Each value is stored in memory and can be accessed via an index.
+To access elements within an array, refer to the index number inside the square brackets `[]`, which always starts at 0.
+
+To change the value of a specific element, refer to the index number and use the assignment operator `=` and override previous values.
 
 ## Example
 ```cpp title="26_single-arrays.cpp"
 #include <iostream>
 using namespace std;
 
-void funtion();
+void carModels() {
+    /// @brief Create carModel[] array and print array elements
+
+    string carModels[3] = { "Lamborghini", "Porsche", "Mustang" };
+
+    cout << carModels[0] << endl;   // Prints "Lamborghini"
+
+    carModels[0] = "Corvette";
+
+    cout << carModels[0] << endl;   // Prints "Corvette"
+    cout << carModels[1] << endl;
+    cout << carModels[2] << endl;
+}
 
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
-    function();
+    carModels();
     return 0;
-}
-
-void function() {
-    /// @brief Describe what the user-defined function does
-    /// @param var Describe what the parameter represented
-    /// @return Desribe what value is being returned
 }
 ```
 
