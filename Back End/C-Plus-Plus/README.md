@@ -1095,26 +1095,47 @@ int main() {
 ```
 
 # `sizeof()` Operator
+In C++, the `sizeof()` operator determines the size in bytes of a variable, data type, class, objetc, etc.
+
+To get the size of an array, use the `sizeof()` operator by pasing in a variable to get the size of a data type in bytes.
+Each of the primitive data types can be calcualted with a set amount of bytes:
+- For boolean values (i.e., `true` or `false`), they are 1 byte
+- For integer values (i.e., `int`), they are 4 bytes
+- For double values (i.e., `double`), they are 8 bytes
+- For character values (i.e., `char`), they are 1 byte
+- For string values (i.e., `string`), they are 32 bytes, regardless of how many characters are within the string
+
+To calculate the amount of bytes within an array, multiply the number of elements by the data type.
+The `sizeof()` operator can be used to find out how many elements an array has by dividing the size of the array by either:
+- The size of the first element in the array: `sizeof(array) / sizeof(array[0])`
+- The size of the array's data type: `sizeof(array) / sizeof(datatype)`
 
 ## Example
 ```cpp title="27_sizeof-ops.cpp"
 #include <iostream>
 using namespace std;
 
-void funtion();
-
 int main() {
     /// @brief The `main()` function is where the program begins
     /// @return 0 if the program terminated successfully, else a non-zero value if there was an issue
 
-    function();
-    return 0;
-}
+    string name = "Imani Hollie";
+    string college = "Gwinnett Technical College";
+    bool isStudent = true;
+    int courses = 4;
+    double gpa = 2.5;
+    char grades[5] = {'A', 'B', 'C', 'D', 'F'};
 
-void function() {
-    /// @brief Describe what the user-defined function does
-    /// @param var Describe what the parameter represented
-    /// @return Desribe what value is being returned
+    cout << sizeof(name) << " bytes" << endl;
+    cout << sizeof(college) << " bytes" << endl;
+    cout << sizeof(isStudent) << " bytes" << endl;
+    cout << sizeof(courses) << " bytes" << endl;
+    cout << sizeof(gpa) << " bytes" << endl;
+    cout << sizeof(grades) << " bytes" << endl;
+    cout << (sizeof(grades) / sizeof(grades[0])) << " elements" << endl;
+    cout << (sizeof(grades) / sizeof(char)) << " elements" << endl;
+
+    return 0;
 }
 ```
 
