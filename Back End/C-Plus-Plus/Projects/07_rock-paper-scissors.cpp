@@ -38,7 +38,7 @@ int main() {
         computer = getCompInput();
 
         // Print output
-        cout << "Player Choice: ";
+        cout << "\nPlayer Choice: ";
         showChoice(player);
         cout << "Computer Choice: ";
         showChoice(computer);
@@ -46,9 +46,11 @@ int main() {
         // Print output
         chooseWinner(player, computer);
 
-        cout << "Play again? (1 or 2): ";
+        cout << "\nPlay again? (1 or 2): ";
         cin >> choice;
-    } while (choice != 2)
+    } while (choice != 2);
+
+    cout << "\nThank you for playing!";
 
     return 0;
 }
@@ -57,7 +59,7 @@ int main() {
 void showMenu() {
     /// @brief showMenu() prints the main menu for the rock, paper, scissors game
 
-    cout << "Choose a hand to play:" << endl;
+    cout << "\nChoose a hand to play:" << endl;
     cout << "1. Rock" << endl;
     cout << "2. Paper" << endl;
     cout << "3. Scissors" << endl;
@@ -90,7 +92,7 @@ int getCompInput() {
     uniform_int_distribution<int> hand(1, 3);
 
     // Declare variables
-    int randNum = event(engine);
+    int randNum = hand(engine);
 
     return randNum;
 }
@@ -116,17 +118,17 @@ void chooseWinner(int player, int computer) {
     /// @param computer is the computer's generated hand
 
     switch(player) {
-        case 1: if (computer == 1) { cout << "Its a tie." << endl; }
-                else if (computer == 2) { cout << "You lose..." << endl; }
-                else { cout << "You win!" << endl; }
+        case 1: if (computer == 1) { cout << "\nIts a tie." << endl; }
+                else if (computer == 2) { cout << "\nYou lose..." << endl; }
+                else { cout << "\nYou win!" << endl; }
                 break;
-        case 2: if (computer == 2) { cout << "Its a tie." << endl; }
-                else if (computer == 3) { cout << "You lose..." << endl; }
-                else { cout << "You win!" << endl; }
+        case 2: if (computer == 2) { cout << "\nIts a tie." << endl; }
+                else if (computer == 3) { cout << "\nYou lose..." << endl; }
+                else { cout << "\nYou win!" << endl; }
                 break;
-        case 3: if (computer == 3) { cout << "Its a tie." << endl; }
-                else if (computer == 1) { cout << "You lose..." << endl; }
-                else { cout << "You win!" << endl; }
+        case 3: if (computer == 3) { cout << "\nIts a tie." << endl; }
+                else if (computer == 1) { cout << "\nYou lose..." << endl; }
+                else { cout << "\nYou win!" << endl; }
                 break;
     }
 }
