@@ -22,7 +22,7 @@ Why would you need to know about data structures or algorithms?
 1. You'll write code that is both time and memory efficient
 2. Commonly asked questions involve DS&A in coding and job interviews
 
-# Stack Data Structures
+# Stacks
 A stack is last-in first-out (LIFO) data structure that stores objects into a "vertical tower"
 
 The following are basic operations used to manipulate data within the stack:
@@ -59,7 +59,329 @@ if __name__ == "__main__":
     main()
 ```
 
-# Notes
+# Queues
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+## Priority Queues
+
+### Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Linked Lists
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Dynamic Arrays
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Big O Notation
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Linear Search
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Binary Search
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Interpolation Search
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Bubble Sort
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Selection Sort
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Insertion Sort
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Recursion
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Merge Sort
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Quick Sort
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Hash Tables
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Linear Graphs
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Adjacency Matrix
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Adjacency Lists
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Depth First Search
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Breadth First Search
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Trees
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Binary Search Trees
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Tree Traversal
+
+## Example
+```python title="01-stack_ds.py"
+def function_name():
+    pass
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
+```
+
+# Calculate Execution Time
 
 ## Example
 ```python title="01-stack_ds.py"
