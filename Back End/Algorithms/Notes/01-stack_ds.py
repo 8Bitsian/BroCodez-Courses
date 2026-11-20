@@ -26,7 +26,7 @@ class Stack:
     def isEmpty(self):
         return len(self.stack) == 0
 
-    # the `size()` method uses the `len()` method
+    # The `size()` method uses the `len()` method
     def size(self):
         return len(self.stack)
 
@@ -45,7 +45,12 @@ def main():
     myStack.push('A')
     myStack.push('B')
     myStack.push('C')
-    
+
+    # You can use the `push()` and `pop()` methods with `for` loops
+    # Be aware that you can overload the stack and cause a nerror with the heap
+    for (int i = 0; i < 2; i++)
+        myStack.push('D')
+
     print(f"Stack: {myStack.stack}\n")
     print(f"isEmpty: {myStack.isEmpty()}\n")    # isEmpty = False
     
