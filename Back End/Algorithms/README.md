@@ -23,51 +23,99 @@ Why would you need to know about data structures or algorithms?
 2. Commonly asked questions involve DS&A in coding and job interviews
 
 # Stacks
-A stack is last-in first-out (LIFO) data structure that stores objects into a "vertical tower"
+A stack is last-in first-out (LIFO) data structure that stores objects "vertically."
+Stacks can be used to implement undo mechanisms, to revert to previous states, to create algorithms for depth-first search in graphs, or for backtracking.
 
-The following are basic operations used to manipulate data within the stack:
+Stacks can be implemented using arrays or [linked lists](#linked-lists), which we will cover later on.
+They are often mentioned with [Queues](#Queues), which is a similar data structure covered in the next section.
+
+The following are basic operations used to manipulate data within a stack:
 - The `push()` method adds to the top of the stack
 - The `pop()` method removes from the bottom of the stack
 - The `peek()` method returns the top (last) element on the stack
 - The `isEmpty()` method checks if there are any elements in the stack
-- The `size()`method checks how many elements are in the stack
+- The `size()` method checks how many elements are in the stack
 
 ## Example
 ```python title="01-stack_ds.py"
 def main():
+    stack = []
+
+    # Is Empty?
+    isEmpty = not bool(stack)
+    print(f"isEmpty: {isEmpty}")    # Prints "isEmpty: True"
+
     # Push
     stack.append(1)
     stack.append(2)
     stack.append(3)
-
-    # Peek
-    topElement = stack[-1]
-    print(f"Peek: {topElement}")
-
-    # Pop
-    poppedElement = stack.pop()
-    print(f"Pop: {poppedElement}")
+    print(f"Stack: {stack}")        # Prints "Stack: [1, 2, 3]"
 
     # Is Empty?
     isEmpty = not bool(stack)
-    print(f"isEmpty: {isEmpty}")
+    print(f"isEmpty: {isEmpty}")    # Prints "isEmpty: False"
+
+    # Peek
+    topElement = stack[-1]
+    print(f"Peek: {topElement}")    # Prints "Peek: 3"
+
+    # Pop
+    poppedElement = stack.pop()
+    print(f"Pop: {poppedElement}")  # Prints "Pop: 3"
 
     # Size?
-    print(f"Size: {len(stack)}")
+    print(f"Size: {len(stack)}")    # Prints "Size: 2"
 
 if __name__ == "__main__":
     main()
 ```
 
 # Queues
+A queue is a first-in first-out (FIFO) data structure that stores objects "horizontally."
+It is a collection designed for holding elements prior to processing and is considered a linear data structure.
+Queues can be used to implement job scheduling for an office printer, order processing for e-tickets, or to create algorithms for breadth-first search in graphs.
+
+Queues can be implemented using arrays or [linked lists](#linked-lists).
+
+The following a basic operations used to manipulate data within a queue:
+- The `enqueue()` method (similar to the `push()` method) adds to the back of the queue
+- The `remove()` method (similar to the `pop()` method) removes to the front of the queue
+
+Queues also uses the `peek()`, `isEmpty()`, and `size()` methods to parse through the elements.
 
 ## Example
-```python title="01-stack_ds.py"
-def function_name():
-    pass
+```python title="02-queue_ds.py"
+from collections import deque
 
 def main():
-    pass
+    def contains(queue, element):
+        return element in queue
+    
+    queue = deque()
+
+    # Is Empty?
+    print(f"isEmpty: {not queue}")  # Prints "isEmpty: True"
+
+    # Enqueue (like `push()`)
+    queue.extend(['A', 'B', 'C'])
+    print(f"Queue: {list(queue)}")  # Prints "Queue: ['A', 'B', 'C']"
+
+    # Is Empty?
+    print(f"isEmpty: {not queue}")  # Prints "isEmpty: False"
+
+    # Peek
+    print(f"Peek: {queue[0]}")      # Prints "Peek: A"
+
+    # Dequeue (like `pop()`)
+    dequeued = queue.popleft()
+    print(f"Dequeue: {dequeued}")  # Prints "Dequeue: A"
+
+    # Size?
+    print(f"Size: {len(queue)}")    # Prints "Size: 2"
+
+    # Is Match?
+    print(f"Contains \"C\": {contains(queue, 'C')}")    # Prints "Contains "C": True"
+    print(f"Contains \"A\": {contains(queue, 'A')}")    # Prints "Contains "A": False"
 
 if __name__ == "__main__":
     main()

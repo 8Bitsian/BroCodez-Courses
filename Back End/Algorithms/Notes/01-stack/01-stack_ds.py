@@ -2,33 +2,7 @@
 # The `push()` method adds to the top of the stack
 # The `pop()` method removes from the bottom of the stack
 
-class Stack:
-    def __init__(self):
-        self.stack = []
-
-    # The `push()` method uses the `append()` method
-    def push(self, element):
-        self.stack.append(element)
-
-    # The `pop()` method removes and returns the top element from the stack
-    def pop(self):
-        if self.isEmpty():
-            return "Stack is empty"
-        return self.stack.pop()
-    
-    # The `peek()` method uses the `len()` method
-    def peek(self):
-        if self.isEmpty():
-            return "Stack is empty"
-        return self.stack[-1]
-
-    # The `isEmpty()` method uses booleans values
-    def isEmpty(self):
-        return len(self.stack) == 0
-
-    # The `size()` method uses the `len()` method
-    def size(self):
-        return len(self.stack)
+from stack import Stack
 
 # Your program implicitly starts here
 def main():
@@ -48,7 +22,7 @@ def main():
 
     # You can use the `push()` and `pop()` methods with `for` loops
     # Be aware that you can overload the stack and cause a nerror with the heap
-    for (int i = 0; i < 2; i++)
+    for x in range(1, 3):
         myStack.push('D')
 
     print(f"Stack: {myStack.stack}\n")
